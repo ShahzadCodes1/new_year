@@ -699,3 +699,93 @@
   white-space: pre;
   pointer-events: none;
 }
+
+/* Phones. The opening type and the city captions step down a size and close up, so the scene keeps most of
+   the screen. Nothing here applies from 600px up: the desktop and tablet layouts are untouched. */
+@media (max-width: 599px) {
+  /* The opening screen */
+  .chapter--hero .chapter__hold {
+    padding-bottom: max(clamp(20px, 3.6svh, 32px), env(safe-area-inset-bottom));
+  }
+
+  .chapter--hero h1 {
+    font-size: clamp(2rem, 9vw, 2.5rem);
+    line-height: 1.02;
+  }
+
+  .chapter--hero .lede {
+    margin-top: 10px;
+    max-width: 36ch;
+    font-size: 0.9375rem;
+    line-height: 1.45;
+  }
+
+  .hero__clock {
+    margin-top: 14px;
+  }
+
+  .hero__clock p {
+    margin-bottom: 6px;
+  }
+
+  .countdown {
+    gap: 18px;
+    min-height: 2.75rem;
+  }
+
+  .countdown b {
+    font-size: 1.5rem;
+  }
+
+  .hero__actions {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  /* The cities: a caption, not a panel. */
+  .chapter--cities .chapter__hold {
+    padding-bottom: max(14px, env(safe-area-inset-bottom));
+  }
+
+  .city__text {
+    padding: 14px 16px 8px;
+    background: rgb(8 13 25 / 0.76);
+  }
+
+  .city h3 {
+    font-size: clamp(1.5rem, 7vw, 1.875rem);
+    line-height: 1.05;
+  }
+
+  .city__verdict {
+    margin-top: 6px;
+    max-width: none;
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+
+  .city__moment {
+    margin-top: 6px;
+    font-size: 0.875rem;
+    line-height: 1.45;
+  }
+
+  .city__links {
+    gap: 0 20px;
+    margin-top: 4px;
+  }
+
+  /* Still a full finger's height between the two links' centres; only the air around them goes. */
+  .city__links a {
+    min-height: 38px;
+  }
+
+  .chapter--cities h2 {
+    margin: 12px 0 6px;
+    font-size: 0.875rem;
+  }
+
+  .chapter--cities .tabbar a {
+    padding: 0 16px;
+  }
+}
