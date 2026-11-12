@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { SiteHeader } from '@/components/site/SiteHeader';
+import { LoaderFireworks } from '@/experience/LoaderFireworks';
 import { Button } from '@/components/ui/Button';
 import { Section, type Tone } from '@/components/ui/Section';
 import { TextLink } from '@/components/ui/TextLink';
@@ -109,6 +110,21 @@ export default function StyleGuide() {
         </p>
         <div className="mt-8 border border-(--rule)">
           <SiteHeader items={nav} inline />
+        </div>
+      </Section>
+
+      <Section tone="night" labelledBy="sg-fireworks">
+        <h2 id="sg-fireworks" className="text-card">
+          Opening-screen fireworks
+        </h2>
+        <p className="mt-4 max-w-prose text-(--muted)">
+          The fireworks that play on the home page’s opening screen while the scene loads, shown here on their own. Shells rise
+          from the horizon line, burst and fall away, with a faint reflection below it. Visitors who ask for less motion never
+          see the opening screen, so they never see these.
+        </p>
+        <div className="relative mt-8 aspect-[16/9] max-h-[70svh] w-full overflow-hidden border border-(--rule) bg-navy [&>canvas]:absolute [&>canvas]:inset-0 [&>canvas]:h-full [&>canvas]:w-full">
+          <LoaderFireworks active />
+          <div aria-hidden="true" className="absolute inset-x-[15%] top-1/2 h-px bg-blush/20" />
         </div>
       </Section>
     </div>

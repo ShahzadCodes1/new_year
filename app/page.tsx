@@ -67,7 +67,7 @@ export default function Home() {
               The guide to every New Year on Earth
             </h1>
             <p className="lede">
-              Where to be at midnight in the UK, where to go for a New Year break, and every other New Year on the calendar.
+              From the first midnight to the last, discover how the world celebrates New Year.
             </p>
             <div className="hero__clock">
               <p id="countdown-label">Until midnight on 31 December, UK time</p>

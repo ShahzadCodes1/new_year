@@ -1,0 +1,260 @@
+/* The events directory. It borrows the reading pages' cards (their ground, edge and lift) and adds what a
+   listing needs: a filter, facts in a row, and a way to book. */
+
+.e-filters {
+  display: grid;
+  gap: 12px;
+}
+
+.e-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* On a phone each row of choices is one line that slides sideways, so the events start within a screen. */
+@media (max-width: 699px) {
+  .e-filter {
+    flex-wrap: nowrap;
+    margin-inline: calc(var(--spacing-gutter) * -1);
+    padding-inline: var(--spacing-gutter);
+    overflow-x: auto;
+    scrollbar-width: none;
+    overscroll-behavior-x: contain;
+  }
+
+  .e-filter button {
+    flex: none;
+  }
+}
+
+.e-filter button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: none;
+  color: var(--fg);
+  font: inherit;
+  font-size: var(--text-nav);
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s var(--ease-soft),
+    border-color 0.25s var(--ease-soft),
+    color 0.25s var(--ease-soft);
+}
+
+.e-filter button span {
+  color: var(--muted);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.e-filter button:hover {
+  border-color: var(--fg);
+}
+
+/* The chosen kind is filled, as the current tab is elsewhere on the site. */
+.e-filter button[aria-pressed='true'] {
+  border-color: var(--color-snow);
+  background: var(--color-snow);
+  color: var(--color-navy);
+}
+
+.e-filter button[aria-pressed='true'] span {
+  color: var(--color-slate);
+}
+
+.e-count {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.e-city {
+  padding-top: clamp(32px, 5vw, 56px);
+}
+
+.e-city h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin: 0 0 clamp(20px, 3vw, 32px);
+  font-size: var(--text-card);
+  line-height: var(--text-card--line-height);
+}
+
+.e-city h2 span {
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: var(--text-nav);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+.e-none {
+  margin: 0;
+  color: var(--muted);
+}
+
+.e-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  gap: clamp(16px, 2vw, 24px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.e-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: clamp(18px, 2vw, 24px);
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-ui);
+  background: var(--card);
+  box-shadow: var(--lift);
+}
+
+.e-card__kind {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px 12px;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.e-card__kind b {
+  padding: 3px 8px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  color: var(--fg);
+  font-size: var(--text-label);
+  font-weight: 600;
+}
+
+.e-card h3 {
+  margin: 0;
+  font-size: clamp(1.3rem, 1.6vw, 1.5rem);
+  line-height: 1.15;
+  /* Organisers' names can be long and unbroken. */
+  overflow-wrap: anywhere;
+}
+
+.e-card__where {
+  margin: 6px 0 0;
+  font-size: var(--text-nav);
+  font-weight: 600;
+}
+
+.e-card__text {
+  margin: 10px 0 0;
+  color: var(--muted);
+}
+
+.e-card__facts {
+  display: grid;
+  gap: 0;
+  margin: 16px 0 0;
+  border-top: 1px solid var(--rule);
+  font-size: var(--text-nav);
+}
+
+.e-card__facts > div {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr);
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.e-card__facts dt {
+  color: var(--muted);
+}
+
+.e-card__facts dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+.e-card__open {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.e-card__more {
+  margin-top: 12px;
+  font-size: var(--text-nav);
+}
+
+.e-card__more summary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.e-card__more p {
+  margin: 0 0 10px;
+  color: var(--muted);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.e-card__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto 0 0;
+  padding-top: 18px;
+}
+
+.e-card__book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: var(--radius-ui);
+  background: var(--cta-bg);
+  color: var(--cta-fg);
+  font-size: var(--text-nav);
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s var(--ease-soft);
+}
+
+.e-card__book:hover {
+  background: var(--cta-hover);
+}
+
+.e-card__checked {
+  color: var(--muted);
+  font-size: var(--text-label);
+  line-height: 1.5;
+}
+
+.e-card__checked a {
+  display: inline-block;
+  /* A full finger's height for a small link, without making the line taller. */
+  padding-block: 12px;
+  margin-block: -12px;
+  color: var(--fg);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}

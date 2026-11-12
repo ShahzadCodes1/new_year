@@ -53,7 +53,8 @@ export interface PageBase {
   crumbs: Crumb[];
   /** The day the page was last checked, as YYYY-MM-DD. */
   checked: string;
-  sample: true;
+  /** True for stand-in content. False only for pages built from verified facts, each with its source. */
+  sample: boolean;
   image?: StaticImageData;
   /** A handful of facts shown on the card in front of the picture. */
   keyFacts?: Fact[];

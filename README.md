@@ -43,6 +43,14 @@ Then open http://localhost:3000. The design system is at `/styleguide/`.
 
 `?hud=1` shows a frame-rate readout. `?mode=still` shows the still version. `?loader=0` skips the opening screen. `?tier=high|medium|low` forces a quality tier.
 
+## The events directory
+
+`/events/` lists real, ticketed New Year's Eve events. Its data is `content/events/uk-new-years-eve.json`, read
+through `content/events.ts`, which also holds the rules for adding or updating an event. In short: every
+price, time, age limit and link must be read on the event's own page for this year's date; a field the page
+does not state is `null` and is named in `unconfirmed`; and `checked` is the day the page was read. The file
+is plain JSON so that a backend can replace it without changing a page.
+
 ## Deploying
 
 The site is a standard Next.js project and deploys to Vercel as it is: import the repository, keep the
@@ -58,4 +66,4 @@ Next.js preset, and deploy. There are no environment variables and no build sett
 
 `lib/site.ts` has `live: false`, which keeps the site out of search engines. Flip it at launch.
 
-**Do not launch with sample content.** Every page in `content/guides/` is marked `sample: true`: its venues, prices, times and places are realistic stand-ins written to exercise the templates, and several are invented. They are to be replaced when content is managed from the backend. The exceptions are the dates on the home page (`content/celebrations.ts`, `content/practical.ts`) and the bank holiday page, which are verified and carry their sources.
+**Do not launch with sample content.** Every page in `content/guides/` is marked `sample: true`, except the events directory: its venues, prices, times and places are realistic stand-ins written to exercise the templates, and several are invented. They are to be replaced when content is managed from the backend. The exceptions are the dates on the home page (`content/celebrations.ts`, `content/practical.ts`) and the bank holiday page, which are verified and carry their sources.

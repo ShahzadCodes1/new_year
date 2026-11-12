@@ -1,0 +1,2439 @@
+[
+  {
+    "id": "london-mayor-of-london",
+    "name": "Mayor of London's New Year's Eve Fireworks",
+    "venue": "Thames viewing areas",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Victoria Embankment, Westminster Bridge, Waterloo Bridge and Albert Embankment",
+    "category": "fireworks",
+    "description": "A ticket gives entry to one named, colour-coded viewing area beside the Thames for the midnight fireworks. Category A covers the Blue, Pink and White areas; Category B covers the Red, Green and Orange areas.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "12.30am",
+    "priceFrom": 20,
+    "priceTo": 55,
+    "priceText": "Category A £55 (£35 with a London postcode); Category B £40 (£20 with a London postcode). A booking fee is added.",
+    "ageLimit": "Any under-16s who do attend must be with an adult",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.ticketmaster.co.uk/mayor-of-londons-new-years-eve-tickets/artist/5491819",
+      "label": "Ticketmaster"
+    },
+    "source": {
+      "url": "https://www.london.gov.uk/events/london-new-years-eve-2026"
+    },
+    "evidence": "This year, individual ticket prices will vary between £20 and £55.",
+    "unconfirmed": [],
+    "notes": "Category A is £55 (£35 for London residents); Category B is £40 (£20 for London residents). The London price needs a London postcode on the payment card's billing address. Entry to all areas is 8pm to 10.30pm. Up to 4 tickets per buyer, no refunds, and you cannot move between areas on the night. Everyone needs a ticket whatever their age; the organiser says the event is not suitable for young children. Tickets are released in batches.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-thames-luxury-charters",
+    "name": "NEW YEAR'S EVE on the Thames | Aboard Dixie Queen & Elizabethan",
+    "venue": "Thames Luxury Charters",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Butler's Wharf Pier, Shad Thames",
+    "category": "cruise",
+    "description": "Evening on two boats: a Champagne welcome, Tower Bridge lift, river cruise and four-course dinner with wine, beer and soft drinks on the Dixie Queen, then a transfer at 22:00 to the Elizabethan for DJs and a Champagne toast at the midnight fireworks.",
+    "date": "2026-12-31",
+    "starts": "6.30pm",
+    "ends": "1am",
+    "priceFrom": 583,
+    "priceTo": null,
+    "priceText": "Tickets from £583.00",
+    "ageLimit": "18+, or ages 12–17 accompanied by an adult",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/new-years-eve-party/new-years-eve-aboard-the-dixie-queen-2",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/new-years-eve-party/new-years-eve-aboard-the-dixie-queen-2"
+    },
+    "evidence": "Tickets from £583.00",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "Boarding 6.30pm to 7pm at Butler's Wharf Pier; disembarkation there between 1am and 1.15am. The page says availability is limited. The listing's general terms also say ticket holders must be over 18, so check before booking for ages 12 to 17.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-london-party-boats",
+    "name": "New Year's Eve on the Thames: Jewel of London",
+    "venue": "London Party Boats",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Bankside Pier",
+    "category": "cruise",
+    "description": "Five-hour party cruise with a welcome Prosecco, unlimited beer, cider, wine, Prosecco by the glass and soft drinks, and a light party buffet.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": "1.15am to 1.30am",
+    "priceFrom": 240,
+    "priceTo": 400,
+    "priceText": "Jewel of London – From £240 per person",
+    "ageLimit": "21+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230",
+      "label": "London Party Boats (the operator's own site)"
+    },
+    "source": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230"
+    },
+    "evidence": "Jewel of London – From £240 per person",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Boarding 8.15pm at Bankside Pier, prompt departure 8.30pm. Photo ID required. Standard ticket £240; VIP packages are £350 and £400 per person, sold in pairs. The page gives the date as Thursday 31st December and refers to welcoming 2027, without printing the year 2026 next to the date.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-london-party-boats-2",
+    "name": "New Year's Eve on the Thames: Pearl of London",
+    "venue": "London Party Boats",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Bankside Pier",
+    "category": "cruise",
+    "description": "Five-hour party cruise with a glass of Prosecco on arrival, unlimited drinks and a light party buffet.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "12.45am to 1am",
+    "priceFrom": 250,
+    "priceTo": 250,
+    "priceText": "Pearl of London – £250 per person",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230",
+      "label": "London Party Boats (the operator's own site)"
+    },
+    "source": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230"
+    },
+    "evidence": "Pearl of London – £250 per person",
+    "unconfirmed": [
+      "ageLimit",
+      "availability"
+    ],
+    "notes": "Boarding 7.30pm at Bankside Pier, prompt departure 8pm. Photo ID required. The operator's page says strictly 18+, but the DesignMyNight listing for the same cruise (https://www.designmynight.com/london/whats-on/boat-party/new-years-eve-on-the-m-v-pearl-of-london to 1) says 21+ and shows tickets from £265.00, so the age limit is marked unconfirmed. The operator's page gives the date as Thursday 31st December and refers to 2027, without printing the year 2026 next to the date.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-london-party-boats-3",
+    "name": "New Year's Eve on the Thames: Emerald of London (family cruise)",
+    "venue": "London Party Boats",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Festival Pier, South Bank",
+    "category": "cruise",
+    "description": "Four-hour family party cruise. Adults get unlimited beer, cider, wine, Prosecco and soft drinks and children get unlimited soft drinks; food is not included.",
+    "date": "2026-12-31",
+    "starts": "9.30pm",
+    "ends": "1.15am to 1.30am",
+    "priceFrom": 240,
+    "priceTo": 240,
+    "priceText": "Emerald of London – £240 per person",
+    "ageLimit": "Children aged 5 and up; under-5s not permitted",
+    "availability": null,
+    "booking": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230",
+      "label": "London Party Boats (the operator's own site)"
+    },
+    "source": {
+      "url": "https://www.londonpartyboats.co.uk/events/new-year-s-eve-on-the-thames/230"
+    },
+    "evidence": "Emerald of London – £240 per person",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Boarding 9.15pm at Festival Pier, prompt departure 9.30pm. Adult and child tickets are the same price. Alcohol is for wristband holders aged 18 and over. The operator's other family cruise that night, Sapphire of London (£260), is marked sold out on the same page.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-uber-boat-by-thames-clippers",
+    "name": "New Year's Eve Cruise",
+    "venue": "Uber Boat by Thames Clippers",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Departs from a choice of piers, including Tower, Bankside, London Bridge City, Canary Wharf, Greenwich, North Greenwich, Battersea Power Station, Cadogan and Putney",
+    "category": "cruise",
+    "description": "Round-trip river cruise with a view of the fireworks, a welcome drink on arrival (wine or a soft drink), a glass of Champagne at midnight, a snack box, and live music or a DJ.",
+    "date": "2026-12-31",
+    "starts": "Between 8.45pm and 10.30pm, depending on the pier and package",
+    "ends": "Between 12.30am and 1.40am, depending on the pier and package",
+    "priceFrom": 195,
+    "priceTo": 195,
+    "priceText": "Our New Year's Cruise costs £195 per person",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://www.thamesclippers.com/whats-on-and-offers/new-years-eve-cruise",
+      "label": "Uber Boat by Thames Clippers (the operator's own site)"
+    },
+    "source": {
+      "url": "https://www.thamesclippers.com/whats-on-and-offers/new-years-eve-cruise"
+    },
+    "evidence": "Our New Year's Cruise costs £195 per person and includes:",
+    "unconfirmed": [
+      "ageLimit",
+      "availability"
+    ],
+    "notes": "Fourteen packages, each tied to named piers with its own times; the ticket is valid only for the package and pier booked. Arrive at least 15 minutes before departure. Children are welcome but need a full-price ticket; no concession rates. Tickets are non-refundable. Packages also run from Tilbury, Gravesend and Barking Riverside.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-city-cruises",
+    "name": "New Year's Eve Cruises",
+    "venue": "City Cruises",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Tower Millennium Pier",
+    "category": "cruise",
+    "description": "A set of New Year's Eve cruises from Tower Pier with fireworks views from the river. Options listed are the Gala Dinner, Dinner, Dinner Plus, Galaxy, Galaxy Plus and Celestial cruises; food and drink differ by option.",
+    "date": "2026-12-31",
+    "starts": "9.30pm",
+    "ends": "1am",
+    "priceFrom": 379,
+    "priceTo": null,
+    "priceText": "From £379",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/tower-hill-pier/new-years-eve-cruises-3",
+      "label": "DesignMyNight (links to City Cruises tickets)"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/tower-hill-pier/new-years-eve-cruises-3"
+    },
+    "evidence": "Thu, 31st Dec 2026 @ 21:30 - 1:00",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "The listing gives one overall time and one 'from' price; prices and times for each cruise option are not listed there. City Cruises' own New Year's Eve pages (https://www.cityexperiences.com/london/city-cruises/nye-celebration-cruise/) showed no prices or times when checked and say finish times vary by cruise. City Cruises states it has no obligation to refund if the fireworks display is altered or cancelled.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-thames-river-sightseeing",
+    "name": "London New Year's Eve Fireworks Cruise",
+    "venue": "Thames River Sightseeing",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Westminster Pier",
+    "category": "cruise",
+    "description": "Evening cruise on the Mercia or Mercuria with a view of the fireworks, music and a licensed bar. Champagne or Prosecco can be pre-booked at extra cost.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "12.30am",
+    "priceFrom": 172,
+    "priceTo": 172,
+    "priceText": "Adult: £172; Child: £172",
+    "ageLimit": null,
+    "availability": "sold out",
+    "booking": {
+      "url": "https://thamesriversightseeing.com/booking-tickets/london-new-years-eve-fireworks-cruise/",
+      "label": "Thames River Sightseeing (the operator's own site)"
+    },
+    "source": {
+      "url": "https://thamesriversightseeing.com/booking-tickets/london-new-years-eve-fireworks-cruise/"
+    },
+    "evidence": "The cruise operates from 9:00 PM to 12:30 AM (New Year's Day).",
+    "unconfirmed": [
+      "ageLimit"
+    ],
+    "notes": "Boarding begins at 8.45pm. The page says: 'Fully booked for now! Revisit us in December in case any spots free up.' The page refers to New Year's Eve 2026 without printing the full date.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-london-rose",
+    "name": "New Year's Eve Cruise on The London Rose",
+    "venue": "The London Rose",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Westminster Millennium Pier",
+    "category": "cruise",
+    "description": "Cruise aboard The London Rose with unlimited beer, wine, Prosecco and soft drinks, a live DJ, and views of the fireworks. Food is not included.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "1am approximately",
+    "priceFrom": 369,
+    "priceTo": null,
+    "priceText": "From £369.00",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://appcheckout.goldentours.com/en/london/london-new-year-s-eve-cruise-on-the-london-rose",
+      "label": "Golden Tours"
+    },
+    "source": {
+      "url": "https://appcheckout.goldentours.com/en/london/london-new-year-s-eve-cruise-on-the-london-rose"
+    },
+    "evidence": "Check-in from 8:15pm, Boarding at 8:45pm with Departure at 9:00pm",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "Sold by Golden Tours. Date, times, pier and age limit come from the booking page, which did not show a price in the text retrieved. The 'From £369.00' price was read on Golden Tours' New Year's Eve cruises listing (https://www.goldentours.com/new-years-eve-cruises/new-years-eve-thames-cruise-fireworks-onboard-the-monsoon-clipper). Photo ID may be required if you appear under 25. Returns to Westminster Millennium Pier.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-lookout",
+    "name": "New Year's Eve at The Lookout 2026",
+    "venue": "The Lookout, 8 Bishopsgate",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Bishopsgate, City of London",
+    "category": "rooftop",
+    "description": "Standing party at The Lookout viewing gallery with a welcome drink on arrival, a DJ, roaming canapés and a midnight toast. An open bar can be added for an extra charge.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": null,
+    "priceFrom": 210,
+    "priceTo": 262.5,
+    "priceText": "Tickets from £210.00 - £262.50",
+    "ageLimit": "Strictly 18+ only",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/food-drink/new-years-eve-at-the-lookout-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/food-drink/new-years-eve-at-the-lookout-2026"
+    },
+    "evidence": "General Release: £250 per ticket",
+    "unconfirmed": [
+      "availability",
+      "ends"
+    ],
+    "notes": "The description lists First Release at £200 (first 50 tickets) and General Release at £250; the ticket table lists £210.00 and £262.50. The open bar is +£100. The page gives two different end times (1.30am and 2am). Standing only, last entry 11pm, no refunds after 17th December. Organised by Rhubarb Hospitality Collection.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-horizon-22",
+    "name": "Sky High New Year's Eve Party at Horizon 22",
+    "venue": "Horizon 22, 22 Bishopsgate",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Bishopsgate, City of London",
+    "category": "rooftop",
+    "description": "Party on floor 58 of 22 Bishopsgate with views of the midnight fireworks, unlimited Champagne, wine, beer and soft drinks until midnight, food until 11pm, and DJs and dancers.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "2.30am",
+    "priceFrom": 364,
+    "priceTo": null,
+    "priceText": "Tickets from £364.00",
+    "ageLimit": "Over 21",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/event-space/liverpool-street/horizon-22/sky-high-new-years-eve-party-at-horizon-22",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/event-space/liverpool-street/horizon-22/sky-high-new-years-eve-party-at-horizon-22"
+    },
+    "evidence": "Time: 9PM – 2:30AM",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "Last entry 11pm; cash bar after midnight; ID required. The ticket page is dated Thursday 31st December 2026, but the venue's own event page (https://horizon22.co.uk/events/countdown-to to 2027) still carried last year's date text when checked and lists releases at £350, £375 and £400, so later releases may cost more than the price shown here. Run by Searcys.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-sky-garden",
+    "name": "New Year's Eve at Sky Garden",
+    "venue": "Sky Garden",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "rooftop",
+    "description": "Several packages for the same night: a standing Party Access Ticket with a glass of Moët, canapés, DJs and a live band; a bar table with party access; and set dinners at Fenchurch Restaurant, Darwin Brasserie or Larch Italian.",
+    "date": "2026-12-31",
+    "starts": null,
+    "ends": null,
+    "priceFrom": 120,
+    "priceTo": null,
+    "priceText": "Party Access Ticket: Price from £220. Bar Table and Party Access Ticket: Price from £290. Darwin Brasserie: Price from £465. Fenchurch Restaurant: Price from £795. Larch Italian: Price from £120.",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://skygarden.london/whats-on/new-years-eve-2027/",
+      "label": "Sky Garden's own site (bookings through SevenRooms)"
+    },
+    "source": {
+      "url": "https://skygarden.london/whats-on/new-years-eve-2027/"
+    },
+    "evidence": "Celebrate the start of 2027 with a New Year's Eve high above London at Sky Garden.",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability",
+      "ends",
+      "priceTo",
+      "starts"
+    ],
+    "notes": "The lowest price (£120) is the Larch Italian three-course dinner with a glass of Champagne, which does not include party access; party access can be added but that price is not given. The Fenchurch and Darwin dinners are five courses followed by party access. The page does not print the date, times or an age limit; it refers to the start of 2027.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-kitty-hawk-rooftop",
+    "name": "New Years Eve 2026 at Kitty Hawk - CANAPES & ROOFTOP VIEW OF THE FIREWORKS!!",
+    "venue": "Kitty Hawk Rooftop",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Covent Garden (St. Martin's Place)",
+    "category": "rooftop",
+    "description": "Entry from 9pm with a glass of Champagne on arrival, canapés served from 9pm to 11pm, and access to the terrace to watch the fireworks.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "3am",
+    "priceFrom": 150,
+    "priceTo": null,
+    "priceText": "Early bird tickets from £150 per person",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/covent-garden/kitty-hawk/new-years-eve-2026-at-kitty-hawk-canapes-rooftop-view-of-the-fireworks",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/covent-garden/kitty-hawk/new-years-eve-2026-at-kitty-hawk-canapes-rooftop-view-of-the-fireworks"
+    },
+    "evidence": "Early bird tickets from £150 per person, secure your ticket now.",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "Only the Early Bird Entry Ticket (£150.00) was listed, marked 'LIMITED AVAILABILITY'. ID may be required. Part of ETM Collection.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-coq-d-argent",
+    "name": "New Year's Eve: The Final Rooftop Party",
+    "venue": "Coq d'Argent",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "No.1 Poultry, City of London (Bank)",
+    "category": "rooftop",
+    "description": "Rooftop party ticket covering entry and a glass of sparkling wine on arrival. Dinner, seating and a reserved table are not included.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "1am",
+    "priceFrom": 54,
+    "priceTo": 79.5,
+    "priceText": "Tickets from £54.00 - £79.50",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/city-of-london/coq-dargent/new-years-eve-the-final-rooftop-party",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/city-of-london/coq-dargent/new-years-eve-the-final-rooftop-party"
+    },
+    "evidence": "Each ticket includes entry and a complimentary glass of fizz on arrival.",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Early Release Party Ticket £54.00; General Release Party Ticket £79.50. The page does not say the midnight fireworks can be seen from the venue.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-madison",
+    "name": "Madison New Year's Eve",
+    "venue": "Madison, One New Change",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "St Paul's (Rooftop Terrace, One New Change)",
+    "category": "rooftop",
+    "description": "Rooftop terrace event. Standing tickets include a glass of sparkling wine and canapés with entry before 22:00; the early dinner ticket adds a three-course set menu at 17:00 or 18:00.",
+    "date": "2026-12-31",
+    "starts": "Doors open 9pm for standing tickets; early dinner at 5pm or 6pm",
+    "ends": "2am",
+    "priceFrom": 157.94,
+    "priceTo": 312.7,
+    "priceText": "Tickets from £157.94 - £312.70",
+    "ageLimit": "Over 21",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/st-pauls/madison-restaurant-bar-and-cafe/madison-new-years-eve-2",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/st-pauls/madison-restaurant-bar-and-cafe/madison-new-years-eve-2"
+    },
+    "evidence": "Doors open 21:00. Entry before 22:00 with a glass of bubbles and canapes.",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "First Release Standing Ticket £157.94; Second Release Standing Ticket £210.94; Early Dinner & Standing Ticket £312.70. Seating is not included with tickets. Entry after 10pm may be refused or carry a late fee. ID may be required. Card payments only.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-wagtail-rooftop-restaurant-and-bar",
+    "name": "New Years Eve 2026 at Wagtail",
+    "venue": "Wagtail Rooftop Restaurant and Bar",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "King William Street, City of London (Monument)",
+    "category": "rooftop",
+    "description": "Choice of early three-course dinner sittings, five-course dinner sittings with access to the terrace and rooftop, or rooftop party entry tickets with no reserved seating.",
+    "date": "2026-12-31",
+    "starts": "Multiple start times from 5pm (see ticket info)",
+    "ends": "3am",
+    "priceFrom": 85,
+    "priceTo": 250,
+    "priceText": "Tickets from £85.00 - £250.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/city-of-london/wagtail/new-years-eve-2026-at-wagtail",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/city-of-london/wagtail/new-years-eve-2026-at-wagtail"
+    },
+    "evidence": "Thu, 31st Dec 2026 @ multiple start times (see ticket info)",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Early dinner sittings (5pm, 5.30pm, 6pm) are £120.00 for a two-hour table and do not include rooftop party access. Dinner sittings (7.30pm, 8.30pm, 9pm) are £250.00. Rooftop party entry is £85.00 before 9pm, £120.00 before 10pm and £150.00 before 11pm; last entry 11pm. The terms say under to 18s are permitted while dining only and not on the rooftop. Non-refundable and non-transferable. Part of ETM Collection.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-ritz-london",
+    "name": "NEW YEAR'S EVE in The Ritz Restaurant",
+    "venue": "The Ritz London",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "dinner",
+    "description": "Black-tie gala dinner in The Ritz Restaurant: a six-course menu with Champagne, the London Dance Orchestra, a piper, a marching band and a live midnight countdown.",
+    "date": "2026-12-31",
+    "starts": null,
+    "ends": null,
+    "priceFrom": 1500,
+    "priceTo": 1500,
+    "priceText": "Priced at £1,500 per adult and £750 per child (up to the age of 15)",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://theritzlondon.com/christmas-at-the-ritz/new-years-eve/new-years-eve-ritz-restaurant",
+      "label": "The Ritz London's own site (reservations through SevenRooms)"
+    },
+    "source": {
+      "url": "https://theritzlondon.com/christmas-at-the-ritz/new-years-eve/new-years-eve-ritz-restaurant"
+    },
+    "evidence": "Our magnificent New Year’s Eve Gala Dinner will take place on Thursday 31st December 2026.",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability",
+      "ends",
+      "starts"
+    ],
+    "notes": "priceFrom and priceTo show the adult price; the child price is £750 (up to the age of 15). Dress code is black tie. Full, non-refundable pre-payment is required. The page says availability is limited and gives no start time; entertainment continues after midnight.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-savoy",
+    "name": "Midnight Under The Big Top – Silver Spotlight Package",
+    "venue": "The Savoy",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "dinner",
+    "description": "New Year's Eve gala at The Savoy with a Champagne and canapé reception, a five-course dinner, drinks through the evening, a live band, and a midnight Champagne toast during the fireworks.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": null,
+    "priceFrom": 1595,
+    "priceTo": null,
+    "priceText": "£1,595.00",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://savoylondon.wearegifted.co.uk/midnight-under-the-big-top-silver-sparkle-package",
+      "label": "The Savoy's own ticket shop"
+    },
+    "source": {
+      "url": "https://savoylondon.wearegifted.co.uk/midnight-under-the-big-top-silver-sparkle-package"
+    },
+    "evidence": "Thursday 31st December 2026 at 19:00",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability",
+      "ends",
+      "priceTo"
+    ],
+    "notes": "The ticket page does not say whether £1,595.00 is per person. Advance reservation is mandatory and non-refundable. The Savoy's New Year's Eve page (https://www.thesavoylondon.com/new-years-eve) also lists a Gallery dinner, a High Tea and the American Bar for the same night, without prices.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-londoner-hotel",
+    "name": "New Year's Eve 2026 at The Londoner | Masquerade Ball & Party",
+    "venue": "The Londoner Hotel",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Leicester Square",
+    "category": "dinner",
+    "description": "Masquerade ball in the hotel ballroom. Dinner & Party tickets include a Champagne reception, canapés, a three-course dinner and midnight snacks; a Party Only ticket gives standing access after dinner service.",
+    "date": "2026-12-31",
+    "starts": "7pm for dinner tickets; 9.30pm for Party Only",
+    "ends": "2.30am",
+    "priceFrom": 145,
+    "priceTo": 625,
+    "priceText": "Tickets from £145.00 - £625.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/new-years-eve-party/new-years-eve-2026-at-the-londoner-masquerade-ball-party",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/new-years-eve-party/new-years-eve-2026-at-the-londoner-masquerade-ball-party"
+    },
+    "evidence": "Tickets from £145.00 - £625.00",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Organised by Luxury London Events. Party Only £145.00; Silver Dinner & Party £425.00; Gold Dinner & Party £575.00; Platinum Dinner & Party £625.00. Silver includes house wine during dinner; Gold and Platinum add premium drinks during dinner. The terms say over 18 only, while the description says younger guests are allowed on request. The fireworks are not viewed from the venue.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-aviary-rooftop-bar-restaurant",
+    "name": "New Years Eve 2026 at Aviary",
+    "venue": "Aviary Rooftop Bar & Restaurant",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Finsbury Square, City of London (Moorgate)",
+    "category": "dinner",
+    "description": "Tenth-floor rooftop restaurant offering early three-course dinner sittings, five-course dinner sittings followed by the party, a lounge package, or an entry-only ticket with a glass of Champagne.",
+    "date": "2026-12-31",
+    "starts": "Multiple start times from 5pm (see ticket info)",
+    "ends": "3am",
+    "priceFrom": 85,
+    "priceTo": 200,
+    "priceText": "Tickets from £85.00 - £200.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/restaurants/city-of-london/aviary/new-years-eve-2026-at-aviary-1",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/restaurants/city-of-london/aviary/new-years-eve-2026-at-aviary-1"
+    },
+    "evidence": "Tickets from £85.00 - £200.00",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Early dinner (arrive 5pm or 6pm, two-hour table) £110.00; five-course dinner with party (arrive 7.30pm, 8.15pm or 9pm) £200.00; lounge package £125.00 (minimum 6 guests); entry only £85.00 (arrive 9pm to 11pm, no table). The outdoor terrace closes at midnight. The terms say under to 18s may dine with an adult but may not use the bar. Non-refundable and non-transferable. Part of ETM Collection.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-curry-room-at-the-rubens-at-the-palace-hotel",
+    "name": "New Year's Eve in The Curry Room",
+    "venue": "The Curry Room at The Rubens at The Palace Hotel",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Buckingham Palace Road, Westminster (Victoria)",
+    "category": "dinner",
+    "description": "New Year's Eve Indian set menu of two or three courses; each main comes with tarka dal, basmati rice and butter naan.",
+    "date": "2026-12-31",
+    "starts": "5.30pm",
+    "ends": null,
+    "priceFrom": 60,
+    "priceTo": 70,
+    "priceText": "Two courses for £60, three courses for £70",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/restaurants/westminster/the-curry-room-at-the-rubens-at-the-palace-hotel/new-years-eve-in-the-curry-room-3",
+      "label": "DesignMyNight (book and enquire)"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/restaurants/westminster/the-curry-room-at-the-rubens-at-the-palace-hotel/new-years-eve-in-the-curry-room-3"
+    },
+    "evidence": "Two courses for £60",
+    "unconfirmed": [
+      "availability",
+      "ends"
+    ],
+    "notes": "The page gives two end times: the listing says 11pm and the description says 'Time: 5.30pm to 10pm'. This is a dinner booking rather than a late party; the page does not mention a midnight celebration.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-solaya",
+    "name": "Celestial New Year's Eve",
+    "venue": "Solaya",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Rivington Street, Shoreditch",
+    "category": "dinner",
+    "description": "25th-floor restaurant with three ticket types: an early four-course dinner with a glass of Champagne, a six-course Dinner & Party with live band, DJs and a midnight Champagne, or a Solaya Bar ticket with Champagne and canapés.",
+    "date": "2026-12-31",
+    "starts": "6pm (Early Seating); 8.30pm (Dinner & Party); 8pm (Solaya Bar)",
+    "ends": "2am",
+    "priceFrom": 116.6,
+    "priceTo": 265,
+    "priceText": "Tickets from £116.60 - £265.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/restaurants/shoreditch/solaya/celestial-new-years-eve",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/restaurants/shoreditch/solaya/celestial-new-years-eve"
+    },
+    "evidence": "Tickets from £116.60 - £265.00",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Early Seating £116.60 runs 6pm until 8pm only. Dinner & Party £265.00 runs 8.30pm to 2am. Solaya Bar £127.20 runs 8pm to 2am; seating there is limited and not guaranteed.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-cross",
+    "name": "Ritual - New Years Eve Masked Ball",
+    "venue": "The Cross",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "King's Cross",
+    "category": "party",
+    "description": "A masked club night across the venue's floors with house, techno and party music. VIP tickets add queue jump, a glass of champagne and rooftop access around midnight.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "4am",
+    "priceFrom": 22,
+    "priceTo": 79.5,
+    "priceText": "Tickets from £22.00 - £79.50",
+    "ageLimit": "Over 23 (event description); the listing's terms say over 21",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/restaurants/kings-cross/the-cross/ritual-new-years-eve-masked-ball",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/restaurants/kings-cross/the-cross/ritual-new-years-eve-masked-ball"
+    },
+    "evidence": "Tickets from £22.00 - £79.50",
+    "unconfirmed": [
+      "ageLimit",
+      "availability"
+    ],
+    "notes": "Address: 2 to 4 Wharfdale Road, N1 9RY. Tiers listed: 1st release £22.00, 2nd release £27.50, VIP 1st release £64.80, VIP final release £79.50. The page gives two different minimum ages (over 23 and over 21). Dress code: \"Dress to impress, but make it your own.\" Rooftop is reserved for VIP ticket holders around midnight.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-maggie-s-club",
+    "name": "New Year's Eve at Maggie's: Studio 54 Disco",
+    "venue": "Maggie's Club",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Kensington",
+    "category": "party",
+    "description": "A standing ticket to a disco-themed club night with a DJ and a midnight countdown. A glass of champagne is included per person before 11:30pm.",
+    "date": "2026-12-31",
+    "starts": "10.30pm",
+    "ends": "4am",
+    "priceFrom": 43.2,
+    "priceTo": 43.2,
+    "priceText": "Tickets from £43.20",
+    "ageLimit": "21+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/kensington/maggies-club/new-years-eve-studio-54-disco-glam",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/kensington/maggies-club/new-years-eve-studio-54-disco-glam"
+    },
+    "evidence": "Last entry 2am, no re-entry permitted.",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 329 Fulham Road, SW10 9QL. The description words the standing ticket as £40pp while the ticket table charges £43.20; the page does not explain the difference. Last entry 2am, no re-entry. Dress code: Retro Disco Glam. The page states a strict 21+ policy, though the listing's generic terms say over 18.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-lucky-pig-cocktail-bar",
+    "name": "New Years Eve Party 2026 - 15 Years of The Lucky Pig",
+    "venue": "The Lucky Pig Cocktail Bar",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Fitzrovia",
+    "category": "party",
+    "description": "A cocktail-bar party with live jazz from the duo Mapleton Sessions, a late DJ and a tarot reader. Standard and early bird tickets include a welcome drink and canapés; a cheaper after-party ticket covers entry after midnight.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "4am",
+    "priceFrom": 11,
+    "priceTo": 43.2,
+    "priceText": "Tickets from £11.00 - £43.20",
+    "ageLimit": "Over 18",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.designmynight.com/london/bars/central-london/the-lucky-pig/new-years-eve-party-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/bars/central-london/the-lucky-pig/new-years-eve-party-2026"
+    },
+    "evidence": "Entry after midnight and up to 2am, open until 4am",
+    "unconfirmed": [],
+    "notes": "Address: 5 Clipstone Street, W1W 6BB. Ticket table: Standard £43.20 (bought in December), Early Bird £16.50 (bought in November), After Party £11.00 (entry after midnight and up to 2am). The description quotes lower figures (£40, £15, £10), which appear to exclude fees. The page said \"LIMITED TICKETS AVAILABLE\" when read on 12 November 2026.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-clapham-grand",
+    "name": "Heated Rivalry: The New Year's Party",
+    "venue": "The Clapham Grand",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Clapham Junction",
+    "category": "party",
+    "description": "A themed club night built around the soundtrack of the TV series Heated Rivalry, with DJs, photobooths and a midnight countdown. The page states it is an unofficial party not associated with the show.",
+    "date": "2026-12-31",
+    "starts": "10pm",
+    "ends": "3am",
+    "priceFrom": 20,
+    "priceTo": 25,
+    "priceText": "Early Bird: £20.00; Pre-Sale: £22.06 (sold out); First Release: £25.00",
+    "ageLimit": "18+",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://claphamgrand.com/event/heated-rivalry-the-new-years-party/",
+      "label": "The venue's own site (tickets via DICE)"
+    },
+    "source": {
+      "url": "https://claphamgrand.com/event/heated-rivalry-the-new-years-party/"
+    },
+    "evidence": "LAST ENTRY 11.30PM",
+    "unconfirmed": [],
+    "notes": "Address: 21 to 25 St John's Hill, SW11 1TT. Last entry 11.30pm, no re-admittance. Booking fee wording is not given. The Pre-Sale tier was marked sold out with a waiting list when read on 12 November 2026; the other tiers had buy links.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-jazz-cafe",
+    "name": "New Year's Eve (One Final Showdown)",
+    "venue": "The Jazz Cafe",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Camden",
+    "category": "party",
+    "description": "A New Year's Eve party with the Jazz Cafe house bands and resident DJs. Standing tickets and restaurant tickets are sold separately.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "4am",
+    "priceFrom": 20,
+    "priceTo": null,
+    "priceText": "Standing: £20-£60 Restaurant: £60+",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://thejazzcafe.com/event/new-years-eve-3/",
+      "label": "The venue's own site (standing tickets via Resident Advisor)"
+    },
+    "source": {
+      "url": "https://thejazzcafe.com/event/new-years-eve-3/"
+    },
+    "evidence": "Standing: £20-£60 Restaurant: £60+",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "The event page itself carries no date; the venue's what's-on listing (https://thejazzcafe.com/whats-on/) shows it under Thursday 31 December 2026. \"9pm to 4am\" is given as the doors time. Restaurant tickets have no stated upper price.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-village-underground",
+    "name": "Conducta - NYE",
+    "venue": "Village Underground",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "party",
+    "description": "A club night headlined by the DJ Conducta, billed as house, bass, breaks, jungle and UKG. It is promoted by The Jazz Cafe and hosted at Village Underground.",
+    "date": "2026-12-31",
+    "starts": "10pm",
+    "ends": "5am",
+    "priceFrom": 20,
+    "priceTo": 40,
+    "priceText": "£20-£40",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://thejazzcafe.com/event/conducta-nye/",
+      "label": "The Jazz Cafe's site (tickets via Resident Advisor)"
+    },
+    "source": {
+      "url": "https://thejazzcafe.com/event/conducta-nye/"
+    },
+    "evidence": "Hosted at:Village Underground",
+    "unconfirmed": [
+      "area",
+      "availability"
+    ],
+    "notes": "The event page says only \"This NYE\"; the Jazz Cafe what's-on listing (https://thejazzcafe.com/whats-on/) shows it under Thursday 31 December 2026. \"10pm to 5am\" is given as the doors time. The venue address is not on the page.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-troxy",
+    "name": "DnB Allstars NYE: London",
+    "venue": "Troxy",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "party",
+    "description": "A drum and bass night with a multi-act line-up including Jungle Cakes (Benny Page, Ed Solo, Deekline) and TNA, plus hosts. A VIP package adds queue jump and a private VIP bar.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "4am",
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "18 years +",
+    "availability": null,
+    "booking": {
+      "url": "https://troxy.co.uk/event/dnb-allstars-nye-london/",
+      "label": "The venue's own site (tickets via Ticketmaster)"
+    },
+    "source": {
+      "url": "https://troxy.co.uk/event/dnb-allstars-nye-london/"
+    },
+    "evidence": "21:00 - Doors Open",
+    "unconfirmed": [
+      "area",
+      "availability",
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "No prices are shown on the venue page and the linked Ticketmaster page could not be read. Last entry 11pm. A maximum of 8 tickets per person and per household applies. A headline special guest was still unannounced on 12 November 2026.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-phoenix",
+    "name": "Not Another Indie Disco's NYE Party",
+    "venue": "The Phoenix",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "West End",
+    "category": "party",
+    "description": "An indie club night with a pre-bar disco upstairs from 8.30pm and the main room opening at 9.30pm. The music is indie, Britpop, rock and new wave.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": "1.30am",
+    "priceFrom": 13.2,
+    "priceTo": 13.2,
+    "priceText": "Tickets from £13.20",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/pubs/west-end/the-phoenix/not-another-indie-discos-nye-party-thu-31st-december-830pm-130am-18",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/pubs/west-end/the-phoenix/not-another-indie-discos-nye-party-thu-31st-december-830pm-130am-18"
+    },
+    "evidence": "Not Another Indie Disco's NYE Party - Thu 31st December, 8:30pm-1:30am (18+)",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 37 Cavendish Square, W1G 0PP (nearest tube Oxford Circus). Organiser: Jomi Events Ltd, with Old School Indie. One ticket type at £13.20.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-two-brewers",
+    "name": "New Year's Eve - Sapphire Ball",
+    "venue": "The Two Brewers",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Clapham",
+    "category": "party",
+    "description": "A party at the Clapham LGBTQ+ venue with drag performers and DJs. The page says the NYE ticket also gives free entry on New Year's Day.",
+    "date": "2026-12-31",
+    "starts": "6pm",
+    "ends": "5am",
+    "priceFrom": 27.5,
+    "priceTo": 33,
+    "priceText": "Tickets from £27.50 - £33.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/pubs/clapham/two-brewers-clapham/new-years-eve-sapphire-ball",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/pubs/clapham/two-brewers-clapham/new-years-eve-sapphire-ball"
+    },
+    "evidence": "Doors Open: 6:00 PM - Party Until 5:00 AM.",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 114 Clapham High Street, SW4 7UJ. Both ticket types are named \"Arrival by 10pm\". Ticket table: Early Bird £27.50, Entry £33.00; the description quotes £20 and £25, and the page does not explain the difference. The drag line-up differs between the description and the ticket text.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-lil-nashville",
+    "name": "Lil' Nashville: Big Nash New Year's Bash! Live Country Music, Line Dancing & BBQ Night",
+    "venue": "Lil' Nashville",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Chiswick",
+    "category": "party",
+    "description": "A country music night with live acts, line dancing classes and a DJ. The Southern Hospitality ticket adds early entry from 5.30pm, an acoustic set, a welcome drink and a BBQ meal; the Party ticket is entry from 7.30pm without food.",
+    "date": "2026-12-31",
+    "starts": "5.30pm (Southern Hospitality ticket) or 7.30pm (Party ticket)",
+    "ends": "1am",
+    "priceFrom": 35.2,
+    "priceTo": 64.8,
+    "priceText": "Tickets from £35.20 - £64.80",
+    "ageLimit": "Over 18s only",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/live-music/lil-nashville-big-nash-new-years-bash-live-country-music-line-dancing-bbq-night-1",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/live-music/lil-nashville-big-nash-new-years-bash-live-country-music-line-dancing-bbq-night-1"
+    },
+    "evidence": "Tickets from £35.20 - £64.80",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 11 Barley Mow Passage, Chiswick, W4 4PH (nearest tube Turnham Green). Ticket table: Party Ticket £35.20 early bird / £41.80; Southern Hospitality Ticket £59.40 early bird / £64.80. The description quotes £38 and £60. Food is served until 7pm and is not available with the Party ticket. No performers are named.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-st-mary-le-strand",
+    "name": "New Years Eve Moonlight Sonata by Candlelight at St Mary le Strand",
+    "venue": "St Mary le Strand",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Strand",
+    "category": "concert",
+    "description": "A one-hour candlelit piano recital by Warren Mailley-Smith. The programme includes Beethoven's Moonlight Sonata, Debussy's Clair de Lune, Chopin and Gershwin's Rhapsody in Blue.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "8pm",
+    "priceFrom": 35,
+    "priceTo": 50,
+    "priceText": "Band B £35.00, Band A £45.00, Band AA £50.00. No booking fees.",
+    "ageLimit": "All ages are welcome",
+    "availability": null,
+    "booking": {
+      "url": "https://feverup.com/m/197843/en",
+      "label": "Fever"
+    },
+    "source": {
+      "url": "https://feverup.com/m/197843/en"
+    },
+    "evidence": "Date and Time: December 31, 2026. 19:00-20:00",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "The page says the venue is not wheelchair accessible and that all sales are final. Nearest station listed: Temple.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-vortex-jazz-club",
+    "name": "Ian Shaw's New Year's Eve Bash",
+    "venue": "Vortex Jazz Club",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "concert",
+    "description": "A late jazz club show by the singer and pianist Ian Shaw, mixing blues and soul songs, comedy originals and singalongs.",
+    "date": "2026-12-31",
+    "starts": "9.30pm (doors); music 10.15pm",
+    "ends": "1.30am",
+    "priceFrom": 40,
+    "priceTo": 40,
+    "priceText": "Seated £40",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://www.vortexjazz.co.uk/event/ian-shaws-new-years-eve-bash-8/",
+      "label": "The venue's own site (tickets via Universe)"
+    },
+    "source": {
+      "url": "https://www.vortexjazz.co.uk/event/ian-shaws-new-years-eve-bash-8/"
+    },
+    "evidence": "Doors 9:30 PM, Music 10:15 PM",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability"
+    ],
+    "notes": "Address: 11 Gillett Square, N16 8AZ. The end time (1.30am) comes from the venue's day listing at https://www.vortexjazz.co.uk/events/2026 to 12 to 31/. The venue says it is mixed seated and standing, and that seats are guaranteed only for members and for customers unable to stand who give notice. Booking fee wording is not given.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-blue-note-london",
+    "name": "New Year's Eve with Brand New Heavies",
+    "venue": "Blue Note London",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "concert",
+    "description": "Two separately ticketed shows by The Brand New Heavies, at 8pm and 11pm. Each guest gets a glass of fizz on arrival and a wristband for the central London New Year's Eve cordon.",
+    "date": "2026-12-31",
+    "starts": "8pm (doors 6pm) or 11pm (doors 10pm)",
+    "ends": null,
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "Suitable for all ages; under-18s must be accompanied by an adult and are not allowed in the bar area",
+    "availability": null,
+    "booking": {
+      "url": "https://www.bluenotejazz.com/london/tm-event/brand-new-heavies-2/",
+      "label": "The venue's own site (tickets via Ticketmaster)"
+    },
+    "source": {
+      "url": "https://www.bluenotejazz.com/london/tm-event/brand-new-heavies-2/"
+    },
+    "evidence": "Join us for two houses at 8pm and 11pm, with doors at 6pm and 10pm.",
+    "unconfirmed": [
+      "area",
+      "availability",
+      "ends",
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "Address: 42 to 49 St Martin's Lane, WC2N 4EJ. No prices are shown on the venue page and the linked Ticketmaster pages could not be read. The page prints the date as \"Thu, Dec 31\" without a year; its Ticketmaster links are dated 31 to 12 to 2026. The wristband is required for entry because the venue is inside the fireworks cordon. Seating is first come, first served.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-comedy-store",
+    "name": "New Years Eve Comedy and After Show Party",
+    "venue": "The Comedy Store",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "concert",
+    "description": "A stand-up show with MC Thanyia Moore, Jonny Awsum, Geoff Norcott, Valeria Vulpe, Paul Sinha and Jimmy McGhie. The ticket includes the after-show party with a DJ.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": null,
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://london.thecomedystore.co.uk/event/nye-2026",
+      "label": "The venue's own site (tickets via Universe)"
+    },
+    "source": {
+      "url": "https://london.thecomedystore.co.uk/event/nye-2026"
+    },
+    "evidence": "Thursday 31 December 2026 8:30pm",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability",
+      "ends",
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "No price, age limit or end time is on the venue page; the Universe ticket page it links to could not be read. The site footer gives the company address as 1a Oxendon St, SW1Y 4EE.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-dulwich-hamlet-fc-bar",
+    "name": "HAMLET COMEDY - NEW YEAR'S EVE SHOW & AFTER PARTY",
+    "venue": "Dulwich Hamlet FC Bar, Champion Hill Stadium",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "concert",
+    "description": "A stand-up comedy night hosted by Alexandra Haddow with Katie Norris, Josh Weller, Sooz Kempner, Adam Flood and Will Sebag Montefiore. Comedy and Party tickets add an after-party with a DJ until 2am; Comedy Only tickets end by 10.45pm.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "2am",
+    "priceFrom": 15.12,
+    "priceTo": 26.46,
+    "priceText": "Tickets from £15.12 - £26.46",
+    "ageLimit": "Over 16s (event description); the listing's terms say over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/comedy/hamlet-comedy-new-years-eve-show-after-party",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/comedy/hamlet-comedy-new-years-eve-show-after-party"
+    },
+    "evidence": "Tickets from £15.12 - £26.46",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "availability"
+    ],
+    "notes": "Address: Champion Hill Stadium, Edgar Kail Way, SE22 8BD (nearest station East Dulwich). Ticket table: Comedy & Party £26.46 (concession £20.52); Comedy Only £19.98 (concession £15.12). A waiting-list ticket exists for when Comedy & Party is sold out. The page gives two different minimum ages. One more act was still to be announced.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-swimmers-at-the-grafton",
+    "name": "Good Ship Comedy NYE Special feat. Joe Wells",
+    "venue": "Swimmers at the Grafton",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "concert",
+    "description": "An early-evening stand-up show with Joe Wells and Thor Stenhaug, hosted by Ben Van der Velde. It finishes at 22:15, before midnight.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "10.15pm",
+    "priceFrom": 22,
+    "priceTo": 27.5,
+    "priceText": "Tickets from £22.00 - £27.50",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/comedy/good-ship-comedy-nye-special-decemeber-31st-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/comedy/good-ship-comedy-nye-special-decemeber-31st-2026"
+    },
+    "evidence": "Tickets from £22.00 - £27.50",
+    "unconfirmed": [
+      "area",
+      "availability"
+    ],
+    "notes": "Address: 13 Eburne Road, N7 6AR (nearest tube listed: Finsbury Park). Early Bird £22.00, General Admission £27.50.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-barbican-hall",
+    "name": "The Music of Zimmer vs. Williams",
+    "venue": "Barbican Hall, Barbican Centre",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Barbican",
+    "category": "concert",
+    "description": "An afternoon orchestral concert of film music by Hans Zimmer and John Williams, played by the London Concert Orchestra under Anthony Inglis. It runs for about three hours.",
+    "date": "2026-12-31",
+    "starts": "2.30pm",
+    "ends": null,
+    "priceFrom": 26,
+    "priceTo": null,
+    "priceText": "From £26 (£22 + £4 transaction fee)",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://www.barbican.org.uk/whats-on/2026/event/the-music-of-zimmer-vs-williams",
+      "label": "The venue's own site"
+    },
+    "source": {
+      "url": "https://www.barbican.org.uk/whats-on/2026/event/the-music-of-zimmer-vs-williams"
+    },
+    "evidence": "From £26 (£22 + £4 transaction fee)",
+    "unconfirmed": [
+      "ageLimit",
+      "availability",
+      "ends",
+      "priceTo"
+    ],
+    "notes": "This is a matinee at 2.30pm, not an evening or midnight event. Duration is given as \"3 hours approx.\" Address: Silk Street, EC2Y 8DS. Presented by RG Live.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-natural-history-museum",
+    "name": "New Year's Eve: Party at the Museum",
+    "venue": "Natural History Museum",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "South Kensington",
+    "category": "other",
+    "description": "An after-hours party in the museum with live music, a silent disco and access to galleries including Hintze Hall and the Dinosaurs Gallery. Food and drink are sold separately; VIP tickets add queue-skip entry, a drink on arrival and a VIP area.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "1.30am",
+    "priceFrom": 140,
+    "priceTo": null,
+    "priceText": "From £140 (Members: from £126)",
+    "ageLimit": "18+ only",
+    "availability": null,
+    "booking": {
+      "url": "https://www.nhm.ac.uk/events/new-years-eve.html",
+      "label": "The venue's own site"
+    },
+    "source": {
+      "url": "https://www.nhm.ac.uk/events/new-years-eve.html"
+    },
+    "evidence": "ends at 01:30 on Friday 1 January 2027",
+    "unconfirmed": [
+      "availability",
+      "priceTo"
+    ],
+    "notes": "Address: Cromwell Road, SW7 5BD; entry is by the Central Entrance. Last entry 10pm. The VIP price is not stated and the page says ticket prices are subject to change. The page says standard tickets are available until 30 November with a final batch released on 1 December, but its date picker read \"There are currently no dates and times available\" on 12 November 2026, so availability is unclear. No official dress code. No refunds or exchanges.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-st-thomas-church",
+    "name": "New Year's Eve Ceilidh",
+    "venue": "St Thomas' Church",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Balham",
+    "category": "other",
+    "description": "A Hogmanay ceilidh with the band Fiddle Paradiddle, who also call the dances, ending with Auld Lang Syne at midnight. Tickets include a glass of bubbly on entry; a pop-up bar sells drinks.",
+    "date": "2026-12-31",
+    "starts": "9pm (doors); first dance 9.30pm",
+    "ends": "12.30am",
+    "priceFrom": 54,
+    "priceTo": 64.8,
+    "priceText": "Entry for 1 (First 50 people) £54.00; Entry for 1 £64.80",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/party/hogmanay-hootenanny-new-years-eve-ceilidh",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/party/hogmanay-hootenanny-new-years-eve-ceilidh"
+    },
+    "evidence": "Entry for 1 – £60 plus booking fee",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: Telford Avenue, SW2 4BH (the listing places it in Balham). The description words the prices as £50 for the first 50 tickets and £60 plus booking fee; the ticket table charges £54.00 and £64.80. Whether the first to 50 tier is still available is not stated. Dress: \"leave the jeans at home, wear some tartan if you have it\".",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-prince-of-wales",
+    "name": "NEW YEAR'S EVE CABARET EXTRAVAGANZA IN COVENT GARDEN",
+    "venue": "The Prince of Wales",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Covent Garden",
+    "category": "other",
+    "description": "A cabaret show in the pub's upstairs function room with comedy, drag, burlesque and circus acts, followed by dancing, with the fireworks shown on a big screen. Acts named include Madame Galina, Kiki Noir, Judit Circus, Eileen Eifell and President Obonjo.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": "1am",
+    "priceFrom": 90.1,
+    "priceTo": 121.9,
+    "priceText": "Tickets from £90.10 - £121.90",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/whats-on/burlesque-cabaret/covent-garden-new-years-eve-extravaganza",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/whats-on/burlesque-cabaret/covent-garden-new-years-eve-extravaganza"
+    },
+    "evidence": "Tickets from £90.10 - £121.90",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 150 Drury Lane, WC2B 5TD. Presented by The Covent Garden Cabaret Club. Only the first part of a very long page was read, so the individual ticket types and what each includes (food, drink) were not confirmed.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "london-the-heathcote-and-star",
+    "name": "The Heathcote & Star Kids' New Year's Eve Party",
+    "venue": "The Heathcote And Star",
+    "city": "London",
+    "country": "United Kingdom",
+    "area": "Leyton",
+    "category": "other",
+    "description": "An afternoon family party in a pub with arts and crafts, snacks and an early countdown at 6pm. Tickets are needed for children only; accompanying adults go free.",
+    "date": "2026-12-31",
+    "starts": "3pm",
+    "ends": "7pm",
+    "priceFrom": 11,
+    "priceTo": 11,
+    "priceText": "Tickets from £11.00",
+    "ageLimit": "All ages",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/london/pubs/leyton/the-heathcote-and-star/the-heathcote-star-kids-new-years-eve-party-3",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/london/pubs/leyton/the-heathcote-and-star/the-heathcote-star-kids-new-years-eve-party-3"
+    },
+    "evidence": "Tickets are required for children only.",
+    "unconfirmed": [
+      "availability"
+    ],
+    "notes": "Address: 344 Grove Green Rd, E11 4EA (nearest tube Leytonstone). One Standard Ticket at £11.00, 3pm to 7pm. The listing is marked \"All ages\"; its generic terms mention over 18, which appears to be boilerplate.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-edinburgh-s-hogmanay",
+    "name": "Edinburgh's Hogmanay Street Party",
+    "venue": "Edinburgh's Hogmanay",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "Princes Street",
+    "category": "fireworks",
+    "description": "Ticketed outdoor street party in the city centre, with stages on Waverley Bridge and Castle Street, a ceilidh hour on Princes Street and The Mound, and fireworks. A silent disco on Market Street is sold as an upgrade.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": null,
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "Age 12+ (Restriction)",
+    "availability": null,
+    "booking": {
+      "url": "https://edwinterfest.com/hogmanay/whats-on/street-party",
+      "label": "Edinburgh's Hogmanay official site"
+    },
+    "source": {
+      "url": "https://edwinterfest.com/hogmanay/whats-on/street-party"
+    },
+    "evidence": "Date and Time: 31 Dec 2026 - 20:00",
+    "unconfirmed": [
+      "ends",
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "The official page shows \"Prices from: £10\" but does not say which ticket that is (it may be the silent disco upgrade), so no ticket price is recorded here. A 50p charity donation is collected with each ticket. Duration is listed as 285 min. The page says there is no official resale and that tickets on Eventbrite and secondary sites are not valid.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-orchardfield-suite",
+    "name": "Family Hogmanay Party",
+    "venue": "Orchardfield Suite, DoubleTree Hilton Edinburgh City Centre",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "Bread Street",
+    "category": "dinner",
+    "description": "Family dinner and ceilidh. Adult tickets include a welcome drink, half a bottle of wine with the meal, ceilidh entertainment and a hot toddy at the bells; child tickets include soft drinks and hot chocolate.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "1am",
+    "priceFrom": 95.4,
+    "priceTo": 120,
+    "priceText": "Tickets from £95.40 - £120.00",
+    "ageLimit": "Children ticket up to age of 12. Age 13 and up require an adult ticket.",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/edinburgh/whats-on/vip-party/family-hogmanay-party",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/edinburgh/whats-on/vip-party/family-hogmanay-party"
+    },
+    "evidence": "Thu, 31st Dec 2026 @ 19:00 - 1:00",
+    "unconfirmed": [],
+    "notes": "Adult ticket £120.00, child ticket £95.40. The page describes the meal as a buffet dinner in one place and a four course menu in another.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-the-dome",
+    "name": "PARTY like it's 2027",
+    "venue": "The Dome",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "George Street",
+    "category": "party",
+    "description": "Black-tie Hogmanay party at The Dome. The party ticket covers the evening's entertainment (DJ, casino, close-up magic), canapés and a glass of bubbly for the bells, without the three-course dinner.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "1am",
+    "priceFrom": 100,
+    "priceTo": 100,
+    "priceText": "PARTY TICKETS - £100.00",
+    "ageLimit": "Over 18",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.thedomeedinburgh.com/hogmanay",
+      "label": "The Dome's own site"
+    },
+    "source": {
+      "url": "https://www.thedomeedinburgh.com/hogmanay"
+    },
+    "evidence": "Party guests are to arrive for 9:00pm.",
+    "unconfirmed": [],
+    "notes": "Dinner tickets are sold out; only party tickets are on sale. Late admission for party guests may not be permitted after 10pm. Passport or driving licence required as ID. Dress code is black tie.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-skybar",
+    "name": "SKYBar Hogmanay Club Night",
+    "venue": "SKYBar",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "Bread Street",
+    "category": "party",
+    "description": "Standing club night with a DJ and saxophonist. The ticket includes a welcome glass of fizz and access to the outdoor balcony for views of the fireworks, weather permitting.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "3am",
+    "priceFrom": 115,
+    "priceTo": 115,
+    "priceText": "Tickets from £115.00",
+    "ageLimit": "Strictly 18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/edinburgh/bars/city-centre/skybar/skybar-hogmanay-club-night",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/edinburgh/bars/city-centre/skybar/skybar-hogmanay-club-night"
+    },
+    "evidence": "Tickets from £115.00",
+    "unconfirmed": [],
+    "notes": "Doors 8pm, last entry 11pm. No reserved seating. The page mentions Scottish stovies or mac and cheese in the ticket details but not in the main description. Tickets are non-refundable and limited to 10 per booking.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-le-monde",
+    "name": "Casino Noir - Monte Carlo After Dark! NYE 2026",
+    "venue": "Le Monde",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "George Street",
+    "category": "party",
+    "description": "Casino-themed party at Le Monde. The ticket includes entry, fun money for the casino and a welcome drink at the champagne bar.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "3am",
+    "priceFrom": 19.25,
+    "priceTo": null,
+    "priceText": "Tickets from £19.25",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/edinburgh/bars/city-centre/le-monde/casino-noir-monte-carlo-after-dark-nye-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/edinburgh/bars/city-centre/le-monde/casino-noir-monte-carlo-after-dark-nye-2026"
+    },
+    "evidence": "Tickets from £19.25",
+    "unconfirmed": [
+      "priceTo"
+    ],
+    "notes": "£19.25 is the Super Early Bird ticket; later release prices are not shown.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-west-princes-street-gardens",
+    "name": "Hogmanay in the Gardens with Underworld",
+    "venue": "West Princes Street Gardens",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "West Princes Street Gardens",
+    "category": "concert",
+    "description": "Standing outdoor concert headlined by Underworld in an arena beneath Edinburgh Castle. Ticket types are Enclosure, Gardens and a Premium Area with a viewing platform.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": null,
+    "priceFrom": 79,
+    "priceTo": null,
+    "priceText": "Prices from: £79",
+    "ageLimit": "Ages 12+; under 18s require adult (18+) supervision",
+    "availability": null,
+    "booking": {
+      "url": "https://edwinterfest.com/hogmanay/whats-on/hogmanay-in-the-gardens-with-underworld",
+      "label": "Edinburgh's Hogmanay official site"
+    },
+    "source": {
+      "url": "https://edwinterfest.com/hogmanay/whats-on/hogmanay-in-the-gardens-with-underworld"
+    },
+    "evidence": "Prices from: £79",
+    "unconfirmed": [
+      "ends",
+      "priceTo"
+    ],
+    "notes": "Doors open at 8pm, the stage is live from 8.50pm and last entry is 11pm. Duration is listed as 270 minutes. Each booking fee includes a £1.00 charity donation. The page says there is no official resale. Prices for the individual ticket types are not shown on the page.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "edinburgh-the-biscuit-factory",
+    "name": "The Haggis Ceilidh Club - Hogmanay Party 2026 - The Biscuit Factory",
+    "venue": "The Biscuit Factory",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "area": "Anderson Place",
+    "category": "other",
+    "description": "Hogmanay ceilidh with The Haggis Chasers Ceilidh Band at The Biscuit Factory.",
+    "date": "2026-12-31",
+    "starts": "Doors open 8.30pm, dancing from 9pm",
+    "ends": "12.30am",
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": null,
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.eventbrite.com/e/the-haggis-ceilidh-club-hogmanay-party-2026-the-biscuit-factory-tickets-1999088479456?aff=oddtdtcreator",
+      "label": "Eventbrite"
+    },
+    "source": {
+      "url": "https://www.eventbrite.com/e/the-haggis-ceilidh-club-hogmanay-party-2026-the-biscuit-factory-tickets-1999088479456?aff=oddtdtcreator"
+    },
+    "evidence": "Doors open 8:30pm, dancing from 9pm, ends 12.30am.",
+    "unconfirmed": [
+      "ageLimit",
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "Ticket prices and age policy did not appear in the fetched Eventbrite page. \"NOW ON SALE\" is stated on the organiser's page (https://haggischasersceilidhband.com/haggis-ceilidh-club/), which also lists a separate family party at the same venue on the same date. Refunds are available up to 10 days before the event.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "manchester-depot-mayfield",
+    "name": "New Year's Eve: Defected + Glitterbox",
+    "venue": "Depot Mayfield",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "area": "Baring Street",
+    "category": "party",
+    "description": "Warehouse Project club night with Defected and Glitterbox line-ups, including Groove Armada, Eats Everything, Sam Divine, Melvo Baptiste and Fat Tony.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "4am",
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://thewarehouseproject.com/events/nye-defected-glitterbox/",
+      "label": "The Warehouse Project's own site (tickets via Ticketmaster)"
+    },
+    "source": {
+      "url": "https://thewarehouseproject.com/events/nye-defected-glitterbox/"
+    },
+    "evidence": "Depot Mayfield 20:00 — 04:00",
+    "unconfirmed": [
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "A Warehouse Project night. No price appears on the organiser's page and the Ticketmaster page could not be read. The street address, 18+ limit and a 10pm last entry come from the Skiddle listing for the same event (https://www.skiddle.com/whats-on/Manchester/Depot-Mayfield/New-Years-at-The-Warehouse-Project/42596138/). The organiser's page gives the date as Thursday 31 December without the year; the Skiddle listing states 2026.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "manchester-20-stories",
+    "name": "New Year's Eve 2026: A Midnight Masquerade",
+    "venue": "20 Stories",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "area": "Spinningfields",
+    "category": "party",
+    "description": "Masquerade party at 20 Stories. The standing ticket includes entry, live entertainment and a mask on arrival; dinner, seating and a reserved table are not included.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "2am",
+    "priceFrom": 79.5,
+    "priceTo": 106,
+    "priceText": "Tickets from £79.50 - £106.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/manchester/restaurants/spinningfields/20-stories/new-years-eve-2026-a-midnight-masquerade",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/manchester/restaurants/spinningfields/20-stories/new-years-eve-2026-a-midnight-masquerade"
+    },
+    "evidence": "Dinner, seating and a reserved table are not included.",
+    "unconfirmed": [],
+    "notes": "First Release standing ticket £79.50, Second Release £106.00. A separate five-course dinner (one sitting from 6pm, main restaurant tables at £200 per person, window tables £300) is booked through the venue's website.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "manchester-the-lawn-club",
+    "name": "New Year's Eve 2026 at The Lawn Club",
+    "venue": "The Lawn Club",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "area": "Hardman Square, Spinningfields",
+    "category": "party",
+    "description": "Party at The Lawn Club. General admission includes entry and a first drink with no seat allocation; group table tickets include prosecco and a reserved table.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "1.30am",
+    "priceFrom": 24.2,
+    "priceTo": 41.8,
+    "priceText": "Tickets from £24.20 - £41.80",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/manchester/bars/spinningfields/the-lawn-club/new-years-eve-2026-at-the-lawn-club",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/manchester/bars/spinningfields/the-lawn-club/new-years-eve-2026-at-the-lawn-club"
+    },
+    "evidence": "Tickets from £24.20 - £41.80",
+    "unconfirmed": [],
+    "notes": "Early Bird General Admission is £24.20. Table tickets (groups of 6, 10 or 12) are listed at £41.80 and must be bought for the whole group.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "manchester-the-bridgewater-hall",
+    "name": "New Year's Eve 2026: Simply The Best",
+    "venue": "The Bridgewater Hall",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "area": "Lower Mosley Street",
+    "category": "concert",
+    "description": "New Year's Eve concert at The Bridgewater Hall. A separately priced Premium option adds lounge access before the concert and at the interval, two drinks and nibbles.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": null,
+    "priceFrom": 35,
+    "priceTo": 55,
+    "priceText": "Tickets £35.00 to £55.00 (All ticket prices include £4.25 booking fee)",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://www.bridgewater-hall.co.uk/whats-on/simply-the-best-new-years-eve-2026/",
+      "label": "The Bridgewater Hall's own site"
+    },
+    "source": {
+      "url": "https://www.bridgewater-hall.co.uk/whats-on/simply-the-best-new-years-eve-2026/"
+    },
+    "evidence": "(All ticket prices include £4.25 booking fee)",
+    "unconfirmed": [
+      "ageLimit",
+      "ends",
+      "starts"
+    ],
+    "notes": "Doors, interval and finish times are listed as TBC. The Premium price is not stated on the page. The hall lists 8pm, with the detailed timings still to be confirmed.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "birmingham-cosy-club-birmingham",
+    "name": "Birmingham New Year's Eve Party",
+    "venue": "Cosy Club Birmingham",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "area": "Bennetts Hill",
+    "category": "dinner",
+    "description": "Soirée tickets include a four-course set menu, a welcome drink, midnight fizz and a live band. Bar tickets include a welcome drink on arrival and midnight fizz.",
+    "date": "2026-12-31",
+    "starts": "7.30pm",
+    "ends": "1am",
+    "priceFrom": 16.5,
+    "priceTo": 53.94,
+    "priceText": "Tickets from £16.50 - £53.94",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/birmingham/whats-on/food-drink/new-years-eve-party-24",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/birmingham/whats-on/food-drink/new-years-eve-party-24"
+    },
+    "evidence": "Enjoy a four-course set menu with a welcome drink and midnight fizz included for £49.95 per person.",
+    "unconfirmed": [],
+    "notes": "The ticket listing shows NYE Soirée Tickets at £53.94 and NYE Bar Tickets at £16.50; the description quotes £49.95 and £15 per person without explaining the difference.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "birmingham-the-alchemist-colmore-row",
+    "name": "Cosmic Disco - New Year's Eve at The Alchemist Colmore Row",
+    "venue": "The Alchemist Colmore Row",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "area": "Colmore Row",
+    "category": "party",
+    "description": "Disco-themed bar party. The ticket covers entry and a Cosmic Bellini cocktail for guests arriving by 10pm.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 22,
+    "priceTo": 22,
+    "priceText": "Tickets are priced at £20 (+booking fee) for entry and a Cosmic Bellini on arrival.",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/birmingham/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-colmore-row",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/birmingham/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-colmore-row"
+    },
+    "evidence": "Last entry for ticket holders is 10:30pm.",
+    "unconfirmed": [],
+    "notes": "The ticket listing shows the First Release ticket at £22.00, while the description says £20 plus booking fee. A five-course dining option with entry is sold separately through the venue's website.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "birmingham-the-actress-and-bishop",
+    "name": "NEW YEAR'S EVE",
+    "venue": "The Actress and Bishop",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "area": "Ludgate Hill, Jewellery Quarter",
+    "category": "party",
+    "description": "Live set from Debase Invaders from 9:30PM until the countdown, followed by DJ Paul Thomas until 3AM.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": "3am",
+    "priceFrom": 11,
+    "priceTo": 12,
+    "priceText": "Tickets: £10 advance / £12 on the door",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/birmingham/pubs/jewellery-quarter/the-actress-and-bishop/new-years-eve",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/birmingham/pubs/jewellery-quarter/the-actress-and-bishop/new-years-eve"
+    },
+    "evidence": "Tickets: £10 advance / £12 on the door",
+    "unconfirmed": [],
+    "notes": "The online general admission ticket is listed at £11.00, while the description says £10 advance and £12 on the door.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "birmingham-be-at-one-birmingham-new-street",
+    "name": "Midnight Mischief - New Years Eve 2026-27",
+    "venue": "Be At One Birmingham New Street",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "area": "Piccadilly Arcade, Stephenson Street",
+    "category": "party",
+    "description": "Cocktail bar party. The ticket includes entry and a glass of fizz; ticket holders must arrive by 10pm.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "3am",
+    "priceFrom": 11,
+    "priceTo": 27.5,
+    "priceText": "Tickets from £11.00 - £27.50",
+    "ageLimit": "Over 18s only",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/birmingham/bars/city-centre/be-at-one-birmingham/midnight-mischief-new-years-eve-2026-27",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/birmingham/bars/city-centre/be-at-one-birmingham/midnight-mischief-new-years-eve-2026-27"
+    },
+    "evidence": "Ticketholders must arrive at the venue by 10pm.",
+    "unconfirmed": [],
+    "notes": "General Release ticket £11.00, Final Release £27.50. Photo ID is required. The page's terms mention a different price (£30 per person with a £10 deposit) that looks like template text, so confirm at checkout.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "liverpool-the-bentley",
+    "name": "The Port of Liverpool Presents: New Year's Eve Masquerade Ball",
+    "venue": "The Bentley",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "party",
+    "description": "Masquerade ball at The Bentley. The listing shows a single ticket type and does not say what the ticket includes.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 65,
+    "priceTo": 65,
+    "priceText": "£65.00",
+    "ageLimit": null,
+    "availability": "on sale",
+    "booking": {
+      "url": "https://ticket247.co.uk/Event/the-port-of-liverpool-presents-new-year-s-eve-masquerade-ball-at-the-bentley-liverpool-534104",
+      "label": "Skiddle (linked from the Ticket247 listing)"
+    },
+    "source": {
+      "url": "https://ticket247.co.uk/Event/the-port-of-liverpool-presents-new-year-s-eve-masquerade-ball-at-the-bentley-liverpool-534104"
+    },
+    "evidence": "Thu, 31st Dec 2026 19:00-Fri, 1st Jan 2027 02:00",
+    "unconfirmed": [
+      "ageLimit",
+      "area"
+    ],
+    "notes": "Facts come from the Ticket247 listing, which links through to Skiddle for purchase; the Skiddle ticket page itself returned no content when fetched, so fees, age limit and inclusions could not be checked.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "liverpool-sensation-liverpool",
+    "name": "Sensation NYE 2027: Midnight Above Liverpool",
+    "venue": "Sensation Liverpool",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "area": "Seel Street",
+    "category": "party",
+    "description": "Club night at Sensation Liverpool. The standard advance ticket includes a Prosecco on arrival for guests arriving before 9:30pm; a group-of-6 ticket includes a bottle of Prosecco.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "3am",
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.skiddle.com/whats-on/Liverpool/Sensation/Sensation-NYE-2027-Midnight-Above-Liverpool/43160595/",
+      "label": "Skiddle"
+    },
+    "source": {
+      "url": "https://www.skiddle.com/whats-on/Liverpool/Sensation/Sensation-NYE-2027-Midnight-Above-Liverpool/43160595/"
+    },
+    "evidence": "Last entry: 11.45pm",
+    "unconfirmed": [
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "Ticket prices did not load on the Skiddle page. The event is titled NYE 2027 because it counts down to 2027; the page dates it Thursday 31st December 2026. Valid photo ID required. VIP booths are sold separately and do not include admission.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "liverpool-the-alchemist-liverpool",
+    "name": "Cosmic Disco - New Year's Eve at The Alchemist Liverpool",
+    "venue": "The Alchemist Liverpool",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "area": "Brunswick Street",
+    "category": "party",
+    "description": "Disco-themed bar party. The ticket covers entry and a Cosmic Bellini cocktail for guests arriving by 10pm.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 22,
+    "priceTo": 22,
+    "priceText": "Tickets are priced at £20 (+booking fee) for entry and a Cosmic Bellini on arrival.",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/liverpool/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-liverpool",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/liverpool/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-liverpool"
+    },
+    "evidence": "Last entry for ticket holders is 10:30pm.",
+    "unconfirmed": [],
+    "notes": "The ticket listing shows the First Release ticket at £22.00 (\"Tickets from £22.00\"), while the description says £20 plus booking fee. Doors open 7pm.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "liverpool-cavern-club",
+    "name": "New Year's Eve with The Cavern Club Beatles",
+    "venue": "Cavern Club",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "area": "Mathew Street",
+    "category": "concert",
+    "description": "Beatles tribute show by The Cavern Club Beatles in the Cavern Live Lounge, with a solo acoustic support act.",
+    "date": "2026-12-31",
+    "starts": "7.30pm",
+    "ends": "1.30am",
+    "priceFrom": null,
+    "priceTo": null,
+    "priceText": null,
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.skiddle.com/whats-on/Liverpool/Cavern-Club/New-Years-Eve-with-The-Cavern-Club-Beatles/42570579/",
+      "label": "Skiddle"
+    },
+    "source": {
+      "url": "https://www.skiddle.com/whats-on/Liverpool/Cavern-Club/New-Years-Eve-with-The-Cavern-Club-Beatles/42570579/"
+    },
+    "evidence": "7:30pm til 1:30am",
+    "unconfirmed": [
+      "priceFrom",
+      "priceText",
+      "priceTo"
+    ],
+    "notes": "Ticket prices did not load on the Skiddle page. Doors open at 7.30pm via the Harrington Street entrance, support at 8pm, The Cavern Club Beatles at 10pm.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "glasgow-arta",
+    "name": "Hogmanay Celebrations at Arta",
+    "venue": "Arta",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "area": "Albion Street, Merchant City",
+    "category": "dinner",
+    "description": "Three ticket types: a 3-course dinner with a glass of fizz and after party entry, a buffet with after party entry, or after party entry only from 9pm.",
+    "date": "2026-12-31",
+    "starts": "6pm",
+    "ends": "3am",
+    "priceFrom": 32.7,
+    "priceTo": 90.1,
+    "priceText": "Tickets from £32.70 - £90.10",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/glasgow/bars/merchant-city/arta/hogmanay-celebrations-at-arta",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/glasgow/bars/merchant-city/arta/hogmanay-celebrations-at-arta"
+    },
+    "evidence": "Tickets from £32.70 - £90.10",
+    "unconfirmed": [],
+    "notes": "NYE Feast & Party £90.10, Buffet & Party £64.80, Party Only £32.70 (entry from 9pm). The description lists £85, £60 and £30 for the same options without explaining the difference.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "glasgow-oran-mor",
+    "name": "Hogmanay in Main Bar & Fonn Mor",
+    "venue": "Òran Mór",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "area": null,
+    "category": "party",
+    "description": "Hogmanay night in the Main Bar and Fonn Mór with live music and the midnight bells. Table bookings are available in Fonn Mór.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": null,
+    "priceFrom": 35,
+    "priceTo": 35,
+    "priceText": "£35.00",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://oran-mor.co.uk/hogmanay",
+      "label": "Òran Mór's own site (tickets via Universe)"
+    },
+    "source": {
+      "url": "https://oran-mor.co.uk/hogmanay"
+    },
+    "evidence": "Cost £35.00",
+    "unconfirmed": [
+      "ageLimit",
+      "area",
+      "ends"
+    ],
+    "notes": "The venue page shows the price as a \"Cost\" label followed by £35.00 and links to Universe for tickets; the Universe page itself returned no event content when fetched.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "glasgow-waxy-o-connor-s-glasgow",
+    "name": "Hogmanay Party 2026!",
+    "venue": "Waxy O'Connor's Glasgow",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "area": "West George Street",
+    "category": "party",
+    "description": "Pub Hogmanay party. The ticket includes a free pint of Tennents or a glass of fizz.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "2am",
+    "priceFrom": 27.5,
+    "priceTo": 30,
+    "priceText": "Tickets from £27.50",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/glasgow/pubs/merchant-city/waxy-oconnors-glasgow/hogmanay-party-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/glasgow/pubs/merchant-city/waxy-oconnors-glasgow/hogmanay-party-2026"
+    },
+    "evidence": "Tickets are just £30, including a free pint of Tennents or a glass of fizz",
+    "unconfirmed": [],
+    "notes": "Early bird tickets are listed at £27.50; the description gives the price as £30.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "glasgow-sloans",
+    "name": "Sloans Hogmanay 2026",
+    "venue": "Sloans",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "area": "Argyll Arcade, Argyle Street",
+    "category": "party",
+    "description": "The ticket includes entry to Sloans, unreserved seating, a drink on arrival and DJ entertainment.",
+    "date": "2026-12-31",
+    "starts": "8pm",
+    "ends": "2am",
+    "priceFrom": 10.6,
+    "priceTo": 10.6,
+    "priceText": "Tickets from £10.60",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/glasgow/bars/argyle-street/sloans/sloans-hogmanay-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/glasgow/bars/argyle-street/sloans/sloans-hogmanay-2026"
+    },
+    "evidence": "For just £10pp, your ticket includes:",
+    "unconfirmed": [],
+    "notes": "The ticket is listed at £10.60, while the description says £10pp. Seating is first come, first served.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "glasgow-the-ferry",
+    "name": "The Hogmanay Ceilidh",
+    "venue": "The Ferry",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "area": "Anderston Quay",
+    "category": "other",
+    "description": "Ceilidh with the Coila Ceilidh Band and a caller teaching the dances, plus a DJ. A ticket with a 3 course dinner includes seating for the whole night.",
+    "date": "2026-12-31",
+    "starts": "9pm",
+    "ends": "2am",
+    "priceFrom": 29,
+    "priceTo": 79,
+    "priceText": "Advance tickets £29 + b/fee; With 3 course dinner £79",
+    "ageLimit": "Over 18's Only",
+    "availability": null,
+    "booking": {
+      "url": "https://tickets-scotland.com/whats-on/the-hogmanay-ceilidh",
+      "label": "Tickets Scotland"
+    },
+    "source": {
+      "url": "https://the-ferry.co.uk/hogmanay.html"
+    },
+    "evidence": "Doors @ 9pm for general admission and 6.30pm for dinner reservations",
+    "unconfirmed": [],
+    "notes": "The venue's page says Thursday 31st December without the year; the Tickets Scotland page states Thursday, 31 December 2026 and shows \"Prices from £32.45\" for general admission. Dinner guests arrive at 6.30pm and dinner is booked by phone with the venue.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "newcastle-newcastle-quayside",
+    "name": "Howaymanay - Newcastle's New Year's Eve",
+    "venue": "Newcastle Quayside",
+    "city": "Newcastle",
+    "country": "United Kingdom",
+    "area": "Quayside",
+    "category": "fireworks",
+    "description": "Ticket-only outdoor party along the Quayside with live music on two stages, DJs, street entertainment, food and bars, ending with a midnight firework finale over the River Tyne.",
+    "date": "2026-12-31",
+    "starts": "8.30pm",
+    "ends": "12.15am",
+    "priceFrom": 8,
+    "priceTo": 8,
+    "priceText": "Tickets are £8 plus booking fee.",
+    "ageLimit": "Under-16s must be accompanied by an adult",
+    "availability": null,
+    "booking": {
+      "url": "https://www.tickettailor.com/events/newcastlecitycouncil5/2395074",
+      "label": "Ticket Tailor"
+    },
+    "source": {
+      "url": "https://www.newcastleschristmas.com/howaymanay"
+    },
+    "evidence": "Howaymanay takes place on Thursday 31 December 2026, from 8.30pm until 12.15am.",
+    "unconfirmed": [],
+    "notes": "Last entry is 11pm. The organiser's page says the event is suitable for ages 8 and over and that under to 16s need their own ticket. The booking fee amount is not stated. The organiser says last year's event sold out and capacity is limited. A separate free family fireworks display at 6pm does not need a ticket.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "newcastle-the-alchemist-newcastle",
+    "name": "Cosmic Disco - New Year's Eve at The Alchemist Newcastle",
+    "venue": "The Alchemist Newcastle",
+    "city": "Newcastle",
+    "country": "United Kingdom",
+    "area": "Grey's Quarter, Eldon Square",
+    "category": "party",
+    "description": "Disco-themed bar party. The ticket covers entry and a Cosmic Bellini cocktail for guests arriving by 10pm.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 22,
+    "priceTo": 22,
+    "priceText": "£22.00",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/newcastle/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-newcastle",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/newcastle/whats-on/new-years-eve-party/cosmic-disco-new-years-eve-at-the-alchemist-newcastle"
+    },
+    "evidence": "Last entry for ticket holders is 10:30pm.",
+    "unconfirmed": [],
+    "notes": "The First Release ticket is listed at £22.00, while the description gives £20 plus booking fee. Doors open at 7pm.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "newcastle-flares-newcastle",
+    "name": "New Years Eve 2026!",
+    "venue": "Flares Newcastle",
+    "city": "Newcastle",
+    "country": "United Kingdom",
+    "area": "Mosley Street",
+    "category": "party",
+    "description": "Club night at Flares. The ticket grants entry only; it is a standing event with no tables or seating included.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "3am",
+    "priceFrom": 6.6,
+    "priceTo": 6.6,
+    "priceText": "Tickets from £6.60",
+    "ageLimit": "Over 18s only",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.designmynight.com/newcastle/clubs/grey-street/flares-newcastle/new-years-eve-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/newcastle/clubs/grey-street/flares-newcastle/new-years-eve-2026"
+    },
+    "evidence": "Ticket holders must arrive at the venue by 11pm.",
+    "unconfirmed": [],
+    "notes": "The organiser's title includes emoji, removed here. Valid photo ID required.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "leeds-cosy-club-leeds",
+    "name": "Leeds New Year's Eve Party",
+    "venue": "Cosy Club Leeds",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "area": "Albion Street",
+    "category": "dinner",
+    "description": "Soirée tickets include a four-course set menu, a welcome drink, midnight fizz and a live band. Bar tickets include a welcome drink on arrival and midnight fizz.",
+    "date": "2026-12-31",
+    "starts": "7.30pm",
+    "ends": "1am",
+    "priceFrom": 16.5,
+    "priceTo": 53.94,
+    "priceText": "Tickets from £16.50 - £53.94",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/leeds/whats-on/food-drink/new-years-eve-party-8",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/leeds/whats-on/food-drink/new-years-eve-party-8"
+    },
+    "evidence": "Bar tickets are just £15 per person, including a welcome drink and midnight fizz",
+    "unconfirmed": [],
+    "notes": "NYE Soirée Tickets £53.94 (from 7.30pm), NYE Bar Tickets £16.50 (from 8pm). The description quotes £49.95 and £15 per person without explaining the difference.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "leeds-the-hifi-club",
+    "name": "No Scrubs - 90s & 00s Rnb & Hip-Hop NYE Party (Leeds)",
+    "venue": "The HiFi Club",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "area": "Central Road",
+    "category": "party",
+    "description": "90s and 00s R&B and hip-hop club night. Tickets guarantee entry before 11pm.",
+    "date": "2026-12-31",
+    "starts": "10pm",
+    "ends": "4am",
+    "priceFrom": 11,
+    "priceTo": 16.5,
+    "priceText": "Tickets from £11.00 - £16.50",
+    "ageLimit": "18+",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/leeds/clubs/the-hifi-club/no-scrubs-90s-00s-rnb-hip-hop-nye-party-leeds",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/leeds/clubs/the-hifi-club/no-scrubs-90s-00s-rnb-hip-hop-nye-party-leeds"
+    },
+    "evidence": "Tickets guarantee entry before 11pm to make sure you are in for the New Years Eve countdown",
+    "unconfirmed": [],
+    "notes": "Advanced Discount Ticket £11.00, 1st Release £13.20, General Admission £16.50. ID required. After 11pm ticket holders may have to queue and the ticket may be resold.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "bristol-cosy-club-bristol",
+    "name": "Bristol New Year's Eve Party",
+    "venue": "Cosy Club Bristol",
+    "city": "Bristol",
+    "country": "United Kingdom",
+    "area": "Corn Street, Old City",
+    "category": "dinner",
+    "description": "Soirée tickets include a four-course set menu, a welcome drink, midnight fizz and a live band. Bar tickets include a welcome drink on arrival and midnight fizz.",
+    "date": "2026-12-31",
+    "starts": "7.30pm",
+    "ends": "1am",
+    "priceFrom": 16.5,
+    "priceTo": 53.94,
+    "priceText": "Tickets from £16.50 - £53.94",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/bristol/whats-on/new-years-eve-party/new-years-eve-party-23",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/bristol/whats-on/new-years-eve-party/new-years-eve-party-23"
+    },
+    "evidence": "Enjoy a four-course set menu with a welcome drink and midnight fizz included for £49.95 per person.",
+    "unconfirmed": [],
+    "notes": "NYE Soirée Tickets £53.94 (from 7.30pm), NYE Bar Tickets £16.50 (from 8pm). The description quotes £49.95 and £15 per person without explaining the difference.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "bristol-lil-nashville",
+    "name": "Lil' Nashville Bristol: Big Nash New Year's Bash, Live Country Music, Line Dancing & BBQ Night!",
+    "venue": "Lil' Nashville",
+    "city": "Bristol",
+    "country": "United Kingdom",
+    "area": "All Saints Street",
+    "category": "party",
+    "description": "Country music night with a live band, a line-dancing tutorial and a DJ until 12am. The Southern Hospitality ticket adds early entry, a welcome shot and a BBQ meal; the Party ticket does not include food.",
+    "date": "2026-12-31",
+    "starts": "5.30pm",
+    "ends": "1am",
+    "priceFrom": 38.5,
+    "priceTo": 64.8,
+    "priceText": "Tickets from £38.50 - £64.80",
+    "ageLimit": "Over 18s only",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/bristol/whats-on/live-music/lil-nashville-bristol-big-nash-new-years-bash-live-country-music-line-dancing-bbq-night",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/bristol/whats-on/live-music/lil-nashville-bristol-big-nash-new-years-bash-live-country-music-line-dancing-bbq-night"
+    },
+    "evidence": "Tickets from £38.50 - £64.80",
+    "unconfirmed": [],
+    "notes": "Southern Hospitality ticket £64.80 (early bird £54.00), admitted from 5.30pm; Party ticket £41.80 (early bird £38.50), admitted from 7.30pm. The description quotes £60 and £38. Challenge 25 applies.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "cardiff-mary-s-cardiff",
+    "name": "New Years Eve 2026",
+    "venue": "Mary's Cardiff",
+    "city": "Cardiff",
+    "country": "United Kingdom",
+    "area": "St Mary's Street",
+    "category": "party",
+    "description": "Bar party with entertainment from Dr Bev & Polly Amorous and DJ Jay. The advance ticket includes a glass of Prosecco on arrival.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 11,
+    "priceTo": 11,
+    "priceText": "Tickets from £11.00",
+    "ageLimit": "Over 18",
+    "availability": null,
+    "booking": {
+      "url": "https://www.designmynight.com/uk/bars/marys-cardiff/new-years-eve-2026",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/uk/bars/marys-cardiff/new-years-eve-2026"
+    },
+    "evidence": "Arrive before 9pm to guarantee entry",
+    "unconfirmed": [],
+    "notes": "The advance ticket is listed at £11.00 but described on the page as a £10 ticket with a glass of Prosecco on arrival.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "cardiff-the-glee-club-cardiff",
+    "name": "NYE Comedy Show (18+)",
+    "venue": "The Glee Club Cardiff",
+    "city": "Cardiff",
+    "country": "United Kingdom",
+    "area": "Cardiff Bay",
+    "category": "other",
+    "description": "Comedy night with four acts (Robin Morgan, Leroy Brito, Lou Conran, Eddy Brimson), a midnight countdown and a DJ after party. Seating is allocated.",
+    "date": "2026-12-31",
+    "starts": "7.30pm",
+    "ends": null,
+    "priceFrom": 28,
+    "priceTo": 33,
+    "priceText": "£28.00 Show Entry (Earlybird Price); £33.00 Show Entry; + £2.00 booking fee per ticket",
+    "ageLimit": "18+",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://booking.glee.co.uk/23943",
+      "label": "The Glee Club's own booking site"
+    },
+    "source": {
+      "url": "https://www.glee.co.uk/?p=24056"
+    },
+    "evidence": "Limited Earlybird Price tickets available now!",
+    "unconfirmed": [
+      "ends"
+    ],
+    "notes": "7.30pm is doors; last entry is 8pm. The page does not give an end time, only an after party into the early hours. Food and drink are available to order and are not stated as included.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "belfast-grand-central-hotel",
+    "name": "New Year's Eve Celebrations",
+    "venue": "Grand Central Hotel",
+    "city": "Belfast",
+    "country": "United Kingdom",
+    "area": "Bedford Street",
+    "category": "dinner",
+    "description": "Two options at £135 per person: The Seahorse, with a glass of Bollinger, a five-course table d'hote menu and musical entertainment; or The Observatory, a black-tie evening with live jazz, a half bottle of Bollinger and sharing boards.",
+    "date": "2026-12-31",
+    "starts": null,
+    "ends": null,
+    "priceFrom": 135,
+    "priceTo": 135,
+    "priceText": "£135 per person",
+    "ageLimit": null,
+    "availability": null,
+    "booking": {
+      "url": "https://www.grandcentralhotelbelfast.com/?p=4874",
+      "label": "Grand Central Hotel's own site (online, phone or email)"
+    },
+    "source": {
+      "url": "https://www.grandcentralhotelbelfast.com/?p=4874"
+    },
+    "evidence": "£135 per person",
+    "unconfirmed": [
+      "ageLimit",
+      "ends",
+      "starts"
+    ],
+    "notes": "The page says the events are to welcome and ring in 2027 but does not print the date 31 December 2026 or any start time. The hotel's Grand Café also serves an à la carte menu from noon to 9pm with no price listed.",
+    "checked": "2026-11-12"
+  },
+  {
+    "id": "belfast-the-tipsy-bird",
+    "name": "Tipsy's New Year's Eve Party",
+    "venue": "The Tipsy Bird",
+    "city": "Belfast",
+    "country": "United Kingdom",
+    "area": "Ann Street",
+    "category": "party",
+    "description": "Bar party with live music from 7pm to 10pm and a DJ from 10pm to 1:30am.",
+    "date": "2026-12-31",
+    "starts": "7pm",
+    "ends": "2am",
+    "priceFrom": 13.2,
+    "priceTo": null,
+    "priceText": "Tickets from £13.20",
+    "ageLimit": "Over 18",
+    "availability": "on sale",
+    "booking": {
+      "url": "https://www.designmynight.com/belfast/bars/city-centre/the-tipsy-bird/tipsys-new-years-eve-party",
+      "label": "DesignMyNight"
+    },
+    "source": {
+      "url": "https://www.designmynight.com/belfast/bars/city-centre/the-tipsy-bird/tipsys-new-years-eve-party"
+    },
+    "evidence": "Snap up one of our limited early bird tickets from just £12, or £15 once they're gone.",
+    "unconfirmed": [
+      "priceTo"
+    ],
+    "notes": "The Early Bird ticket is listed at £13.20; the description says early bird tickets are from £12, rising to £15. The page does not itemise what the ticket includes.",
+    "checked": "2026-11-12"
+  }
+]

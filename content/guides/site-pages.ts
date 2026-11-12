@@ -44,7 +44,7 @@ export const about: ProsePage = {
   title: 'About newyear.guide',
   metaTitle: 'About newyear.guide',
   description: 'What newyear.guide is, how its guides are written and checked, and how to tell us when something is wrong.',
-  standfirst: 'One guide to every New Year: the night itself, the days around it, and the New Years that fall on other dates.',
+  standfirst: 'One guide to every New Year on Earth: the night itself wherever it falls, the days around it, and the New Years kept on other dates.',
   crumbs: [{ label: 'Home', href: '/' }],
   checked: '2026-11-11',
   sample: true,
@@ -52,7 +52,7 @@ export const about: ProsePage = {
     {
       heading: 'What this is',
       body: [
-        'newyear.guide is an independent guide to New Year in the UK: where to be at midnight in each city, where to go for a few days around it, and what is open, running and closed while you are there.',
+        'newyear.guide is an independent guide to how the world celebrates New Year. It begins with the UK: where to be at midnight in each city, which events are worth a ticket, where to go for a few days around it, and what is open, running and closed while you are there. Other countries follow, city by city.',
         'It also covers the New Years that are not on 31 December. Lunar New Year, Nowruz, Rosh Hashanah, Diwali and others are kept by millions of people in Britain, and each has its own page.',
       ],
     },

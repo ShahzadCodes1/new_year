@@ -2,7 +2,7 @@
 
 ## What it is
 
-newyear.guide: "The guide to every New Year on Earth." An independent editorial site covering New Year's Eve in UK cities, New Year breaks, fireworks and events, and the other New Years across the calendar (Lunar New Year, Hogmanay, Nowruz, Rosh Hashanah, Diwali, Songkran). UK first, built to expand internationally. English only.
+newyear.guide: "The guide to every New Year on Earth." An independent editorial site covering New Year's Eve in UK cities, New Year breaks, fireworks and events, and the other New Years across the calendar (Lunar New Year, Hogmanay, Nowruz, Rosh Hashanah, Diwali, Songkran). UK first, built to expand internationally: `content/world.ts` is the map of places, cities carry their country, and `/world/` shows midnight crossing the globe. English only.
 
 The full plan is `references/newyear-guide-one-page-summary.pdf`.
 

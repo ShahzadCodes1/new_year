@@ -2,6 +2,7 @@ import dawn from '@/assets/source/countryside-dawn-higgsfield.jpg';
 import fireworks from '@/assets/ways/fireworks.jpg';
 import { celebrations } from '@/content/celebrations';
 import { cities } from '@/content/cities';
+import { midnightInUkTime, places, regions } from '@/content/world';
 import { site } from '@/lib/site';
 import { edinburgh } from './edinburgh';
 import { london } from './london';
@@ -24,9 +25,9 @@ const cityGuide: Record<string, CityGuide> = { london, manchester, birmingham, l
 export const citiesHub: HubPage = {
   path: '/cities/',
   title: 'New Year’s Eve, city by city',
-  metaTitle: `New Year’s Eve ${site.season.eve} in UK cities: where to be at midnight`,
-  description: 'New Year’s Eve in seven UK cities: London, Manchester, Birmingham, Liverpool, Newcastle, Glasgow and Edinburgh, with where midnight happens in each.',
-  standfirst: 'Seven cities, seven different nights. Decide what kind of midnight you want first, then pick the city that does it best.',
+  metaTitle: `New Year’s Eve ${site.season.eve}, city by city: where to be at midnight`,
+  description: 'New Year’s Eve city by city, starting with the UK: London, Manchester, Birmingham, Liverpool, Newcastle, Glasgow and Edinburgh, and where midnight happens.',
+  standfirst: 'Seven cities to begin with, all in the UK, and seven different nights. Decide what kind of midnight you want first, then pick the city that does it best.',
   crumbs: home,
   checked,
   sample: true,
@@ -38,17 +39,20 @@ export const citiesHub: HubPage = {
     { label: 'Hogmanay', value: 'Edinburgh and Glasgow' },
   ],
   groups: [
-    {
-      id: 'cities',
-      title: 'The cities',
-      lede: 'South to north, ending on Hogmanay.',
-      picks: cities.map((city) => ({
-        name: city.name,
-        text: `${city.verdict} ${city.moment}`,
-        href: cityGuide[city.slug].path,
-        image: cityGuide[city.slug].image,
-      })),
-    },
+    // One group for each country, in the order the countries first appear.
+    ...[...new Set(cities.map((city) => city.country))].map((country, i) => ({
+      id: i === 0 ? 'cities' : `cities-${country.toLowerCase().replace(/[^a-z]+/g, '-')}`,
+      title: country,
+      lede: country === 'United Kingdom' ? 'South to north, ending on Hogmanay.' : undefined,
+      picks: cities
+        .filter((city) => city.country === country)
+        .map((city) => ({
+          name: city.name,
+          text: `${city.verdict} ${city.moment}`,
+          href: cityGuide[city.slug].path,
+          image: cityGuide[city.slug].image,
+        })),
+    })),
     {
       id: 'displays',
       title: 'The displays',
@@ -66,6 +70,7 @@ export const citiesHub: HubPage = {
         { name: 'Getting home after midnight', text: 'Last trains, trams and night buses, city by city.', href: '/transport/' },
         { name: 'Hogmanay', text: 'What makes New Year in Scotland a different thing.', href: '/hogmanay/' },
         { name: 'New Year breaks', text: 'If the answer is no city at all.', href: '/breaks/' },
+        { name: 'New Year around the world', text: 'Where midnight falls, from the first place on Earth to the last.', href: '/world/' },
       ],
     },
   ],
@@ -143,6 +148,42 @@ export const practicalHub: HubPage = {
         { name: 'New Year’s Eve, city by city', text: 'Seven cities, and where midnight happens in each.', href: '/cities/' },
         { name: 'New Year breaks', text: 'Scotland, the Peak District, spa stays, breaks for two and cruises.', href: '/breaks/' },
         { name: 'New Year celebrations', text: 'The New Years that fall on other dates.', href: '/celebrations/' },
+      ],
+    },
+  ],
+};
+
+/**
+ * The world: where midnight falls, region by region. Built from content/world.ts, which says what in it is
+ * checked. A place is a link once its guide exists.
+ */
+export const worldHub: HubPage = {
+  path: '/world/',
+  title: 'New Year around the world',
+  metaTitle: 'New Year around the world: from the first midnight to the last',
+  description: 'How the world celebrates New Year, in the order midnight arrives: from Kiritimati in the Pacific to American Samoa twenty-five hours later.',
+  standfirst: 'Midnight takes twenty-five hours to cross the inhabited world. It starts on a Pacific island at ten in the morning, UK time, and ends on another the next day.',
+  crumbs: home,
+  checked: '2026-11-12',
+  sample: true,
+  groups: [
+    ...regions.map((region) => ({
+      id: region.id,
+      title: region.title,
+      lede: region.lede,
+      picks: places
+        .filter((place) => place.region === region.id)
+        .map((place) => ({ kind: midnightInUkTime(place.offset), name: place.name, text: place.line, note: place.country, href: place.href })),
+    })),
+    {
+      id: 'uk',
+      title: 'Start with the UK',
+      lede: 'The first country with full guides. Others follow.',
+      picks: [
+        { name: 'New Year’s Eve, city by city', text: 'Seven cities, and where midnight happens in each.', href: '/cities/' },
+        { name: 'New Year’s Eve events', text: 'Ticketed events in London and ten other cities, each checked at its source.', href: '/events/' },
+        { name: 'New Year celebrations', text: 'The New Years that fall on other dates, and how each is kept.', href: '/celebrations/' },
+        { name: 'New Year breaks', text: 'A few days around the night, in the UK and at sea.', href: '/breaks/' },
       ],
     },
   ],

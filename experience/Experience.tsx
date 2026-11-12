@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import { Component, useCallback, useEffect, useRef, useState, useSyncExternalStore, type ReactNode } from 'react';
 import { Logo } from '@/components/site/Logo';
 import { chooseModeLate } from './boot';
+import { LoaderFireworks } from './LoaderFireworks';
 import { progress } from './progress';
 import { initScroll, lockScroll } from './scroll';
 import { Still } from './Still';
@@ -48,8 +49,10 @@ const SINK = 450;
 const PART = 1100;
 
 /**
- * The opening screen: the name on a horizon line that fills as the scene really loads. When it has, the name
- * sinks into the line and the screen parts along it, like a letterbox opening, onto the scene.
+ * The opening screen: the name on a horizon line that fills as the scene really loads, with fireworks rising
+ * from the line. When the scene is ready the name sinks into the line and the screen parts along it, like a
+ * letterbox opening, onto the scene. It never holds the page for long: if the scene is slow to arrive, the
+ * screen opens onto the still picture underneath and the scene fades in over it.
  */
 function Loader({ onReveal, onDone }: { onReveal: () => void; onDone: () => void }) {
   const [p, setP] = useState(0.06);
@@ -63,8 +66,8 @@ function Loader({ onReveal, onDone }: { onReveal: () => void; onDone: () => void
       if (finished) return;
       finished = true;
       setP(1);
-      // Never a flicker: stay up for at least a beat, let the line reach both ends, then open.
-      const hold = Math.max(0, 1100 - (performance.now() - start)) + 350;
+      // Never a flicker: stay up long enough for the first shell to rise and burst, then open.
+      const hold = Math.max(0, 1700 - (performance.now() - start)) + 300;
       timers.push(window.setTimeout(() => setLeaving(true), hold));
       // The page behind is released as the halves start to move, so its opening lines arrive through the gap.
       timers.push(window.setTimeout(onReveal, hold + SINK));
@@ -74,8 +77,9 @@ function Loader({ onReveal, onDone }: { onReveal: () => void; onDone: () => void
       setP((old) => Math.max(old, value));
       if (ready) finish();
     });
-    // Whatever happens to the 3D layer, nobody waits longer than this: the still is already underneath.
-    timers.push(window.setTimeout(finish, 9000));
+    // Nobody waits longer than this for the 3D layer. The still is already underneath, and it is the scene's
+    // own first frame, so the screen opens onto it and the live scene fades in when it is ready.
+    timers.push(window.setTimeout(finish, 3200));
     return () => {
       off();
       timers.forEach((t) => window.clearTimeout(t));
@@ -91,6 +95,7 @@ function Loader({ onReveal, onDone }: { onReveal: () => void; onDone: () => void
       <div className="loader__half loader__half--bottom" aria-hidden="true">
         <p className="loader__note">Setting the scene</p>
       </div>
+      <LoaderFireworks active={!leaving} />
       <div className="loader__line" aria-hidden="true">
         <span style={{ transform: `scaleX(${p})` }} />
       </div>

@@ -70,7 +70,8 @@ Rules:
 | `Logo` | `components/site/Logo.tsx` | A placeholder until the real brand arrives: a ring with the point where the year begins again, and the initials NYG beside it. Sized by the font size around it, coloured by the text colour |
 | `SiteHeader` | `components/site/SiteHeader.tsx` | Floats over the scene. Links appear as pages are built. Full-screen menu under 768px. A line along its lower edge runs while the next page is on its way |
 | `SiteFooter` | `components/site/SiteFooter.tsx` | Affiliate disclosure joins it with the first affiliate link |
-| `Experience` | `experience/Experience.tsx` | The cinematic layer: scenery, opening screen, scroll, still fallback. The opening screen is the logo on a horizon line that fills as the scene loads; the screen then parts along the line onto the scene. It shows on a direct visit to the home page, not when arriving from another page |
+| `Experience` | `experience/Experience.tsx` | The cinematic layer: scenery, opening screen, scroll, still fallback. The opening screen is the logo on a horizon line that fills as the scene loads, with fireworks rising from the line (`LoaderFireworks`: a small 2D canvas in the scene's gold-led palette, shown in the style guide); the screen then parts along the line onto the scene. It waits at most about three seconds for the scene, then opens onto the still. It shows on a direct visit to the home page, not when arriving from another page, and never to visitors who ask for less motion |
+| `EventsDirectory` | `components/events/EventsDirectory.tsx` | The events list: filters by city and kind, one card per event with when, price, ages, what is not confirmed, where to book and where the facts were checked. Reads `content/events.ts` |
 
 One radius (`rounded-ui`, 2px). One easing (`ease-soft`). One button pair.
 

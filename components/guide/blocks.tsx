@@ -4,15 +4,11 @@ import type { ReactNode } from 'react';
 import { Section, type Tone } from '@/components/ui/Section';
 import { TextLink } from '@/components/ui/TextLink';
 import type { Fact, PageBase, Pick, Question } from '@/content/guides/types';
+import { longDate } from '@/lib/dates';
 import { site } from '@/lib/site';
 import './guide.css';
 
-const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-/** '2026-11-11' as '11 November 2026', without going through a clock or a time zone. */
-export const longDate = (iso: string) => {
-  const [y, m, d] = iso.split('-').map(Number);
-  return `${d} ${MONTHS[m - 1]} ${y}`;
-};
+export { longDate };
 
 /**
  * A reading page: its opening, then whatever blocks the template gives it. Also says where the page sits in

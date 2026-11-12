@@ -10,6 +10,8 @@
 export interface City {
   slug: string;
   name: string;
+  /** The country, as hubs head it. Cities are grouped by this, so a second country's cities form their own group. */
+  country: string;
   /** One opinionated line. */
   verdict: string;
   /** Where midnight happens, in a sentence. */
@@ -22,6 +24,7 @@ export interface City {
 export const cities: City[] = [
   {
     slug: 'london',
+    country: 'United Kingdom',
     side: 'end',
     name: 'London',
     verdict: 'The biggest display in the country, and the hardest to get close to.',
@@ -33,6 +36,7 @@ export const cities: City[] = [
   },
   {
     slug: 'manchester',
+    country: 'United Kingdom',
     side: 'end',
     name: 'Manchester',
     verdict: 'A night out first, a countdown second.',
@@ -44,6 +48,7 @@ export const cities: City[] = [
   },
   {
     slug: 'birmingham',
+    country: 'United Kingdom',
     side: 'start',
     name: 'Birmingham',
     verdict: 'No single centrepiece, which leaves the whole city to choose from.',
@@ -52,6 +57,7 @@ export const cities: City[] = [
   },
   {
     slug: 'liverpool',
+    country: 'United Kingdom',
     side: 'start',
     name: 'Liverpool',
     verdict: 'A waterfront made for midnight, and a city that needs no excuse.',
@@ -60,6 +66,7 @@ export const cities: City[] = [
   },
   {
     slug: 'newcastle',
+    country: 'United Kingdom',
     side: 'end',
     name: 'Newcastle',
     verdict: 'The Quayside is the place to be, with the bridges overhead.',
@@ -68,6 +75,7 @@ export const cities: City[] = [
   },
   {
     slug: 'glasgow',
+    country: 'United Kingdom',
     side: 'end',
     name: 'Glasgow',
     verdict: 'Hogmanay with less ceremony and more noise.',
@@ -76,6 +84,7 @@ export const cities: City[] = [
   },
   {
     slug: 'edinburgh',
+    country: 'United Kingdom',
     side: 'start',
     name: 'Edinburgh',
     verdict: 'Hogmanay is a festival, not a single night.',

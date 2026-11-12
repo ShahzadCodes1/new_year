@@ -8,7 +8,7 @@ export const site = {
   url: 'https://newyear.guide',
   tagline: 'The guide to every New Year on Earth',
   description:
-    'Independent guides to New Year’s Eve in UK cities, New Year breaks, fireworks and every New Year celebration on the calendar.',
+    'How the world celebrates New Year: independent guides to New Year’s Eve city by city, events, breaks and every New Year on the calendar. The UK first.',
   locale: 'en-GB',
   /** The New Year the site is written for. Page titles take their year from here, so the site rolls forward in one change. */
   season: { eve: 2026, newYear: 2027 },
@@ -26,8 +26,10 @@ export interface NavItem {
 // The four hubs.
 export const nav: NavItem[] = [
   { label: 'Cities', href: '/cities/', ready: true },
+  { label: 'Events', href: '/events/', ready: true },
   { label: 'Breaks', href: '/breaks/', ready: true },
   { label: 'Celebrations', href: '/celebrations/', ready: true },
+  { label: 'World', href: '/world/', ready: true },
   { label: 'Practical', href: '/practical/', ready: true },
 ];
 
