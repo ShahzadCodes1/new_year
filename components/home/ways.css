@@ -1,0 +1,149 @@
+/* Chapter 4: ways to spend the night. A list beside one photograph on a wide screen; a list with a small
+   photograph in every row on a narrow one. */
+.ways {
+  display: grid;
+  gap: 0 clamp(40px, 6vw, 96px);
+}
+
+.ways__lede {
+  margin: 16px 0 0;
+  max-width: 38ch;
+  color: var(--muted);
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.ways__list {
+  margin: clamp(32px, 5vw, 56px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.way {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 0 16px;
+  padding: 20px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.way:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.way__thumb {
+  width: 88px;
+  height: 110px;
+  border-radius: var(--radius-ui);
+  object-fit: cover;
+}
+
+.way h3 {
+  margin: 0;
+}
+
+.way__line {
+  margin: 6px 0 0;
+  max-width: 44ch;
+}
+
+.way__detail {
+  margin: 4px 0 0;
+  max-width: 48ch;
+  color: var(--muted);
+}
+
+/* On a narrow screen the links run the full width, under the photograph, so three cities fit on one line. */
+.way__links {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 20px;
+  margin: 4px 0 0;
+  font-size: var(--text-nav);
+}
+
+.way__links span {
+  color: var(--muted);
+}
+
+.way__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+.ways__frame {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .ways {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.78fr);
+    align-items: start;
+  }
+
+  .way {
+    position: relative;
+    grid-template-columns: 1fr;
+    padding: 20px 0 10px 24px;
+  }
+
+  .way__thumb {
+    display: none;
+  }
+
+  /* The row in hand: a red rule down its edge and its name at full strength. */
+  .way::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background: var(--accent);
+    opacity: 0;
+    transition: opacity 0.3s var(--ease-soft);
+  }
+
+  .way[data-active='true']::before {
+    opacity: 1;
+  }
+
+  .way h3 {
+    color: rgb(243 236 234 / 0.62);
+    transition: color 0.3s var(--ease-soft);
+  }
+
+  .way[data-active='true'] h3 {
+    color: var(--fg);
+  }
+
+  /* The photograph stays in view while the list scrolls past it. */
+  .ways__frame {
+    position: sticky;
+    top: 96px;
+    display: block;
+    aspect-ratio: 4 / 5;
+    max-height: calc(100svh - 128px);
+    overflow: hidden;
+    border-radius: var(--radius-ui);
+    background: var(--color-navy);
+  }
+
+  .ways__frame img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .ways__frame img[data-active='true'] {
+    opacity: 1;
+  }
+}

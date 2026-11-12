@@ -1,0 +1,554 @@
+/* The reading pages: guides, breaks, celebrations, practical answers and the site pages.
+   No 3D scene here. Depth comes from layering instead: a picture with a plate behind it and a card in front,
+   cards that stand a little off their ground, and a hover that lifts them. All of it is paint and transform,
+   so the pages stay as light as plain pages. */
+
+/* How a card stands off each ground. */
+.guide [data-tone='night'],
+.guide [data-tone='deep'] {
+  --card: rgb(255 255 255 / 0.04);
+  --card-edge: rgb(255 255 255 / 0.09);
+  --lift: inset 0 1px 0 rgb(255 255 255 / 0.06), 0 1px 2px rgb(0 0 0 / 0.4), 0 18px 32px -20px rgb(0 0 0 / 0.85);
+  --lift-up: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 2px 4px rgb(0 0 0 / 0.45), 0 30px 48px -22px rgb(0 0 0 / 0.9);
+}
+
+.guide [data-tone='light'] {
+  --card: #fff;
+  --card-edge: rgb(8 13 25 / 0.1);
+  --lift: 0 1px 2px rgb(8 13 25 / 0.06), 0 16px 30px -20px rgb(8 13 25 / 0.3);
+  --lift-up: 0 2px 4px rgb(8 13 25 / 0.08), 0 28px 44px -22px rgb(8 13 25 / 0.38);
+}
+
+/* ---------------------------------------------------------------- the opening of a page */
+.g-hero {
+  position: relative;
+  z-index: 1;
+  padding: clamp(104px, 15vw, 168px) var(--spacing-gutter) clamp(56px, 8vw, 104px);
+  overflow-x: clip;
+}
+
+.g-hero__inner {
+  display: grid;
+  gap: clamp(36px, 6vw, 72px);
+  align-items: center;
+  max-width: var(--container-page);
+  margin: 0 auto;
+}
+
+.g-crumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  margin: 0 0 clamp(16px, 2.4vw, 28px);
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.g-crumbs li + li::before {
+  content: '/';
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.g-crumbs a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.g-crumbs [aria-current] {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--fg);
+}
+
+.g-hero h1 {
+  margin: 0;
+  max-width: 16ch;
+  font-size: var(--text-section);
+  line-height: var(--text-section--line-height);
+  letter-spacing: var(--text-section--letter-spacing);
+}
+
+.g-hero__standfirst {
+  margin: clamp(16px, 2vw, 24px) 0 0;
+  max-width: 40ch;
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.g-hero__meta {
+  margin: clamp(18px, 2.4vw, 28px) 0 0;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+/* The picture: three layers. A bare plate set back behind it, the picture itself, and a card of facts
+   standing in front of its lower corner. */
+.g-hero__stage {
+  position: relative;
+  margin-right: 14px;
+}
+
+.g-hero__stage::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-ui);
+  transform: translate(14px, 14px);
+}
+
+.g-hero__picture {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: var(--radius-ui);
+  box-shadow: var(--lift-up);
+}
+
+.g-hero__picture img {
+  width: 100%;
+  height: 112%;
+  object-fit: cover;
+}
+
+.g-hero__facts {
+  position: relative;
+  margin: -44px 0 0 clamp(12px, 3vw, 28px);
+  width: min(100% - 28px, 22rem);
+  padding: 18px 20px;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-ui);
+  background: var(--color-blue);
+  box-shadow: var(--lift-up);
+}
+
+/* As the page scrolls the picture slides a little inside its frame, so it reads as further away than the
+   card in front of it. Only where the browser can tie it to scrolling, and only if motion is welcome. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .g-hero__picture img {
+      animation: g-drift linear both;
+      animation-timeline: scroll(root);
+      animation-range: 0 90vh;
+    }
+  }
+}
+
+@keyframes g-drift {
+  to {
+    transform: translateY(-10.5%);
+  }
+}
+
+@media (min-width: 900px) {
+  .g-hero__inner {
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  }
+
+  .g-hero__inner--plain {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .g-hero__picture {
+    aspect-ratio: 4 / 3;
+  }
+
+  .g-hero__facts {
+    position: absolute;
+    bottom: -32px;
+    left: -40px;
+    margin: 0;
+  }
+}
+
+/* ---------------------------------------------------------------- facts: a label and what it is */
+.g-facts {
+  display: grid;
+  gap: 10px 20px;
+  margin: 0;
+}
+
+.g-facts div {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 16px;
+}
+
+.g-facts dt {
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.g-facts dd {
+  margin: 0;
+  font-size: var(--text-nav);
+  font-weight: 600;
+}
+
+/* The same list as a panel in the body of a page. */
+.g-panel {
+  padding: clamp(20px, 2.6vw, 30px);
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-ui);
+  background: var(--card);
+  box-shadow: var(--lift);
+}
+
+.g-panel .g-facts {
+  gap: 0;
+}
+
+.g-panel .g-facts div {
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.g-panel .g-facts div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.g-panel .g-facts div:last-child {
+  padding-bottom: 0;
+}
+
+.g-panel .g-facts dt,
+.g-panel .g-facts dd {
+  font-size: var(--text-body);
+}
+
+/* ---------------------------------------------------------------- what is on this page */
+.g-contents {
+  position: relative;
+  z-index: 1;
+  padding: 0 var(--spacing-gutter);
+  border-block: 1px solid var(--rule);
+}
+
+.g-contents ul {
+  display: flex;
+  gap: 0 clamp(18px, 3vw, 36px);
+  max-width: var(--container-page);
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+  font-size: var(--text-nav);
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.g-contents a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 52px;
+  color: var(--muted);
+  font-weight: 600;
+  transition: color 0.2s var(--ease-soft);
+}
+
+.g-contents a:hover {
+  color: var(--fg);
+}
+
+/* ---------------------------------------------------------------- a block of a page */
+/* Blocks follow one another closely: a guide has many of them. */
+.g-block {
+  padding-block: clamp(48px, 7vw, 96px);
+}
+
+.g-block__head {
+  display: grid;
+  gap: 12px;
+  margin-bottom: clamp(28px, 4vw, 48px);
+}
+
+.g-block h2 {
+  margin: 0;
+  max-width: 20ch;
+  font-size: var(--text-card);
+  line-height: var(--text-card--line-height);
+}
+
+.g-block__lede {
+  margin: 0;
+  max-width: 56ch;
+  color: var(--muted);
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.g-prose {
+  max-width: var(--container-prose);
+}
+
+.g-prose p {
+  margin: 0 0 1.1em;
+}
+
+.g-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.g-prose h3 {
+  margin: 1.6em 0 0.5em;
+  font-size: clamp(1.375rem, 1.7vw, 1.625rem);
+  line-height: 1.15;
+}
+
+.g-prose ul {
+  margin: 0 0 1.1em;
+  padding-left: 1.2em;
+}
+
+.g-prose li {
+  margin-bottom: 0.4em;
+}
+
+/* Words beside a panel of facts. */
+.g-split {
+  display: grid;
+  gap: clamp(28px, 5vw, 64px);
+  align-items: start;
+}
+
+@media (min-width: 900px) {
+  .g-split {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  }
+}
+
+/* The answer to a question, set large: it is the first thing on a practical page. */
+.g-answer {
+  margin: 0;
+  max-width: 30ch;
+  font-family: var(--font-display);
+  font-size: var(--text-card);
+  font-weight: 600;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+/* ---------------------------------------------------------------- cards */
+.g-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: clamp(16px, 2vw, 28px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* On a wide screen a set of up to five sits in one row, so none is left alone on a second. */
+@media (min-width: 1180px) {
+  .g-cards[data-count='2'] {
+    grid-template-columns: repeat(2, minmax(0, 26rem));
+  }
+
+  .g-cards[data-count='3'] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .g-cards[data-count='4'] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .g-cards[data-count='5'] {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  /* Six sit three and three, not four and two. */
+  .g-cards[data-count='6'] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.g-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--card-edge);
+  border-radius: var(--radius-ui);
+  background: var(--card);
+  box-shadow: var(--lift);
+  transition:
+    transform 0.35s var(--ease-soft),
+    box-shadow 0.35s var(--ease-soft);
+}
+
+.g-card__picture {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-ui) var(--radius-ui) 0 0;
+}
+
+.g-card__picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-soft);
+}
+
+.g-card__words {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: clamp(18px, 2vw, 24px);
+}
+
+.g-card__kind {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.g-card h3 {
+  margin: 0;
+  font-size: clamp(1.375rem, 1.7vw, 1.625rem);
+  line-height: 1.15;
+}
+
+.g-card__text {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.g-card__foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 16px;
+  margin: auto 0 0;
+  padding-top: 16px;
+  font-size: var(--text-nav);
+}
+
+.g-card__foot b {
+  font-weight: 700;
+}
+
+/* The whole card is the link: its name carries the link and the link covers the card. */
+.g-card h3 a::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+.g-card:has(a:focus-visible) {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.g-card h3 a:focus-visible {
+  outline: none;
+}
+
+@media (hover: hover) {
+  .g-card:has(a):hover {
+    box-shadow: var(--lift-up);
+    transform: translateY(-4px);
+  }
+
+  .g-card:has(a):hover .g-card__picture img {
+    transform: scale(1.04);
+  }
+}
+
+/* ---------------------------------------------------------------- questions and answers */
+.g-faq {
+  max-width: var(--container-prose);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.g-faq li {
+  border-top: 1px solid var(--rule);
+}
+
+.g-faq li:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.g-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 56px;
+  padding: 14px 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 1.5vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  list-style: none;
+}
+
+.g-faq summary::-webkit-details-marker {
+  display: none;
+}
+
+/* A plus that becomes a minus when the answer is open. */
+.g-faq summary::after {
+  content: '';
+  flex: none;
+  width: 14px;
+  height: 14px;
+  background:
+    linear-gradient(currentcolor, currentcolor) center / 14px 1.5px no-repeat,
+    linear-gradient(currentcolor, currentcolor) center / 1.5px 14px no-repeat;
+  transition: transform 0.3s var(--ease-soft);
+}
+
+.g-faq details[open] summary::after {
+  background: linear-gradient(currentcolor, currentcolor) center / 14px 1.5px no-repeat;
+  transform: rotate(180deg);
+}
+
+.g-faq details p {
+  margin: 0;
+  padding: 0 0 20px;
+  max-width: 60ch;
+  color: var(--muted);
+}
+
+/* ---------------------------------------------------------------- when the page was last checked */
+.g-updated {
+  margin: clamp(28px, 4vw, 44px) 0 0;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+/* A page arrives quietly: its opening words settle into place, and the picture a moment after. */
+@media (prefers-reduced-motion: no-preference) {
+  .g-hero__inner > :first-child {
+    animation: g-arrive 0.7s var(--ease-soft) backwards;
+  }
+
+  .g-hero__stage {
+    animation: g-arrive-picture 0.9s var(--ease-soft) backwards;
+  }
+}
+
+@keyframes g-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
+/* The picture keeps its full opacity throughout, so it paints at once. */
+@keyframes g-arrive-picture {
+  from {
+    transform: translateY(22px);
+  }
+}

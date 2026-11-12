@@ -1,0 +1,93 @@
+/* Chapter 7: the useful bits. Daylight clarity: a soft white ground, tight type, each answer in its first words. */
+.practical {
+  display: grid;
+  gap: clamp(28px, 5vw, 72px);
+}
+
+.practical__lede {
+  margin: 16px 0 0;
+  max-width: 30ch;
+  color: var(--muted);
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.practical__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fact {
+  padding: clamp(20px, 2.4vw, 30px) 0 clamp(10px, 1.4vw, 18px);
+  border-top: 1px solid var(--rule);
+}
+
+.fact:last-child {
+  border-bottom: 1px solid var(--rule);
+}
+
+.fact h3 {
+  margin: 0;
+  font-size: clamp(1.5rem, 2vw, 1.875rem);
+  line-height: 1.12;
+}
+
+.fact p {
+  margin: 10px 0 0;
+  max-width: 60ch;
+}
+
+.fact strong {
+  font-weight: 700;
+}
+
+/* The greetings: each phrase in the display face, with its language named beneath it. */
+.fact__says {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px clamp(24px, 4vw, 48px);
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fact__says span {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 1.7vw, 1.625rem);
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+.fact__says small {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: var(--text-nav);
+}
+
+.fact .fact__link {
+  margin: 4px 0 0;
+  font-size: var(--text-nav);
+}
+
+.fact__link a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+@media (min-width: 900px) {
+  .practical {
+    grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+    align-items: start;
+  }
+
+  /* The heading keeps the list company as it scrolls. */
+  .practical__head {
+    position: sticky;
+    top: 120px;
+  }
+}

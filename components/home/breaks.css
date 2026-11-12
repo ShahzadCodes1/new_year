@@ -1,0 +1,113 @@
+/* Chapter 5, the light spread: New Year breaks. */
+.breaks__lead {
+  display: grid;
+  gap: clamp(28px, 5vw, 72px);
+  align-items: end;
+}
+
+.breaks__lede {
+  margin: 16px 0 0;
+  max-width: 34ch;
+  color: var(--muted);
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.breaks__action {
+  margin: clamp(20px, 3vw, 32px) 0 0;
+}
+
+.breaks__picture {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-ui);
+  object-fit: cover;
+}
+
+/* The five ways in. On a narrow screen they run sideways, out to both edges of the screen, each one
+   stopping in place as it is swiped to. */
+.breaks__types {
+  display: flex;
+  gap: 14px;
+  margin: clamp(40px, 6vw, 80px) calc(-1 * var(--spacing-gutter)) 0;
+  padding: 0 var(--spacing-gutter) 4px;
+  list-style: none;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--spacing-gutter);
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.breaks__types li {
+  flex: 0 0 62%;
+  max-width: 300px;
+  scroll-snap-align: start;
+}
+
+.break {
+  display: block;
+}
+
+.break__frame {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: var(--radius-ui);
+  background: rgb(8 13 25 / 0.08);
+}
+
+.break__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-soft);
+}
+
+a.break:hover .break__frame img {
+  transform: scale(1.03);
+}
+
+.break__name {
+  display: block;
+  margin: 14px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2vw, 1.875rem);
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  transition: text-decoration-color 0.3s var(--ease-soft);
+}
+
+a.break:hover .break__name {
+  text-decoration-color: currentcolor;
+}
+
+.break__line {
+  display: block;
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+@media (min-width: 900px) {
+  .breaks__lead {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  }
+
+  .breaks__types {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: clamp(16px, 2vw, 28px);
+    margin-inline: 0;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .breaks__types li {
+    max-width: none;
+  }
+}

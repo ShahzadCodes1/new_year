@@ -1,0 +1,215 @@
+/* Chapter 6: every New Year on Earth. The year as a ring of pictures that turns as the page scrolls.
+   The section is one screen to arrive in plus a stretch of scroll for each further celebration; its contents
+   hold on screen meanwhile. */
+.year {
+  position: relative;
+  z-index: 1;
+  height: calc(100svh + (var(--count) - 1) * 60svh);
+  padding: 0 var(--spacing-gutter);
+  /* The pictures at the sides of the ring reach past the screen on a phone; they must not widen the page.
+     (clip, not hidden: hidden would stop the contents holding in place.) */
+  overflow-x: clip;
+}
+
+.year__hold {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto auto;
+  justify-items: center;
+  gap: clamp(10px, 2svh, 20px);
+  height: 100svh;
+  max-width: var(--container-page);
+  margin: 0 auto;
+  padding: clamp(84px, 12svh, 124px) 0 clamp(18px, 3.5svh, 36px);
+  text-align: center;
+}
+
+.year__head h2 {
+  margin: 0;
+  font-size: var(--text-card);
+  line-height: var(--text-card--line-height);
+}
+
+.year__lede {
+  margin: 8px auto 0;
+  max-width: 46ch;
+  color: var(--muted);
+}
+
+/* On a small or short screen the heading alone introduces the ring: the room goes to the pictures. */
+@media (max-width: 480px), (max-height: 700px) {
+  .year__lede {
+    display: none;
+  }
+}
+
+/* The ring. It takes whatever height the screen has left between the heading and the caption, and its
+   pictures are sized to that, so they never crowd the words on a short screen. (Named "wheel" in the code:
+   "ring" is already a utility class in the styling framework.) */
+.wheel {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  container-type: size;
+  perspective: 1300px;
+}
+
+/* Its centre is pushed back by its own radius, so the picture at the front is at its true size and the
+   others curve away from it. */
+.wheel__turn {
+  /* The width of one picture: as large as the space allows, leaving its neighbours room to show at the sides. */
+  --card: min(300px, 78cqh, 56cqw);
+  /* Far enough back that neighbours stand clear of each other at 32 degrees apart. */
+  --radius: calc(var(--card) * 1.92);
+  position: absolute;
+  inset: 0;
+  transform: translateZ(calc(var(--radius) * -1));
+  transform-style: preserve-3d;
+}
+
+.wheel__card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--card);
+  aspect-ratio: 4 / 5;
+  margin: calc(var(--card) * -0.625) 0 0 calc(var(--card) * -0.5);
+  overflow: hidden;
+  border-radius: var(--radius-ui);
+  background: var(--color-blue);
+  backface-visibility: hidden;
+}
+
+.wheel__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* A picture goes into the dark as it leaves the front: a veil of the page's own navy, never a filter. */
+.wheel__card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-navy);
+  opacity: calc(var(--dim) * 0.8);
+}
+
+/* The captions share one place; only the celebration at the front shows. */
+.year__captions {
+  display: grid;
+  width: 100%;
+}
+
+.celebration {
+  grid-area: 1 / 1;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease,
+    visibility 0s linear 0.3s;
+}
+
+.celebration.is-active {
+  opacity: 1;
+  visibility: visible;
+  transition:
+    opacity 0.5s ease 0.15s,
+    visibility 0s;
+}
+
+.celebration__picture {
+  display: none;
+}
+
+.celebration h3 {
+  margin: 0;
+}
+
+.celebration__when {
+  margin: 6px 0 0;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.celebration__when span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.celebration__line {
+  margin: 6px auto 0;
+  max-width: 52ch;
+}
+
+.celebration__link {
+  margin: 2px 0 0;
+  font-size: var(--text-nav);
+}
+
+.celebration__link a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 600;
+}
+
+.year nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 0;
+}
+
+/* Without motion there is nothing to turn: the ring is laid out flat, every celebration with its picture. */
+.is-still .year {
+  height: auto;
+  padding-block: var(--spacing-section);
+}
+
+.is-still .year__hold {
+  position: static;
+  display: block;
+  justify-items: normal;
+  height: auto;
+  padding: 0;
+  text-align: left;
+}
+
+.is-still .wheel,
+.is-still .year nav {
+  display: none;
+}
+
+.is-still .year__captions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: clamp(28px, 4vw, 48px) clamp(20px, 3vw, 36px);
+  margin-top: clamp(32px, 5vw, 56px);
+}
+
+.is-still .celebration {
+  grid-area: auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-still .celebration__picture {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  margin-bottom: 14px;
+  border-radius: var(--radius-ui);
+  object-fit: cover;
+}
+
+.is-still .celebration__line {
+  margin-inline: 0;
+}
+
+.is-still .year__lede {
+  display: block;
+  margin-inline: 0;
+}

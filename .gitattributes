@@ -1,0 +1,8 @@
+# One line ending everywhere, whatever machine the files are checked out on.
+* text=auto eol=lf
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.avif binary
+*.ico binary
+*.pdf binary

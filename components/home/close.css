@@ -1,0 +1,107 @@
+/* Chapter 8: the close. A last quiet frame: the dark after the show, with a few embers still coming down. */
+.close {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-height: min(88svh, 820px);
+  padding: var(--spacing-section) var(--spacing-gutter);
+  overflow: hidden;
+  /* The last warmth of the night, low in the frame. */
+  background:
+    radial-gradient(120% 70% at 50% 118%, rgb(201 75 67 / 0.13), rgb(201 75 67 / 0) 62%),
+    var(--color-navy);
+  text-align: center;
+}
+
+.close__words {
+  position: relative;
+  max-width: 44rem;
+}
+
+.close h2 {
+  margin: 0;
+}
+
+.close__lede {
+  margin: 18px auto 0;
+  max-width: 40ch;
+  color: var(--muted);
+  font-size: var(--text-sub);
+  line-height: var(--text-sub--line-height);
+}
+
+.close__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: clamp(24px, 4vw, 36px) 0 0;
+}
+
+/* The letter: said plainly, with nothing to fill in until there is something to send. */
+.close__letter {
+  margin: clamp(40px, 7vw, 72px) auto 0;
+  padding-top: clamp(20px, 3vw, 28px);
+  max-width: 34rem;
+  border-top: 1px solid var(--rule);
+}
+
+.close__letter h3 {
+  margin: 0;
+  font-size: clamp(1.375rem, 1.7vw, 1.625rem);
+  line-height: 1.15;
+}
+
+.close__letter p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+/* The embers. Each falls the height of the frame, drifting a little, and fades as it goes. Only transform
+   and opacity move, so they cost almost nothing. */
+.close__embers {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.close__embers span {
+  position: absolute;
+  top: -4%;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  background: rgb(232 132 118);
+  box-shadow: 0 0 8px 1px rgb(201 75 67 / 0.6);
+  opacity: 0;
+  animation: ember linear infinite;
+}
+
+@keyframes ember {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.85;
+  }
+  70% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate3d(var(--drift), min(92svh, 860px), 0);
+    opacity: 0;
+  }
+}
+
+/* Without motion the frame is simply dark and still. */
+.is-still .close__embers {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .close__embers {
+    display: none;
+  }
+}

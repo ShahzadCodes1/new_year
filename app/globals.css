@@ -1,0 +1,268 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Design tokens. One source for the page, the components and the 3D layer.
+   --------------------------------------------------------------------------- */
+@theme {
+  /* Palette */
+  --color-navy: #080d19;
+  --color-blue: #111c30;
+  --color-snow: #f4f6fa; /* Soft White: the light ground, and filled actions and the current tab on dark */
+  --color-blush: #f3ecea; /* Warm Blush White: headings and text on dark */
+  --color-red: #c94b43;
+  --color-silver: #73859b;
+  --color-slate: #4f5d70; /* the secondary text colour on soft white, where silver is too faint */
+
+  /* Type: Cormorant Garamond for display, Manrope for everything functional */
+  --font-display: var(--font-cormorant), 'Times New Roman', serif;
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+
+  /* Fluid type scale. Upper bounds are the desktop sizes from the brief. */
+  --text-hero: clamp(2.9rem, 7.4vw, 7rem);
+  --text-hero--line-height: 0.98;
+  --text-hero--letter-spacing: -0.01em;
+  --text-section: clamp(2.4rem, 5.2vw, 4.5rem);
+  --text-section--line-height: 1;
+  --text-section--letter-spacing: -0.01em;
+  --text-card: clamp(1.75rem, 2.6vw, 2.375rem);
+  --text-card--line-height: 1.08;
+  --text-sub: clamp(1.125rem, 1.6vw, 1.5rem);
+  --text-sub--line-height: 1.35;
+  --text-body: clamp(1rem, 1.15vw, 1.125rem);
+  --text-body--line-height: 1.6;
+  --text-nav: 0.875rem;
+  --text-nav--line-height: 1.2;
+  --text-label: 0.75rem;
+  --text-label--line-height: 1.3;
+
+  /* Layout */
+  --spacing-gutter: clamp(20px, 5vw, 80px);
+  --spacing-section: clamp(72px, 11vw, 160px);
+  --container-page: 80rem;
+  --container-prose: 44rem;
+
+  /* Shape and motion: one radius, one easing */
+  --radius-ui: 2px;
+  --ease-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* ---------------------------------------------------------------------------
+   Tones. A section declares its ground; text, rules and actions follow.
+   On dark, type is warm blush white, actions are filled in soft white and the accent is Celebration Red. Red on navy is 4.2:1, short
+   of the 4.5 small text needs, so it marks things (the row in hand, the focus outline) and never
+   carries words or underlines them. On a light ground the accent is navy.
+   --------------------------------------------------------------------------- */
+:root,
+[data-tone='night'] {
+  --bg: var(--color-navy);
+  --fg: var(--color-blush);
+  --muted: var(--color-silver);
+  --accent: var(--color-red);
+  --rule: rgb(115 133 155 / 0.3);
+  --cta-bg: var(--color-snow);
+  --cta-fg: var(--color-navy);
+  --cta-hover: #fff;
+  color-scheme: dark;
+}
+
+[data-tone='deep'] {
+  --bg: var(--color-blue);
+  /* Silver alone is a shade too dark to read on the raised cards of this ground (4.1:1). A fifth of soft
+     white lifts it to 5.5:1. */
+  --muted: color-mix(in srgb, var(--color-silver) 80%, var(--color-snow));
+}
+
+[data-tone='light'] {
+  --bg: var(--color-snow);
+  --fg: var(--color-navy);
+  --muted: var(--color-slate);
+  --accent: var(--color-navy);
+  --rule: rgb(8 13 25 / 0.16);
+  --cta-bg: var(--color-navy);
+  --cta-fg: var(--color-snow);
+  --cta-hover: var(--color-blue);
+  color-scheme: light;
+}
+
+[data-tone] {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+/* ---------------------------------------------------------------------------
+   Base
+   --------------------------------------------------------------------------- */
+html {
+  background-color: var(--color-navy);
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: var(--text-body--line-height);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a,
+button {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgb(201 75 67 / 0.25);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--color-red);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+   The tab bar: one rounded bar of choices over a dark ground, the current one filled in soft white. Used where a
+   chapter is stepped through (the cities, the celebrations). On a narrow screen it scrolls sideways.
+   --------------------------------------------------------------------------- */
+.tabbar {
+  display: flex;
+  gap: 4px;
+  width: max-content;
+  max-width: 100%;
+  margin: 0;
+  padding: 4px;
+  overflow-x: auto;
+  border: 1px solid rgb(244 246 250 / 0.2);
+  border-radius: 999px;
+  background: rgb(8 13 25 / 0.8);
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+}
+
+.tabbar a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-size: var(--text-nav);
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s var(--ease-soft),
+    color 0.25s var(--ease-soft);
+}
+
+.tabbar a:hover {
+  background: rgb(244 246 250 / 0.1);
+}
+
+.tabbar a[aria-current] {
+  background: var(--color-snow);
+  color: var(--color-navy);
+}
+
+/* The page behind the full-screen phone menu does not scroll. */
+.menu-open {
+  overflow: hidden;
+}
+
+/* The logo: mark and initials, sized by the font size around them. */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.36em;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.logo__mark {
+  flex: none;
+  width: 1.05em;
+  height: 1.05em;
+}
+
+/* Three capitals need a little air between them. The last one gives its share back, so the logo ends where
+   the G does. */
+.logo__name {
+  letter-spacing: 0.08em;
+  margin-right: -0.08em;
+}
+
+/* The line under the header that runs while the next page is on its way. At rest it is full and invisible,
+   so that when a page arrives the line completes and fades instead of vanishing mid-way. */
+.nav-progress {
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 2px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.nav-progress::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-blush);
+  transform-origin: left;
+  opacity: 0;
+  transition:
+    transform 0.25s ease-out,
+    opacity 0.45s ease 0.2s;
+}
+
+/* A page that arrives at once never shows the line: it waits a moment before appearing. */
+.nav-progress[data-on]::after {
+  opacity: 1;
+  transition: opacity 0.2s ease 0.12s;
+  animation: nav-progress 9s cubic-bezier(0.1, 0.6, 0.2, 1) 0.12s both;
+}
+
+@keyframes nav-progress {
+  from {
+    transform: scaleX(0);
+  }
+
+  25% {
+    transform: scaleX(0.5);
+  }
+
+  to {
+    transform: scaleX(0.92);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-progress[data-on]::after {
+    animation: none;
+  }
+}
