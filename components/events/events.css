@@ -258,3 +258,18 @@
   text-underline-offset: 3px;
   overflow-wrap: anywhere;
 }
+
+.e-guide {
+  margin: -8px 0 clamp(18px, 2.4vw, 26px);
+  font-size: var(--text-nav);
+  font-weight: 600;
+}
+
+.e-guide a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}

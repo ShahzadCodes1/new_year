@@ -18,9 +18,11 @@ const checked = '2026-11-11';
 /** SAMPLE CONTENT: see types.ts. Places to stay, prices and booking patterns in all three guides are stand-ins. */
 export const spaBreaks: BreaksGuide = {
   path: '/breaks/spa/',
+  subject: 'New Year’s Eve spa breaks',
+  imageAlt: 'Steam rising from an outdoor spa pool in a frosted garden at sunrise',
   title: 'New Year spa breaks',
-  metaTitle: `New Year spa breaks ${site.season.eve}: where to go, what is included and when to book`,
-  description: 'New Year spa breaks in the UK: country houses, lochside hotels and city spas, with what a package includes, what it costs and when to book.',
+  metaTitle: `New Year’s Eve spa breaks UK ${site.season.eve}: what is included`,
+  description: 'New Year’s Eve spa breaks in the UK: country houses, lochside hotels and city spas, what a package includes, what it costs and when to book.',
   standfirst: 'Hot water, cold air and nothing booked but dinner. The good ones are quiet on the first morning; the others have a queue for the pool.',
   crumbs: trail,
   checked,
@@ -68,9 +70,11 @@ export const spaBreaks: BreaksGuide = {
 
 export const couplesBreaks: BreaksGuide = {
   path: '/breaks/couples/',
+  subject: 'New Year’s Eve breaks for couples',
+  imageAlt: 'A couple wrapped in a blanket on a cottage doorstep, looking out over a frosted garden',
   title: 'New Year breaks for couples',
-  metaTitle: `New Year breaks for couples ${site.season.eve}: cottages, inns and quiet hotels`,
-  description: 'New Year breaks for two: cottages, small inns and quiet hotels in the UK, with what each costs, what midnight is like and when to book.',
+  metaTitle: `New Year’s Eve breaks for couples UK ${site.season.eve}`,
+  description: 'New Year’s Eve breaks for couples in the UK: cottages for two, small inns and quiet hotels, with what midnight is like, what they cost and when to book.',
   standfirst: 'Two days with nobody else’s plans in them. The best places for two are small, and the small ones go first.',
   crumbs: trail,
   checked,
@@ -118,9 +122,11 @@ export const couplesBreaks: BreaksGuide = {
 
 export const cruiseBreaks: BreaksGuide = {
   path: '/breaks/cruises/',
+  subject: 'New Year’s Eve cruises',
+  imageAlt: 'The deck of a ship at sea at dawn, with loungers and a coastline in the distance',
   title: 'New Year cruises',
-  metaTitle: `New Year cruises ${site.season.eve}: where they sail, what they cost and when to book`,
-  description: 'New Year cruises from the UK: the Canary Islands, northern cities and rivers, with what is included, what it costs and when to book.',
+  metaTitle: `New Year’s Eve cruises ${site.season.eve} from the UK: where and when`,
+  description: 'New Year’s Eve cruises from the UK: the Canary Islands, northern cities and rivers, with what is included, what it costs and when to book.',
   standfirst: 'Midnight at sea, and the washing-up is somebody else’s. Choose the ship for where it will be at twelve, not for where it starts.',
   crumbs: trail,
   checked,

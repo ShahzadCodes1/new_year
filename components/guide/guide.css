@@ -552,3 +552,24 @@
     transform: translateY(22px);
   }
 }
+
+/* A verified page's sources, at its foot. */
+.g-sources {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.g-sources a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* The way on from a block: a link to the page that has the rest. */
+.g-more {
+  margin: clamp(20px, 3vw, 32px) 0 0;
+  font-weight: 600;
+}

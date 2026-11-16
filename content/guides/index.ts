@@ -3,7 +3,7 @@ import { couplesBreaks, cruiseBreaks, spaBreaks } from './breaks-kinds';
 import { peakDistrictBreaks, scotlandBreaks } from './breaks-regions';
 import { chineseNewYear } from './chinese-new-year';
 import { edinburgh } from './edinburgh';
-import { eventsPage } from './events-page';
+import { cityEventsPages, eventsPage } from './events-page';
 import { celebrationsHub, citiesHub, practicalHub, worldHub } from './hubs';
 import { london } from './london';
 import { londonFireworks } from './london-fireworks';
@@ -50,6 +50,7 @@ export const pages: PageBase[] = [
   practicalHub,
   worldHub,
   eventsPage,
+  ...Object.values(cityEventsPages),
   bankHolidays,
   whatsOpen,
   transport,

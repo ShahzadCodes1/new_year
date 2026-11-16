@@ -4,51 +4,77 @@ import family from '@/assets/ways/family.jpg';
 import fireworks from '@/assets/ways/fireworks.jpg';
 import parties from '@/assets/ways/parties.jpg';
 import quiet from '@/assets/ways/quiet.jpg';
+import { events } from '@/content/events';
 import { site } from '@/lib/site';
 import type { CityGuide } from './types';
 
-/** SAMPLE CONTENT: see types.ts. Venue names, prices and times here are stand-ins. */
+const inLondon = events.filter((event) => event.city === 'London');
+/** One kind of London event, summed up from the verified events: how many, and the price range they publish. */
+const kind = (category: string) => {
+  const list = inLondon.filter((event) => event.category === category);
+  const prices = list.flatMap((event) => [event.priceFrom, event.priceTo]).filter((n): n is number => n !== null);
+  const range = prices.length ? `£${Math.min(...prices).toLocaleString('en-GB', { maximumFractionDigits: 0 })} to £${Math.max(...prices).toLocaleString('en-GB', { maximumFractionDigits: 0 })}` : 'Prices vary';
+  return { count: list.length, range };
+};
+const cruises = kind('cruise');
+const rooftops = kind('rooftop');
+const dinners_ = kind('dinner');
+const parties_ = kind('party');
+
+/**
+ * MIXED CONTENT. The midnight section and the ways to spend the night are verified: the fireworks facts come
+ * from the Mayor of London's event page (see london-fireworks.ts) and the event counts and prices from the
+ * events directory, both checked in November 2026. The places to stay and the getting-home section are still
+ * SAMPLE CONTENT (see types.ts): their names, prices and times are stand-ins.
+ */
 export const london: CityGuide = {
   path: '/london/',
+  place: 'London',
+  occasion: 'New Year’s Eve',
+  imageAlt: 'The London Eye lit purple beside the Thames at night, with the Houses of Parliament and Big Ben behind',
   title: 'New Year’s Eve in London',
-  metaTitle: `New Year’s Eve in London ${site.season.eve}: where to be at midnight`,
-  description: 'Where to be at midnight in London: the fireworks, the parties, the dinners, where to stay and how to get home.',
-  standfirst: 'The biggest display in the country, and the hardest to get close to. Book early or watch from further out: both make a good night.',
+  metaTitle: `New Year’s Eve in London ${site.season.eve}: events, fireworks, tips`,
+  description: 'New Year’s Eve in London: where to be at midnight, the fireworks and how tickets work, ticketed parties and cruises, where to stay and getting home.',
+  standfirst: 'The biggest display in the country is ticketed: £20 to £55 for a place on the river, sold only through Ticketmaster. Around it are dozens of ticketed parties, Thames cruises, rooftops and dinners, all listed with prices.',
   crumbs: [
     { label: 'Home', href: '/' },
     { label: 'Cities', href: '/cities/' },
   ],
-  checked: '2026-11-11',
+  checked: '2026-11-17',
+  sources: [
+    { label: 'London New Year’s Eve 2026, Mayor of London (london.gov.uk)', href: 'https://www.london.gov.uk/events/london-new-years-eve-2026' },
+    { label: 'Event prices and times: each event’s own page, linked from its card', href: '/london/events/' },
+  ],
   sample: true,
   image: picture,
   keyFacts: [
     { label: 'At midnight', value: 'Fireworks at the London Eye' },
-    { label: 'Riverside areas', value: 'Ticketed' },
-    { label: 'Best for', value: 'First-timers and groups' },
-    { label: 'Budget', value: '££ to ££££' },
+    { label: 'Fireworks tickets', value: '£20 to £55' },
+    { label: 'Ticketed events', value: `${inLondon.length} listed` },
+    { label: 'Viewing areas open', value: '8pm to 10.30pm' },
   ],
   moment: {
     body: [
-      'At midnight the bells ring out over the river and the display begins from barges moored beside the London Eye. It lasts about twelve minutes and is set to music, which you hear properly only inside the viewing areas.',
-      'The riverside between the bridges is closed to anyone without a ticket from early evening. Outside it the view narrows quickly: tall buildings and bends in the river hide most of the display from street level.',
-      'If you have no ticket, choose height over closeness. The hills to the north and south-east give a full view of the skyline, with room to stand and no barriers.',
+      'At midnight the Mayor of London’s fireworks are fired over the Thames at the London Eye. The event runs from 8pm to 12.30am, and its six riverside viewing areas, three on each bank, let people in from 8pm until 10.30pm.',
+      'The riverside is ticketed. Without a ticket you will not be let into the viewing areas, and Westminster, Golden Jubilee, Lambeth, Blackfriars and Waterloo bridges are closed to crossing before and after. Tickets cost £20 to £55 and are sold only through Ticketmaster, with £20 off for anyone with a London postcode.',
+      'If the river is not for you, most of the city’s New Year’s Eve is ticketed somewhere else: club nights, Thames cruises, rooftop parties and long dinners, listed below with what they cost.',
     ],
     facts: [
-      { label: 'Display begins', value: 'Midnight' },
-      { label: 'Lasts', value: 'About 12 minutes' },
-      { label: 'Viewing areas open', value: '8pm' },
-      { label: 'Last entry', value: '10.30pm' },
-      { label: 'Tickets', value: 'From £20' },
+      { label: 'Display', value: 'Midnight, at the London Eye' },
+      { label: 'Viewing areas open', value: '8pm (last entry 10.30pm)' },
+      { label: 'Event ends', value: '12.30am' },
+      { label: 'Tickets', value: '£20 to £55, Ticketmaster only' },
+      { label: 'Road closures', value: '2pm to about 6am' },
     ],
   },
   ways: {
-    lede: 'Five kinds of night. Pick the one that sounds like yours.',
+    lede: 'The kinds of night London does, with the number of ticketed events of each kind we have checked and the prices they publish.',
     picks: [
-      { kind: 'Fireworks', name: 'The riverside display', text: 'Ticketed viewing areas along the embankment, and the free hills further out.', price: 'From £20', note: 'Free from the hills', href: '/london/fireworks/', image: fireworks },
-      { kind: 'Parties', name: 'The Lantern Rooms', text: 'Three floors, two dance floors and a roof terrace opened for the countdown.', price: 'From £45', note: 'Shoreditch', image: parties },
-      { kind: 'Dinners and cruises', name: 'A midnight dinner cruise', text: 'Four courses on the river, moored in sight of the display when the bells go.', price: 'From £260', note: 'Boards at 7pm', image: dinners },
-      { kind: 'Family', name: 'The early countdown', text: 'A daytime programme with its own countdown at 6pm, so small children see one too.', price: 'Free', note: 'South Bank', image: family },
-      { kind: 'A quiet one', name: 'The Old Wharf Inn', text: 'A fire, a short menu and a room that keeps the television off until five to twelve.', price: 'Tables from £60', note: 'Rotherhithe', image: quiet },
+      { kind: 'Fireworks', name: 'The official fireworks', text: 'Six fenced viewing areas on both banks of the Thames, each with its own gates. The only way to see the display from the river.', price: '£20 to £55', note: 'Ticketmaster only', href: '/london/fireworks/', image: fireworks },
+      { kind: 'Parties', name: 'Club nights and parties', text: `${parties_.count} ticketed parties, from masked balls and disco nights to drum and bass, most running until 3am or 4am.`, price: parties_.range, note: 'Listed with times', href: '/london/events/', image: parties },
+      { kind: 'Dinners and cruises', name: 'Thames cruises and dinners', text: `${cruises.count} New Year’s Eve cruises on the Thames and ${dinners_.count} ticketed dinners, from a curry house to the Ritz.`, price: cruises.range, note: 'Cruises', href: '/london/events/', image: dinners },
+      { kind: 'Rooftops', name: 'Rooftop parties', text: `${rooftops.count} ticketed rooftop events in the City and beyond, several with a view of the skyline at midnight.`, price: rooftops.range, note: 'Standing and tables', href: '/london/events/', image: family },
+      { kind: 'Something different', name: 'Concerts, comedy and a museum', text: 'Candlelit concerts, comedy nights, a ceilidh and a party at the Natural History Museum, each with tickets on sale.', price: 'From £11', note: 'Listed with ages', href: '/london/events/', image: quiet },
     ],
   },
   stay: {
@@ -73,9 +99,10 @@ export const london: CityGuide = {
     ],
   },
   faq: [
-    { q: 'Can I watch the fireworks without a ticket?', a: 'Not from the riverside. From the hills further out you can, for free, and you will see the whole skyline rather than part of the display.' },
-    { q: 'What time should I arrive?', a: 'With a ticket, soon after the viewing areas open. Without one, be on your hill by ten: the good spots go early.' },
-    { q: 'Is it suitable for children?', a: 'The riverside is crowded and loud and the wait is long. The early countdown or a hill with space to sit suits children better.' },
-    { q: 'What if it rains?', a: 'The display goes ahead in rain. Bring a waterproof rather than an umbrella, which nobody behind you will thank you for.' },
+    { q: 'Can I watch the London fireworks without a ticket?', a: 'Not from the riverside. The organiser says people without tickets will not be let into the viewing areas, and it does not publish places to watch from outside the event.' },
+    { q: 'How much are tickets for the London fireworks?', a: '£20 to £55 plus a booking fee, sold only through Ticketmaster. A London postcode takes £20 off each ticket.' },
+    { q: 'What time should I arrive?', a: 'The viewing areas open at 8pm and let people in until 10.30pm. The display is at midnight.' },
+    { q: 'Is the riverside suitable for children?', a: 'The organiser says the event is not suitable for young children, everyone needs a ticket whatever their age, and under-16s must be with an adult. Several ticketed parties and cruises welcome families: their age rules are on each event.' },
+    { q: 'What New Year’s Eve events are there in London?', a: 'We list every ticketed London event we have checked, from club nights and Thames cruises to rooftops, dinners, concerts and comedy, each with its price, times and age limit.' },
   ],
 };

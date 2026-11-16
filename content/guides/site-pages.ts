@@ -7,8 +7,8 @@ import type { AnswerPage, ProsePage } from './types';
 export const bankHolidays: AnswerPage = {
   path: '/bank-holidays/',
   title: 'Is New Year’s Day a bank holiday?',
-  metaTitle: 'Is New Year’s Day 2027 a bank holiday? Christmas and New Year dates',
-  description: 'The Christmas and New Year bank holidays for England, Wales, Scotland and Northern Ireland, with the days that move and why.',
+  metaTitle: 'Is New Year’s Day a bank holiday? UK dates 2026 to 2027',
+  description: 'Yes: New Year’s Day 2027 is a bank holiday across the UK, and Scotland has 4 January too. Christmas, Boxing Day and New Year dates, from GOV.UK.',
   standfirst: 'Yes, everywhere in the UK. Scotland has a second day as well, and New Year’s Eve is not one.',
   crumbs: [
     { label: 'Home', href: '/' },
@@ -31,6 +31,14 @@ export const bankHolidays: AnswerPage = {
     ],
   },
   source: { label: 'UK bank holidays, GOV.UK', href: 'https://www.gov.uk/bank-holidays' },
+  // Each answer is in the GOV.UK list above: the days on it are bank holidays, and days missing from it are not.
+  faq: [
+    { q: 'Is New Year’s Eve a bank holiday?', a: 'No. 31 December is not a bank holiday anywhere in the UK, though many shops and offices close early.' },
+    { q: 'Is Christmas Eve a bank holiday?', a: 'No. 24 December is not a bank holiday in any part of the UK. Christmas Day and Boxing Day are.' },
+    { q: 'Is Boxing Day a bank holiday?', a: 'Yes, everywhere in the UK. In 2026 Boxing Day falls on a Saturday, so the bank holiday is Monday 28 December.' },
+    { q: 'Is 2 January a bank holiday?', a: 'In Scotland only. In 2027 it falls on a Saturday, so Scotland’s holiday moves to Monday 4 January. England, Wales and Northern Ireland have no holiday on 2 January.' },
+    { q: 'How many bank holidays are there over Christmas and New Year?', a: 'Three in England, Wales and Northern Ireland (25 and 28 December 2026, 1 January 2027) and four in Scotland, which adds 4 January 2027.' },
+  ],
   related: [
     { label: 'What is open on New Year’s Day?', text: 'Shops, pharmacies, banks and pubs on the first.', href: '/whats-open/' },
     { label: 'New Year breaks', text: 'Four days off in a row, in Scotland. What to do with them.', href: '/breaks/' },

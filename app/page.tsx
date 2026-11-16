@@ -18,6 +18,20 @@ import { ScrollLine } from '@/experience/ScrollLine';
 import { Still } from '@/experience/Still';
 import { isBuilt } from '@/lib/routes';
 import { site } from '@/lib/site';
+import type { Metadata } from 'next';
+
+// UK first: the searches the home page answers are New Year's Eve in the UK, its events and its fireworks.
+const homeTitle = `New Year’s Eve in the UK ${site.season.eve}: events, fireworks, breaks`;
+const homeDescription =
+  'Your guide to New Year’s Eve across the UK: where to be at midnight in each city, ticketed events, fireworks and breaks, plus how the world celebrates New Year.';
+
+export const metadata: Metadata = {
+  title: { absolute: homeTitle },
+  description: homeDescription,
+  alternates: { canonical: '/' },
+  // The home page's sharing tags replace the site's, so the ones every page keeps are repeated.
+  openGraph: { type: 'website', siteName: site.name, locale: 'en_GB', title: homeTitle, description: homeDescription, url: '/', images: [site.sharingImage] },
+};
 
 // Who publishes the site and what it is. Nothing here that is not plainly true of the page.
 const structuredData = {

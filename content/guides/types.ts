@@ -56,6 +56,10 @@ export interface PageBase {
   /** True for stand-in content. False only for pages built from verified facts, each with its source. */
   sample: boolean;
   image?: StaticImageData;
+  /** What the picture shows, for screen readers and image search. Left out where the picture is only mood. */
+  imageAlt?: string;
+  /** Where the page's facts come from, listed at its foot. Verified pages only. */
+  sources?: { label: string; href: string }[];
   /** A handful of facts shown on the card in front of the picture. */
   keyFacts?: Fact[];
 }
@@ -81,6 +85,10 @@ export interface Picks {
 
 /** The city guide: the plan's seven blocks, in its order. */
 export interface CityGuide extends PageBase {
+  /** The city, as the events data names it: 'London'. Section headings and the events block use it. */
+  place: string;
+  /** What the night is called there: 'New Year’s Eve', or 'Hogmanay' in Scotland. */
+  occasion: string;
   moment: Passage;
   ways: Picks;
   stay: Picks;
@@ -90,6 +98,8 @@ export interface CityGuide extends PageBase {
 
 /** An event or experience: fireworks, a street party. */
 export interface EventGuide extends PageBase {
+  /** How headings name the event, in lower case: 'the London fireworks'. */
+  subject: string;
   what: Passage;
   watch: Picks;
   tickets: Passage;
@@ -99,6 +109,8 @@ export interface EventGuide extends PageBase {
 
 /** A breaks roundup: the hub, a region, a kind of break. */
 export interface BreaksGuide extends PageBase {
+  /** How headings name the breaks, plural and in lower case: 'New Year’s Eve spa breaks'. */
+  subject: string;
   picks: Picks;
   choose: { heading: string; text: string }[];
   booking: Passage;
@@ -107,6 +119,8 @@ export interface BreaksGuide extends PageBase {
 
 /** A celebration: Lunar New Year, Hogmanay, Nowruz. */
 export interface CelebrationGuide extends PageBase {
+  /** The celebration's name as headings use it: 'Diwali'. */
+  name: string;
   what: Passage;
   marked: Picks;
   where: Picks;
@@ -122,12 +136,17 @@ export interface AnswerPage extends PageBase {
   groups?: Group[];
   /** Where the facts come from. Left out only where the page states no fact that needs one. */
   source?: { label: string; href: string };
+  /** Short questions answered on the page, each with a verified answer. */
+  faq?: Question[];
   related: { label: string; text: string; href: string }[];
 }
 
 /** A hub: the pages below it, in headed sets of cards. */
 export interface HubPage extends PageBase {
+  /** A few paragraphs of guidance before the cards. */
+  intro?: string[];
   groups: Group[];
+  faq?: Question[];
 }
 
 /** A site page: about, contact, privacy, disclosure. */

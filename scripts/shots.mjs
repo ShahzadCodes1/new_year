@@ -13,7 +13,7 @@ const out = stills ? join(dirname(fileURLToPath(import.meta.url)), '..', 'public
 if (!out) throw new Error('Usage: node scripts/shots.mjs <outDir> | --stills | --audit <outDir> [baseUrl]');
 const base = process.argv.slice(2).find((a) => a.startsWith('http')) ?? 'http://localhost:3000/';
 // The home page, the style guide, and every reading page.
-const PAGES = ['', 'styleguide/', 'world/', 'events/', 'cities/', 'celebrations/', 'practical/', 'whats-open/', 'transport/', 'say-it/', 'london/', 'london/fireworks/', 'manchester/', 'manchester/fireworks/', 'birmingham/', 'liverpool/', 'newcastle/', 'glasgow/', 'hogmanay/edinburgh/', 'breaks/', 'breaks/scotland/', 'breaks/peak-district/', 'breaks/spa/', 'breaks/couples/', 'breaks/cruises/', 'chinese-new-year/', 'hogmanay/', 'nowruz/', 'songkran/', 'islamic-new-year/', 'rosh-hashanah/', 'diwali/', 'bank-holidays/', 'about/', 'contact/', 'privacy/', 'disclosure/'];
+const PAGES = ['', 'styleguide/', 'world/', 'events/', 'london/events/', 'cities/', 'celebrations/', 'practical/', 'whats-open/', 'transport/', 'say-it/', 'london/', 'london/fireworks/', 'manchester/', 'manchester/fireworks/', 'birmingham/', 'liverpool/', 'newcastle/', 'glasgow/', 'hogmanay/edinburgh/', 'breaks/', 'breaks/scotland/', 'breaks/peak-district/', 'breaks/spa/', 'breaks/couples/', 'breaks/cruises/', 'chinese-new-year/', 'hogmanay/', 'nowruz/', 'songkran/', 'islamic-new-year/', 'rosh-hashanah/', 'diwali/', 'bank-holidays/', 'about/', 'contact/', 'privacy/', 'disclosure/'];
 const WIDTHS = [320, 390, 768, 1024, 1440, 1920];
 mkdirSync(out, { recursive: true });
 

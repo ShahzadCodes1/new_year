@@ -1,3 +1,4 @@
+import { site } from '@/lib/site';
 import type { AnswerPage } from './types';
 
 const trail = [
@@ -14,8 +15,8 @@ const checked = '2026-11-11';
 export const whatsOpen: AnswerPage = {
   path: '/whats-open/',
   title: 'What is open on New Year’s Day?',
-  metaTitle: 'What is open on New Year’s Day 2027? Shops, supermarkets, pubs and banks',
-  description: 'What is open on New Year’s Eve and New Year’s Day in the UK: supermarkets, pharmacies, banks, pubs, shopping centres and attractions.',
+  metaTitle: 'What’s open on New Year’s Day 2027? Shops, pubs, banks',
+  description: 'What is open on New Year’s Day in the UK: supermarkets, pharmacies, banks, pubs and attractions, and what closes early on New Year’s Eve.',
   standfirst: 'Less than usual, and it varies branch by branch. Buy what you need on the 30th and treat anything open on the first as a bonus.',
   crumbs: trail,
   checked,
@@ -61,8 +62,8 @@ export const whatsOpen: AnswerPage = {
 export const transport: AnswerPage = {
   path: '/transport/',
   title: 'Getting home after midnight',
-  metaTitle: 'Getting home on New Year’s Eve 2026: trains, night buses and taxis, city by city',
-  description: 'How to get home after midnight on New Year’s Eve in the UK: last trains, trams, night buses and taxis, with a summary for each city.',
+  metaTitle: `Getting home on New Year’s Eve ${site.season.eve}: trains, Tube, buses`,
+  description: 'Getting home after midnight on New Year’s Eve: trains, the Tube, trams, night buses and taxis, city by city across the UK.',
   standfirst: 'The night ends when the last train does, unless you have planned for it. Decide how you are getting home before you go out, and tell the people you are with.',
   crumbs: trail,
   checked,
@@ -107,8 +108,8 @@ export const transport: AnswerPage = {
 export const sayIt: AnswerPage = {
   path: '/say-it/',
   title: 'How do you say Happy New Year?',
-  metaTitle: 'How to say Happy New Year in Welsh, Gaelic, Irish and other languages',
-  description: 'How to say Happy New Year in Welsh, Scottish Gaelic, Irish and Scots, across Europe, and at the New Years kept on other dates.',
+  metaTitle: 'Happy New Year in Welsh, Gaelic, Irish and more',
+  description: 'How to say Happy New Year in Welsh, Scottish Gaelic, Irish and Scots, across Europe, and for Chinese New Year, Nowruz, Diwali and other New Years.',
   standfirst: '“Happy New Year” is understood everywhere in Britain. Saying it in somebody’s own language is better, and takes three words.',
   crumbs: trail,
   checked,

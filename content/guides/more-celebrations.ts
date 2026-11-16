@@ -21,9 +21,10 @@ const checked = '2026-11-11';
  */
 export const hogmanay: CelebrationGuide = {
   path: '/hogmanay/',
+  name: 'Hogmanay',
   title: 'Hogmanay',
-  metaTitle: `Hogmanay ${site.season.eve}: what it is, where to go and what the customs mean`,
-  description: 'Hogmanay, Scotland’s New Year: what it is, how it is kept, where to spend it and what first-footing, the bells and Auld Lang Syne mean.',
+  metaTitle: `Hogmanay ${site.season.eve}: what it means and where to celebrate`,
+  description: 'What Hogmanay is and what it means, its traditions from first-footing to Auld Lang Syne, and where to celebrate it in Scotland this year.',
   standfirst: 'Scotland’s New Year is older, longer and louder than anyone else’s. The street party is the famous part; what happens after the bells is the better one.',
   crumbs: home,
   checked,
@@ -80,9 +81,10 @@ export const hogmanay: CelebrationGuide = {
 
 export const nowruz: CelebrationGuide = {
   path: '/nowruz/',
+  name: 'Nowruz',
   title: 'Nowruz in the UK',
-  metaTitle: 'Nowruz 2027 in the UK: the date, the haft-sin table and where it is kept',
-  description: 'Nowruz, the Persian New Year, in the UK: when it falls, what the haft-sin table means, how the thirteen days are kept and where to join in.',
+  metaTitle: 'Nowruz 2027: when is Persian New Year, and UK events',
+  description: 'Nowruz 2027 falls on Saturday 20 March, at the spring equinox. What the Persian New Year means, the haft-sin table, and where it is kept in the UK.',
   standfirst: 'The Persian New Year begins at the exact moment spring does. It has been kept for some three thousand years, and its table is the best-looking in any calendar.',
   crumbs: home,
   checked,
@@ -139,9 +141,10 @@ export const nowruz: CelebrationGuide = {
 
 export const songkran: CelebrationGuide = {
   path: '/songkran/',
+  name: 'Songkran',
   title: 'Songkran in the UK',
-  metaTitle: 'Songkran 2027 in the UK: the dates, what the water means and where to join in',
-  description: 'Songkran, the Thai New Year, in the UK: when it falls, what the water means, how the three days are kept and where the temple fairs are.',
+  metaTitle: 'Songkran 2027: dates of Thai New Year and UK events',
+  description: 'Songkran, the Thai New Year, runs from 13 to 15 April 2027. What the water means, how it is kept, and where to join temple celebrations in the UK.',
   standfirst: 'Thailand’s New Year is a blessing first and a water fight second. In Britain it is mostly the first, with the second kept for a temple garden on a cold April weekend.',
   crumbs: home,
   checked,
@@ -198,9 +201,10 @@ export const songkran: CelebrationGuide = {
 
 export const islamicNewYear: CelebrationGuide = {
   path: '/islamic-new-year/',
+  name: 'Islamic New Year',
   title: 'Islamic New Year in the UK',
-  metaTitle: 'Islamic New Year 2027 in the UK: the date, what it marks and how it is kept',
-  description: 'Islamic New Year in the UK: when the first of Muharram falls, why the date depends on the moon, what it marks and how it is kept.',
+  metaTitle: 'When is Islamic New Year 2027? Date and meaning',
+  description: 'Islamic New Year 2027 is expected around Sunday 6 June, depending on the moon. What the first of Muharram marks and how it is kept in the UK.',
   standfirst: 'The Islamic year begins quietly. There are no fireworks and no countdown: the first of Muharram is a day for reflection, and for most people an ordinary working one.',
   crumbs: home,
   checked,
@@ -257,9 +261,10 @@ export const islamicNewYear: CelebrationGuide = {
 
 export const roshHashanah: CelebrationGuide = {
   path: '/rosh-hashanah/',
+  name: 'Rosh Hashanah',
   title: 'Rosh Hashanah in the UK',
-  metaTitle: 'Rosh Hashanah 2027 in the UK: the dates, the shofar and what the customs mean',
-  description: 'Rosh Hashanah, the Jewish New Year, in the UK: when it begins and ends, what the shofar and the apples and honey mean, and how it is kept.',
+  metaTitle: 'Rosh Hashanah 2027: dates, meaning and UK customs',
+  description: 'Rosh Hashanah 2027 begins at sunset on Friday 1 October. What the Jewish New Year means, the shofar, apples and honey, and how it is kept in the UK.',
   standfirst: 'The Jewish New Year is two days of prayer, long lunches and honey. It opens ten days of taking stock, which end on the most solemn day of the year.',
   crumbs: home,
   checked,
@@ -316,9 +321,10 @@ export const roshHashanah: CelebrationGuide = {
 
 export const diwali: CelebrationGuide = {
   path: '/diwali/',
+  name: 'Diwali',
   title: 'Diwali in the UK',
-  metaTitle: 'Diwali 2027 in the UK: the date, the new year after it and where to see the lights',
-  description: 'Diwali in the UK: when it falls, why a new year begins the morning after, how the five days are kept and where the lights are best.',
+  metaTitle: 'When is Diwali 2027? Date and where to celebrate in the UK',
+  description: 'Diwali 2027 falls on Friday 29 October. What the festival of lights means, the new year that follows it, and where to see the lights in the UK.',
   standfirst: 'Five days of lamps, sweets and fireworks. For many Gujarati and Jain families the new year begins the morning after the main night, with new clothes and a clean ledger.',
   crumbs: home,
   checked,

@@ -10,9 +10,12 @@ import type { CityGuide, EventGuide } from './types';
 /** SAMPLE CONTENT: see types.ts. Venue names, prices and times here are stand-ins. */
 export const manchester: CityGuide = {
   path: '/manchester/',
+  place: 'Manchester',
+  occasion: 'New Year’s Eve',
+  imageAlt: 'Manchester city centre at night from above, with a curved station roof lit blue and towers behind',
   title: 'New Year’s Eve in Manchester',
-  metaTitle: `New Year’s Eve in Manchester ${site.season.eve}: where to be at midnight`,
-  description: 'Where to be at midnight in Manchester: the bars and clubs, the fireworks, the dinners, where to stay and how to get home.',
+  metaTitle: `New Year’s Eve in Manchester ${site.season.eve}: events and parties`,
+  description: 'New Year’s Eve in Manchester: where midnight happens, ticketed parties and club nights, where to stay and how to get home by tram.',
   standfirst: 'A night out first and a countdown second. The city is at its best indoors, loud, and moving between three places before midnight.',
   crumbs: [
     { label: 'Home', href: '/' },
@@ -83,9 +86,10 @@ export const manchester: CityGuide = {
 /** SAMPLE CONTENT: see types.ts. */
 export const manchesterFireworks: EventGuide = {
   path: '/manchester/fireworks/',
+  subject: 'the Manchester fireworks',
   title: 'Manchester’s New Year’s Eve fireworks',
   metaTitle: `Manchester New Year’s Eve fireworks ${site.season.eve}: where to watch`,
-  description: 'The Manchester fireworks at midnight: what the display is, the best places to watch it from, and how to get home afterwards.',
+  description: 'The Manchester New Year’s Eve fireworks: where the display is, where to watch it from and how to get home afterwards.',
   standfirst: 'Six minutes, free, and best treated as the moment you step outside. The square in front of the town hall has the clearest view.',
   crumbs: [
     { label: 'Home', href: '/' },

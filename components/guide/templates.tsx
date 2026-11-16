@@ -1,6 +1,10 @@
+import { EventCard } from '@/components/events/EventsDirectory';
 import { TextLink } from '@/components/ui/TextLink';
+import { cityEventsPath, events as allEvents, eventCategories } from '@/content/events';
 import type { AnswerPage, BreaksGuide, CelebrationGuide, CityGuide, EventGuide, HubPage, ProsePage } from '@/content/guides/types';
-import { Block, Cards, Faq, Guide, Passage, Points, Prose } from './blocks';
+import { Block, Cards, Faq, Guide, Passage, Points, Prose, longDate } from './blocks';
+
+const capital = (text: string) => text.charAt(0).toUpperCase() + text.slice(1);
 
 /**
  * The seven templates. Each takes a page's data and lays it out in a fixed order, so every page of a kind
@@ -8,30 +12,74 @@ import { Block, Cards, Faq, Guide, Passage, Points, Prose } from './blocks';
  * block for the practical part.
  */
 
-/** A city guide: the plan's seven blocks. (The verdict opens the page; "last checked" closes it.) */
+/**
+ * The real ticketed events in a city, from the events directory. A city guide shows them so that its
+ * listings are verified ones; a large city shows a selection and links to its own events page.
+ */
+function CityEvents({ place, occasion }: { place: string; occasion: string }) {
+  const here = allEvents.filter((event) => event.city === place);
+  if (here.length === 0) return null;
+  const page = cityEventsPath(place);
+  // One of each kind, in the directory's order, so a selection shows the range rather than six parties.
+  const shown = page
+    ? eventCategories.map((category) => here.find((event) => event.category === category.id)).filter((event) => event !== undefined).slice(0, 6)
+    : here;
+  const checked = here.map((event) => event.checked).sort().at(-1)!;
+  return (
+    <Block
+      id="events"
+      tone="deep"
+      title={`Ticketed ${occasion} events in ${place}`}
+      lede={`Real events with paid tickets, each checked on the organiser’s or seller’s own page on ${longDate(checked)}. Prices and times can change, so confirm on the seller’s page before you pay.`}
+    >
+      <ul className="e-list">
+        {shown.map((event) => (
+          <li key={event.id}>
+            <EventCard event={event} />
+          </li>
+        ))}
+      </ul>
+      <p className="g-more">
+        {page ? (
+          <TextLink href={page}>
+            All {here.length} ticketed events in {place}
+          </TextLink>
+        ) : (
+          <TextLink href="/events/">New Year’s Eve events in other UK cities</TextLink>
+        )}
+      </p>
+    </Block>
+  );
+}
+
+/** A city guide: the plan's seven blocks, with the city's verified events after the ways to spend the night. */
 export function CityGuideTemplate({ guide }: { guide: CityGuide }) {
+  const { place, occasion } = guide;
+  const hasEvents = allEvents.some((event) => event.city === place);
   const contents = [
-    { id: 'midnight', label: 'The midnight moment' },
-    { id: 'ways', label: 'Ways to spend the night' },
+    { id: 'midnight', label: 'Midnight' },
+    { id: 'ways', label: 'Ways to spend it' },
+    ...(hasEvents ? [{ id: 'events', label: 'Ticketed events' }] : []),
     { id: 'stay', label: 'Where to stay' },
-    { id: 'logistics', label: 'Getting there and home' },
+    { id: 'logistics', label: 'Getting home' },
     { id: 'questions', label: 'Questions' },
   ];
   return (
     <Guide page={guide} contents={contents}>
-      <Block id="midnight" title="The midnight moment">
+      <Block id="midnight" title={`Where to be at midnight in ${place}`}>
         <Passage {...guide.moment} />
       </Block>
-      <Block id="ways" tone="deep" title="Ways to spend the night" lede={guide.ways.lede}>
+      <Block id="ways" tone={hasEvents ? 'night' : 'deep'} title={`Ways to spend ${occasion} in ${place}`} lede={guide.ways.lede}>
         <Cards picks={guide.ways.picks} />
       </Block>
-      <Block id="stay" title="Where to stay" lede={guide.stay.lede}>
+      <CityEvents place={place} occasion={occasion} />
+      <Block id="stay" title={`Where to stay in ${place} for ${occasion}`} lede={guide.stay.lede}>
         <Cards picks={guide.stay.picks} />
       </Block>
-      <Block id="logistics" tone="light" title="Getting there and getting home">
+      <Block id="logistics" tone="light" title={`Getting to ${place} and home after midnight`}>
         <Passage {...guide.logistics} />
       </Block>
-      <Block id="questions" title="Questions people ask">
+      <Block id="questions" title={`${occasion} in ${place}: questions people ask`}>
         <Faq questions={guide.faq} />
       </Block>
     </Guide>
@@ -49,19 +97,19 @@ export function EventGuideTemplate({ guide }: { guide: EventGuide }) {
   ];
   return (
     <Guide page={guide} contents={contents}>
-      <Block id="what" title="What it is, and when">
+      <Block id="what" title={`${capital(guide.subject)}: when and what happens`}>
         <Passage {...guide.what} />
       </Block>
-      <Block id="watch" tone="deep" title="Where to watch" lede={guide.watch.lede}>
+      <Block id="watch" tone="deep" title={`Where to watch ${guide.subject}`} lede={guide.watch.lede}>
         <Cards picks={guide.watch.picks} />
       </Block>
-      <Block id="tickets" title="Tickets">
+      <Block id="tickets" title={`Tickets and prices for ${guide.subject}`}>
         <Passage {...guide.tickets} />
       </Block>
-      <Block id="logistics" tone="light" title="Getting there and getting home">
+      <Block id="logistics" tone="light" title={`Getting to and from ${guide.subject}`}>
         <Passage {...guide.logistics} />
       </Block>
-      <Block id="questions" title="Questions people ask">
+      <Block id="questions" title={`Questions about ${guide.subject}`}>
         <Faq questions={guide.faq} />
       </Block>
     </Guide>
@@ -78,16 +126,16 @@ export function BreaksGuideTemplate({ guide }: { guide: BreaksGuide }) {
   ];
   return (
     <Guide page={guide} contents={contents}>
-      <Block id="picks" title="Picks by type" lede={guide.picks.lede}>
+      <Block id="picks" title={`${capital(guide.subject)}: our picks`} lede={guide.picks.lede}>
         <Cards picks={guide.picks.picks} />
       </Block>
-      <Block id="choose" tone="deep" title="How to choose">
+      <Block id="choose" tone="deep" title={`Choosing ${guide.subject}`}>
         <Points points={guide.choose} />
       </Block>
-      <Block id="booking" tone="light" title="Booking notes">
+      <Block id="booking" tone="light" title={`When to book ${guide.subject}`}>
         <Passage {...guide.booking} />
       </Block>
-      <Block id="questions" title="Questions people ask">
+      <Block id="questions" title={`${capital(guide.subject)}: questions people ask`}>
         <Faq questions={guide.faq} />
       </Block>
     </Guide>
@@ -105,19 +153,19 @@ export function CelebrationGuideTemplate({ guide }: { guide: CelebrationGuide })
   ];
   return (
     <Guide page={guide} contents={contents}>
-      <Block id="what" title="What it is, and when">
+      <Block id="what" title={`When is ${guide.name}, and what is it?`}>
         <Passage {...guide.what} />
       </Block>
-      <Block id="marked" tone="deep" title="How it is marked" lede={guide.marked.lede}>
+      <Block id="marked" tone="deep" title={`How ${guide.name} is celebrated`} lede={guide.marked.lede}>
         <Cards picks={guide.marked.picks} />
       </Block>
-      <Block id="where" title="Where in the UK" lede={guide.where.lede}>
+      <Block id="where" title={`Where to celebrate ${guide.name} in the UK`} lede={guide.where.lede}>
         <Cards picks={guide.where.picks} />
       </Block>
-      <Block id="traditions" tone="light" title="Traditions">
+      <Block id="traditions" tone="light" title={`${guide.name} traditions`}>
         <Points points={guide.traditions} />
       </Block>
-      <Block id="questions" title="Questions people ask">
+      <Block id="questions" title={`${guide.name}: questions people ask`}>
         <Faq questions={guide.faq} />
       </Block>
     </Guide>
@@ -145,8 +193,13 @@ export function AnswerPageTemplate({ page }: { page: AnswerPage }) {
           <Cards picks={group.picks} />
         </Block>
       ))}
+      {page.faq && page.faq.length > 0 && (
+        <Block id="questions" tone={groups.length % 2 ? 'deep' : 'night'} title="Questions people ask">
+          <Faq questions={page.faq} />
+        </Block>
+      )}
       {page.related.length > 0 && (
-        <Block id="related" tone={groups.length % 2 ? 'night' : 'deep'} title="Related">
+        <Block id="related" tone={(groups.length + (page.faq?.length ? 1 : 0)) % 2 ? 'night' : 'deep'} title="Related">
           <Cards picks={page.related.map((r) => ({ name: r.label, text: r.text, href: r.href }))} />
         </Block>
       )}
@@ -158,11 +211,21 @@ export function AnswerPageTemplate({ page }: { page: AnswerPage }) {
 export function HubPageTemplate({ page }: { page: HubPage }) {
   return (
     <Guide page={page}>
+      {page.intro && page.intro.length > 0 && (
+        <Block id="intro" title="In short">
+          <Prose paragraphs={page.intro} />
+        </Block>
+      )}
       {page.groups.map((group, i) => (
-        <Block key={group.id} id={group.id} tone={i % 2 ? 'deep' : 'night'} title={group.title} lede={group.lede}>
+        <Block key={group.id} id={group.id} tone={(i + (page.intro?.length ? 1 : 0)) % 2 ? 'deep' : 'night'} title={group.title} lede={group.lede}>
           <Cards picks={group.picks} />
         </Block>
       ))}
+      {page.faq && page.faq.length > 0 && (
+        <Block id="questions" title="Questions people ask">
+          <Faq questions={page.faq} />
+        </Block>
+      )}
     </Guide>
   );
 }

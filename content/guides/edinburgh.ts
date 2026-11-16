@@ -10,9 +10,12 @@ import type { CityGuide } from './types';
 /** SAMPLE CONTENT: see types.ts. Venue names, prices and times here are stand-ins. */
 export const edinburgh: CityGuide = {
   path: '/hogmanay/edinburgh/',
+  place: 'Edinburgh',
+  occasion: 'Hogmanay',
+  imageAlt: 'Edinburgh’s Old Town at night: the castle on its rock, the Balmoral clock tower and the Scott Monument',
   title: 'Hogmanay in Edinburgh',
-  metaTitle: `Edinburgh’s Hogmanay ${site.season.eve}: the street party, the fireworks and where to stay`,
-  description: 'Hogmanay in Edinburgh: the torchlight procession, the street party, the fireworks from the castle, where to stay and how to get home.',
+  metaTitle: `Edinburgh’s Hogmanay ${site.season.eve}: street party, tickets, events`,
+  description: 'Edinburgh’s Hogmanay: the street party, the concert in the gardens and the castle fireworks, ticketed Hogmanay events, where to stay.',
   standfirst: 'Hogmanay is a festival, not a night. Come for three days, book in the summer, and bring more layers than you think you need.',
   crumbs: [
     { label: 'Home', href: '/' },

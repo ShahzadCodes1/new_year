@@ -14,9 +14,11 @@ const trail = [
 /** SAMPLE CONTENT: see types.ts. Places to stay, prices and booking patterns here are stand-ins. */
 export const scotlandBreaks: BreaksGuide = {
   path: '/breaks/scotland/',
+  subject: 'New Year breaks in Scotland',
+  imageAlt: 'Frost on a Scottish glen at dawn, with mist over a loch and snow on the mountains',
   title: 'New Year breaks in Scotland',
-  metaTitle: `New Year breaks in Scotland ${site.season.eve}: Hogmanay, the Highlands and when to book`,
-  description: 'New Year breaks in Scotland: Hogmanay in the cities, lodges in the Highlands and inns on the islands, with what each costs and when to book.',
+  metaTitle: `New Year breaks in Scotland ${site.season.eve}: Hogmanay and Highlands`,
+  description: 'New Year and Hogmanay breaks in Scotland: Edinburgh for the street party, Highland lodges and island inns, what each costs and when to book.',
   standfirst: 'Nobody does New Year better, and everybody knows it. Go for the party or go for the silence afterwards: trying for both in three days is how people come home tired.',
   crumbs: trail,
   checked: '2026-11-11',
@@ -65,9 +67,11 @@ export const scotlandBreaks: BreaksGuide = {
 /** SAMPLE CONTENT: see types.ts. */
 export const peakDistrictBreaks: BreaksGuide = {
   path: '/breaks/peak-district/',
+  subject: 'New Year breaks in the Peak District',
+  imageAlt: 'A walker on a frosted gritstone edge above a Peak District valley at sunrise',
   title: 'New Year in the Peak District',
-  metaTitle: `New Year in the Peak District ${site.season.eve}: cottages, inns and walks`,
-  description: 'New Year in the Peak District: stone villages, inns with fires and walks for New Year’s Day, with what a stay costs and when to book.',
+  metaTitle: `New Year in the Peak District ${site.season.eve}: cottages and inns`,
+  description: 'New Year in the Peak District: stone villages, inns with fires and walks for New Year’s Day, what a stay costs and when to book.',
   standfirst: 'Two hours from half of England and nothing like any of it. The best New Year here is a pub at midnight and a hill by ten the next morning.',
   crumbs: trail,
   checked: '2026-11-11',

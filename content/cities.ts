@@ -32,6 +32,7 @@ export const cities: City[] = [
     links: [
       { label: 'Read the London guide', href: '/london/' },
       { label: 'Fireworks in London', href: '/london/fireworks/' },
+      { label: 'New Year’s Eve events in London', href: '/london/events/' },
     ],
   },
   {

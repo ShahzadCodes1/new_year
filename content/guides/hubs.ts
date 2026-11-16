@@ -24,9 +24,10 @@ const cityGuide: Record<string, CityGuide> = { london, manchester, birmingham, l
 
 export const citiesHub: HubPage = {
   path: '/cities/',
+  imageAlt: 'A crowd watching fireworks over a river at night, phones raised',
   title: 'New Year’s Eve, city by city',
-  metaTitle: `New Year’s Eve ${site.season.eve}, city by city: where to be at midnight`,
-  description: 'New Year’s Eve city by city, starting with the UK: London, Manchester, Birmingham, Liverpool, Newcastle, Glasgow and Edinburgh, and where midnight happens.',
+  metaTitle: `New Year’s Eve in UK cities ${site.season.eve}: where to celebrate`,
+  description: 'New Year’s Eve in seven UK cities: London, Manchester, Birmingham, Liverpool, Newcastle, Glasgow and Edinburgh, and the kind of night each does best.',
   standfirst: 'Seven cities to begin with, all in the UK, and seven different nights. Decide what kind of midnight you want first, then pick the city that does it best.',
   crumbs: home,
   checked,
@@ -67,6 +68,8 @@ export const citiesHub: HubPage = {
       id: 'more',
       title: 'Before you choose',
       picks: [
+        { name: 'New Year’s Eve events in London', text: 'Every ticketed party, cruise, rooftop and dinner we have checked, with prices.', href: '/london/events/' },
+        { name: 'Events across the UK', text: 'Ticketed New Year’s Eve events in eleven cities.', href: '/events/' },
         { name: 'Getting home after midnight', text: 'Last trains, trams and night buses, city by city.', href: '/transport/' },
         { name: 'Hogmanay', text: 'What makes New Year in Scotland a different thing.', href: '/hogmanay/' },
         { name: 'New Year breaks', text: 'If the answer is no city at all.', href: '/breaks/' },
@@ -90,9 +93,13 @@ const season: Record<string, string> = {
 export const celebrationsHub: HubPage = {
   path: '/celebrations/',
   title: 'New Year celebrations',
-  metaTitle: 'New Year celebrations through the year, and how they are kept in the UK',
-  description: 'Seven New Years kept in Britain: Hogmanay, Lunar New Year, Nowruz, Songkran, Islamic New Year, Rosh Hashanah and Diwali, with when each falls.',
+  metaTitle: 'New Year celebrations around the world: 2027 dates',
+  description: 'The New Years kept in the UK through the year, with 2027 dates: Chinese New Year, Nowruz, Songkran, Islamic New Year, Rosh Hashanah, Diwali.',
   standfirst: 'The year has more than one beginning. Seven of them are kept in Britain, each with its own date, its own table and its own way of wishing you well.',
+  intro: [
+    'Only one New Year in the UK falls on 1 January. The others follow the moon, the sun or a religious calendar, so their dates move from year to year: Chinese New Year falls between late January and late February, Nowruz at the spring equinox, Songkran in mid-April, Rosh Hashanah in September or October and Diwali in October or November. The Islamic New Year moves through every season.',
+    'Each page gives the next date, checked against a published calendar, and how the celebration is kept in Britain.',
+  ],
   crumbs: home,
   checked,
   sample: true,
@@ -124,9 +131,13 @@ export const celebrationsHub: HubPage = {
 export const practicalHub: HubPage = {
   path: '/practical/',
   title: 'The useful bits',
-  metaTitle: `New Year ${site.season.newYear}: bank holidays, what is open and getting home`,
-  description: 'Short answers for New Year in the UK: whether it is a bank holiday, what is open on New Year’s Day, getting home after midnight and how to say it.',
+  metaTitle: 'New Year in the UK: bank holidays, opening times, travel',
+  description: 'Quick answers for New Year in the UK: whether it is a bank holiday, what is open on New Year’s Day, getting home after midnight and how to say it.',
   standfirst: 'Short answers to the questions everybody asks in the last week of December, each with the detail behind it.',
+  intro: [
+    'New Year’s Day is a bank holiday everywhere in the UK, and Scotland has a second day. New Year’s Eve is not: it is an ordinary working day, though many shops and offices close early.',
+    'The two things that catch people out are opening hours on 1 January, which are set shop by shop, and the journey home after midnight, when most transport runs to a special timetable. Plan both before the night.',
+  ],
   crumbs: home,
   checked,
   sample: true,
@@ -159,13 +170,17 @@ export const practicalHub: HubPage = {
  */
 export const worldHub: HubPage = {
   path: '/world/',
-  title: 'New Year around the world',
-  metaTitle: 'New Year around the world: from the first midnight to the last',
-  description: 'How the world celebrates New Year, in the order midnight arrives: from Kiritimati in the Pacific to American Samoa twenty-five hours later.',
+  title: 'The first and last places to celebrate New Year',
+  metaTitle: 'First and last countries to celebrate New Year',
+  description: 'Kiribati is the first country to celebrate New Year, at 10am UK time; American Samoa is the last, 25 hours later. Where midnight falls in between, by UK time.',
   standfirst: 'Midnight takes twenty-five hours to cross the inhabited world. It starts on a Pacific island at ten in the morning, UK time, and ends on another the next day.',
   crumbs: home,
-  checked: '2026-11-12',
+  checked: '2026-11-17',
   sample: true,
+  intro: [
+    'The first country to celebrate New Year is Kiribati: its Line Islands, Kiritimati among them, keep a clock fourteen hours ahead of the UK, so their midnight comes at 10am on 31 December, UK time. The last inhabited place is American Samoa, eleven hours behind the UK, which sees the year in at 11am on 1 January, UK time.',
+    'Between the two, midnight crosses the Pacific, Asia, the Gulf, Africa and Europe, reaches the UK, and carries on across the Atlantic to the Americas. The times below are midnight in each place, given by the UK clock, so you can see when each city celebrates from here.',
+  ],
   groups: [
     ...regions.map((region) => ({
       id: region.id,
@@ -186,5 +201,11 @@ export const worldHub: HubPage = {
         { name: 'New Year breaks', text: 'A few days around the night, in the UK and at sea.', href: '/breaks/' },
       ],
     },
+  ],
+  faq: [
+    { q: 'Which country celebrates New Year first?', a: 'Kiribati. Its Line Islands, including Kiritimati, are fourteen hours ahead of the UK, so they reach midnight at 10am on 31 December, UK time.' },
+    { q: 'Which country celebrates New Year last?', a: 'American Samoa, the last inhabited place to reach midnight. It is eleven hours behind the UK, so its New Year comes at 11am on 1 January, UK time.' },
+    { q: 'How long does it take for New Year to go round the world?', a: 'About twenty-five hours between the first inhabited place and the last, from 10am on 31 December to 11am on 1 January, UK time.' },
+    { q: 'When is midnight in Sydney, in UK time?', a: 'At 1pm on 31 December. Sydney is eleven hours ahead of the UK at New Year.' },
   ],
 };

@@ -1,6 +1,6 @@
 import { EventsDirectory } from '@/components/events/EventsDirectory';
 import { Block, Guide } from '@/components/guide/blocks';
-import { eventCities, events } from '@/content/events';
+import { eventCities, events, eventsStructuredData } from '@/content/events';
 import { eventsPage } from '@/content/guides/events-page';
 import { longDate } from '@/lib/dates';
 import { pageMeta } from '@/lib/meta';
@@ -8,33 +8,7 @@ import { site } from '@/lib/site';
 
 export const metadata = pageMeta(eventsPage);
 
-// What search engines are told about each event: only what its source confirmed.
-const structuredData = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  name: eventsPage.title,
-  numberOfItems: events.length,
-  itemListElement: events.map((event, i) => ({
-    '@type': 'ListItem',
-    position: i + 1,
-    item: {
-      '@type': 'Event',
-      name: event.name,
-      description: event.description,
-      startDate: event.date,
-      eventStatus: 'https://schema.org/EventScheduled',
-      eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-      location: { '@type': 'Place', name: event.venue, address: { '@type': 'PostalAddress', addressLocality: event.city, addressCountry: 'GB' } },
-      offers: {
-        '@type': 'Offer',
-        url: event.booking.url,
-        priceCurrency: 'GBP',
-        ...(event.priceFrom !== null ? { price: event.priceFrom } : {}),
-        ...(event.availability ? { availability: event.availability === 'sold out' ? 'https://schema.org/SoldOut' : 'https://schema.org/InStock' } : {}),
-      },
-    },
-  })),
-};
+const structuredData = eventsStructuredData(events, eventsPage.title);
 
 export default function EventsPage() {
   const checked = events.map((event) => event.checked).sort().at(-1)!;

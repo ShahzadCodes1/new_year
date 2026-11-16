@@ -104,3 +104,68 @@ const FIELD_WORDS: Record<string, string> = {
 export function unconfirmedWords(event: EventListing): string[] {
   return [...new Set(event.unconfirmed.filter((field) => field !== 'availability' && field !== 'area').map((field) => FIELD_WORDS[field] ?? field))];
 }
+
+/** Cities with enough events for a page of their own, at /<city>/events/. */
+const CITY_PAGE_MIN = 10;
+
+/** The address of a city's own events page, if it has one. */
+export function cityEventsPath(city: string): string | null {
+  return events.filter((event) => event.city === city).length >= CITY_PAGE_MIN ? `/${city.toLowerCase()}/events/` : null;
+}
+
+export const citiesWithPages = eventCities.filter((city) => cityEventsPath(city) !== null);
+
+/** '8pm' or '12.30am' as 24-hour 'HH:MM'; null for anything that is not one plain clock time. */
+function clock24(time: string | null): string | null {
+  const m = time?.match(/^(\d{1,2})(?:\.(\d{2}))?(am|pm)$/);
+  if (!m) return null;
+  const h = (Number(m[1]) % 12) + (m[3] === 'pm' ? 12 : 0);
+  return `${String(h).padStart(2, '0')}:${m[2] ?? '00'}`;
+}
+
+/**
+ * The events as schema.org data for search engines. Only what each source confirmed: a time of day is
+ * added only where the published time is one plain clock time, and an end that is earlier than the start
+ * is the next morning. UK clocks are on GMT (+00:00) at New Year.
+ */
+export function eventsStructuredData(list: EventListing[], name: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name,
+    numberOfItems: list.length,
+    itemListElement: list.map((event, i) => {
+      const start = clock24(event.starts);
+      const end = clock24(event.ends);
+      const next = new Date(`${event.date}T00:00:00Z`);
+      next.setUTCDate(next.getUTCDate() + 1);
+      const endDay = start && end && end < start ? next.toISOString().slice(0, 10) : event.date;
+      return {
+        '@type': 'ListItem',
+        position: i + 1,
+        item: {
+          '@type': 'Event',
+          name: event.name,
+          description: event.description,
+          startDate: start ? `${event.date}T${start}:00+00:00` : event.date,
+          ...(end ? { endDate: `${endDay}T${end}:00+00:00` } : {}),
+          eventStatus: 'https://schema.org/EventScheduled',
+          eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+          location: {
+            '@type': 'Place',
+            name: event.venue,
+            address: { '@type': 'PostalAddress', ...(event.area ? { streetAddress: event.area } : {}), addressLocality: event.city, addressCountry: 'GB' },
+          },
+          ...(event.ageLimit && /18|21/.test(event.ageLimit) && !/under|accompan|12|16|5 and/i.test(event.ageLimit) ? { typicalAgeRange: /21/.test(event.ageLimit) ? '21-' : '18-' } : {}),
+          offers: {
+            '@type': 'Offer',
+            url: event.booking.url,
+            priceCurrency: 'GBP',
+            ...(event.priceFrom !== null ? { price: event.priceFrom } : {}),
+            ...(event.availability ? { availability: event.availability === 'sold out' ? 'https://schema.org/SoldOut' : 'https://schema.org/InStock' } : {}),
+          },
+        },
+      };
+    }),
+  };
+}

@@ -7,9 +7,10 @@ import type { CelebrationGuide } from './types';
  */
 export const chineseNewYear: CelebrationGuide = {
   path: '/chinese-new-year/',
+  name: 'Chinese New Year',
   title: 'Chinese New Year in the UK',
-  metaTitle: 'Chinese New Year 2027 in the UK: the date, what happens and where to go',
-  description: 'Chinese New Year in the UK: when it falls, how it is marked, where the biggest celebrations are and what the traditions mean.',
+  metaTitle: 'When is Chinese New Year 2027? Date and UK events',
+  description: 'Chinese New Year 2027 is on Saturday 6 February: the Year of the Goat. How it is celebrated, and where to see it in London and across the UK.',
   standfirst: 'The largest New Year in the world lasts fifteen days. In Britain the public part is one loud, crowded, generous weekend.',
   crumbs: [
     { label: 'Home', href: '/' },

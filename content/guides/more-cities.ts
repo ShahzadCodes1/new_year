@@ -19,9 +19,12 @@ const checked = '2026-11-11';
 /** SAMPLE CONTENT: see types.ts. Venue names, prices and times in all four guides are stand-ins. */
 export const birmingham: CityGuide = {
   path: '/birmingham/',
+  place: 'Birmingham',
+  occasion: 'New Year’s Eve',
+  imageAlt: 'Brick canalside buildings in Birmingham lit up at night, reflected in the water below modern towers',
   title: 'New Year’s Eve in Birmingham',
-  metaTitle: `New Year’s Eve in Birmingham ${site.season.eve}: where to be at midnight`,
-  description: 'Where to be at midnight in Birmingham: Broad Street, the canals and Digbeth, with where to stay and how to get home.',
+  metaTitle: `New Year’s Eve in Birmingham ${site.season.eve}: events and parties`,
+  description: 'New Year’s Eve in Birmingham: Broad Street, the canals and Digbeth, ticketed parties and dinners, where to stay and getting home.',
   standfirst: 'There is no single centrepiece, which leaves the whole city to choose from. Pick a quarter and stay in it: they are further apart than they look.',
   crumbs: home,
   checked,
@@ -84,9 +87,12 @@ export const birmingham: CityGuide = {
 
 export const liverpool: CityGuide = {
   path: '/liverpool/',
+  place: 'Liverpool',
+  occasion: 'New Year’s Eve',
+  imageAlt: 'Liverpool’s waterfront at night, with the Royal Liver Building and the Museum of Liverpool across the dock',
   title: 'New Year’s Eve in Liverpool',
-  metaTitle: `New Year’s Eve in Liverpool ${site.season.eve}: where to be at midnight`,
-  description: 'Where to be at midnight in Liverpool: the waterfront, the docks and the bars behind them, with where to stay and how to get home.',
+  metaTitle: `New Year’s Eve in Liverpool ${site.season.eve}: events and parties`,
+  description: 'New Year’s Eve in Liverpool: midnight on the waterfront, ticketed parties and concerts, where to stay and how to get home.',
   standfirst: 'A waterfront made for midnight, and a city that needs no excuse. Start at the docks, end wherever the music is.',
   crumbs: home,
   checked,
@@ -149,9 +155,12 @@ export const liverpool: CityGuide = {
 
 export const newcastle: CityGuide = {
   path: '/newcastle/',
+  place: 'Newcastle',
+  occasion: 'New Year’s Eve',
+  imageAlt: 'The River Tyne at night, with the Millennium Bridge arch lit white and the Tyne Bridge beyond',
   title: 'New Year’s Eve in Newcastle',
-  metaTitle: `New Year’s Eve in Newcastle ${site.season.eve}: where to be at midnight`,
-  description: 'Where to be at midnight in Newcastle: the Quayside and the bridges, the bars above them, where to stay and how to get home.',
+  metaTitle: `New Year’s Eve in Newcastle ${site.season.eve}: Quayside and parties`,
+  description: 'New Year’s Eve in Newcastle: Howaymanay on the Quayside, ticketed parties, where to stay and how to get home on the Metro.',
   standfirst: 'The Quayside is the place to be, with the bridges overhead. Dress for the cold, though you will be the only one who does.',
   crumbs: home,
   checked,
@@ -214,9 +223,12 @@ export const newcastle: CityGuide = {
 
 export const glasgow: CityGuide = {
   path: '/glasgow/',
+  place: 'Glasgow',
+  occasion: 'Hogmanay',
+  imageAlt: 'The Clyde Arc bridge lit up over the River Clyde in Glasgow at night',
   title: 'Hogmanay in Glasgow',
-  metaTitle: `Hogmanay in Glasgow ${site.season.eve}: ceilidhs, pubs and where to be at the bells`,
-  description: 'Hogmanay in Glasgow: ceilidhs, pubs and parties, where to hear the bells, where to stay and how to get home.',
+  metaTitle: `Hogmanay in Glasgow ${site.season.eve}: ceilidhs, parties and events`,
+  description: 'Hogmanay in Glasgow: ceilidhs, pubs and parties, ticketed Hogmanay events, where to stay and how to get home after the bells.',
   standfirst: 'Hogmanay with less ceremony and more noise. Here the bells are mostly heard indoors, and the best nights are the ones somebody invites you to.',
   crumbs: home,
   checked,

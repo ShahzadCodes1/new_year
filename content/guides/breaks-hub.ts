@@ -10,9 +10,11 @@ import type { BreaksGuide } from './types';
 /** SAMPLE CONTENT: see types.ts. Prices and booking patterns here are stand-ins. */
 export const breaksHub: BreaksGuide = {
   path: '/breaks/',
+  subject: 'New Year’s Eve breaks',
+  imageAlt: 'Two people walking up a frosted lane towards a stone farmhouse at sunrise',
   title: 'New Year breaks',
-  metaTitle: `New Year breaks ${site.season.eve}: where to go and when to book`,
-  description: 'New Year breaks in the UK and beyond: Scotland, the Peak District, spa stays, breaks for two and cruises, with what each costs and when to book.',
+  metaTitle: `New Year’s Eve breaks UK ${site.season.eve}: where to go, when to book`,
+  description: 'New Year’s Eve breaks in the UK: Scotland, the Peak District, spa hotels, breaks for couples and cruises, with what each costs and when to book.',
   standfirst: 'The night is a few hours. A break makes it three days, and the best ones are quiet by the second morning.',
   crumbs: [{ label: 'Home', href: '/' }],
   checked: '2026-11-11',

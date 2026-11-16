@@ -47,8 +47,8 @@ export function Guide({ page, contents, children }: { page: PageBase; contents?:
           {page.image && (
             <div className="g-hero__stage">
               <div className="g-hero__picture">
-                {/* Decorative: the heading and standfirst say what the page is. */}
-                <Image src={page.image} alt="" sizes="(min-width: 900px) 55vw, 100vw" placeholder="blur" priority />
+                {/* Described where it shows a real place; otherwise decorative, as the heading says what the page is. */}
+                <Image src={page.image} alt={page.imageAlt ?? ''} sizes="(min-width: 900px) 55vw, 100vw" placeholder="blur" priority />
               </div>
               {page.keyFacts && (
                 <div className="g-hero__facts">
@@ -73,6 +73,19 @@ export function Guide({ page, contents, children }: { page: PageBase; contents?:
       )}
 
       {children}
+
+      {page.sources && page.sources.length > 0 && (
+        <Block id="sources" tone="deep" title="Sources">
+          <ul className="g-sources">
+            {page.sources.map((source) => (
+              <li key={source.href}>
+                <TextLink href={source.href}>{source.label}</TextLink>
+              </li>
+            ))}
+          </ul>
+          <p className="g-updated">Checked {longDate(page.checked)}.</p>
+        </Block>
+      )}
     </article>
   );
 }
