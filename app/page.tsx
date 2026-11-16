@@ -64,7 +64,7 @@ export default function Home() {
           <Still name="hero" eager />
           <div className="chapter__hold">
             <h1 id="hero-title" className="text-hero">
-              The guide to every New Year on Earth
+              Your guide to New Year's Eve across the UK
             </h1>
             <p className="lede">
               From the first midnight to the last, discover how the world celebrates New Year.
