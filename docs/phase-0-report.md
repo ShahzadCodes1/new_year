@@ -457,7 +457,7 @@ Stills as AVIF with WebP fallback and responsive sizes. Plate layers as GPU-comp
 
 ### Testing
 
-I can test every viewport from 320 to 1920px in the built-in browser and profile frame times there. I cannot hold a physical phone. For real scrolling feel on iOS and Android I will give you a private preview link from Phase 1 onward and a short checklist, and treat what you and Diana report as the deciding evidence.
+I can test every viewport from 320 to 1920px in the built-in browser and profile frame times there. I cannot hold a physical phone. For real scrolling feel on iOS and Android I will give you a private preview link from Phase 1 onward and a short checklist, and treat what you report as the deciding evidence.
 
 ---
 
@@ -524,7 +524,7 @@ Hub and spoke. The homepage links to every hub with ordinary crawlable links (th
 | 10 | Skill rules conflict with the brief | Certain | Declared in section 6; the brief wins |
 | 11 | Library ceiling: `postprocessing` caps three.js below r188 | Low | Pin versions; upgrade deliberately |
 | 12 | Hosting plan | Certain | Vercel's Hobby plan is for non-commercial use. A site carrying affiliate links needs Pro |
-| 13 | I cannot test on physical devices | Certain | Preview links and a checklist for you and Diana |
+| 13 | I cannot test on physical devices | Certain | Preview links and a checklist for your review |
 
 ---
 
