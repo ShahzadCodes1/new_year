@@ -72,7 +72,7 @@ light; none shows a real event or a face, and each was checked against what the 
 
 | Asset | Shows | Local file |
 |---|---|---|
-| Hogmanay | A torchlight procession, seen from behind | `assets/celebrations/hogmanay.jpg` |
+| Hogmanay | **Replaced 17 November 2026** with a photograph supplied by the client: people carrying lit torches in a night-time procession, one taking a selfie (identifiable faces and visible brand logos). Upscaled to 4K with Higgsfield (bytedance image upscale, 2 credits) and cropped to the same portrait shape. **Source, photographer and licence not yet recorded: needed before launch.** Original: `assets/source/hogmanay-torchlight-original.jpg`; upscale: `assets/source/hogmanay-torchlight-upscaled.png`; the generated picture it replaced: `assets/source/hogmanay-procession-previous.jpg` | `assets/celebrations/hogmanay.jpg` (portrait); `assets/celebrations/hogmanay-wide.jpg` (full width, for the Hogmanay page) |
 | Lunar New Year | Rows of plain red lanterns at night | `assets/celebrations/lunar-new-year.jpg` |
 | Nowruz | A haft-sin table: sprouted wheat, apples, garlic, sumac, oleaster, wheat pudding, vinegar, with a mirror, candles, painted eggs, hyacinth, coins and a goldfish | `assets/celebrations/nowruz.jpg` |
 | Songkran | Water poured over an elder's cupped hands, jasmine | `assets/celebrations/songkran.jpg` |

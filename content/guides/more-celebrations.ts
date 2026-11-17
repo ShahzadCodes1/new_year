@@ -1,5 +1,6 @@
 import diwaliPicture from '@/assets/celebrations/diwali.jpg';
-import hogmanayPicture from '@/assets/celebrations/hogmanay.jpg';
+// The Hogmanay page's hero is landscape, so it takes the full-width version of the photograph.
+import hogmanayPicture from '@/assets/celebrations/hogmanay-wide.jpg';
 import islamicPicture from '@/assets/celebrations/islamic-new-year.jpg';
 import nowruzPicture from '@/assets/celebrations/nowruz.jpg';
 import roshPicture from '@/assets/celebrations/rosh-hashanah.jpg';
@@ -22,6 +23,7 @@ const checked = '2026-11-11';
 export const hogmanay: CelebrationGuide = {
   path: '/hogmanay/',
   name: 'Hogmanay',
+  imageAlt: 'People in winter coats carrying lit torches through a crowd at night, one taking a selfie',
   title: 'Hogmanay',
   metaTitle: `Hogmanay ${site.season.eve}: what it means and where to celebrate`,
   description: 'What Hogmanay is and what it means, its traditions from first-footing to Auld Lang Syne, and where to celebrate it in Scotland this year.',
